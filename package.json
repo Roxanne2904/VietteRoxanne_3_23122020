@@ -1,0 +1,19 @@
+{
+  "name": "projet_p3_ohmyfood",
+  "version": "1.0.0",
+  "description": "P3 openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roxanne2904/VietteRoxanne_3_23122020.git"
+  },
+  "author": "Viette Roxanne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roxanne2904/VietteRoxanne_3_23122020/issues"
+  },
+  "homepage": "https://github.com/Roxanne2904/VietteRoxanne_3_23122020#readme"
+}

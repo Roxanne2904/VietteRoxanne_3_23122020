@@ -1,0 +1,16 @@
+/*Utils*/
+@import "./Utils/variables.scss";
+@import "./Utils/fonctions.scss";
+@import "./Utils/mixins.scss";
+
+/*Base*/
+@import "./Base/police.scss";
+
+/*Components(composants)*/
+
+/*Layout*(les blocs BEM, ex: header et footer)*/
+@import "./Layouts/header.scss";
+@import "./Layouts/footer.scss";
+
+/*Pages*/
+@import"./Pages/mainpage.scss";
