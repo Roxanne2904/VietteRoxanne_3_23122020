@@ -1,0 +1,8 @@
+.footer{
+    background-color:$footer-bgd;
+    color:$footer-text;
+    padding:$padding-footer;
+    &__title{
+        font-weight: normal;
+    }
+}
