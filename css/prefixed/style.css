@@ -1,0 +1,35 @@
+/*Utils*/
+/*Base*/
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"), url("../font/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("../font/roboto-regular-webfont.woff2") format("woff2"), url("../font/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  font-family: "robotoregular";
+}
+
+h1 {
+  font-family: "shrikhandregular";
+}
+
+.footer__title {
+  font-family: "shrikhandregular";
+}
+
+/*Components(composants)*/
+/*Layout*(les blocs BEM, ex: header et footer)*/
+/*Pages*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vLi4vc2Fzcy9CYXNlL19wb2xpY2Uuc2NzcyIsIi4uL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxRQUFBO0FBS0EsT0FBQTtBQ0xBO0VBQ0ksK0JBQUE7RUFDQSxpSUFBQTtFQUVBLG1CQUFBO0VBQ0Esa0JBQUE7QUNFSjtBREVBO0VBQ0ksNEJBQUE7RUFDQSwySEFBQTtFQUVBLG1CQUFBO0VBQ0Esa0JBQUE7QUNESjtBREtBO0VBQ0ksdUJBQUE7QUNISjs7QURLQTtFQUNJLDRCQUFBO0FDRko7O0FESUE7RUFDSSwrQkFBQTtBQ0RKOztBREdBO0VBQ0ksK0JBQUE7QUNBSjs7QUZwQkEseUJBQUE7QUFFQSwrQ0FBQTtBQUlBLFFBQUEiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

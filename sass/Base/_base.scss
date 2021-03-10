@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('../font/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('../font/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+main{
+    font-family:'robotoregular';
+    font-size:$main-text-size;
+}
+main{
+    button{
+        font-size:$button-and-input-size;
+    }
+    input{
+        font-size:$button-and-input-size;
+    }
+}
+h1{
+    font-family:'shrikhandregular';
+    font-size:$title-size-primary;
+}
+h2{
+    font-size:$title-size-secondary;
+}
+h3{
+    font-size:$title-size-tertiary;
+}
+.footer__title{
+    font-family:'shrikhandregular'
+}
+
+
+
+
