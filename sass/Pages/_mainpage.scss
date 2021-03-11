@@ -1,0 +1,12 @@
+.accueil{
+    background-color:$accueil-bgd;
+    text-align: center;
+    padding-bottom: $padding-bot-accueil;
+    &__title{
+        margin-top: $no-padding;
+        padding-top:nth($padding-title-and-input,1);
+    }
+    &__content{
+        margin-bottom: 5rem;
+    }
+}

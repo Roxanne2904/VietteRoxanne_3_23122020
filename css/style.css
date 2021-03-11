@@ -4,6 +4,8 @@
 /*padding-margin*/
 /* list: nth($nomdelaliste, position de la valeur souhaité)*/
 /*list*/
+/*list*/
+/*border*/
 /*color*/
 /*Base-(police, font-size)*/
 @font-face {
@@ -47,7 +49,52 @@ h3 {
   font-family: "shrikhandregular";
 }
 
+.fa-hands-helping:before {
+  font-size: 1rem;
+}
+
 /*Components(composants)*/
+/*input*/
+.localisation {
+  display: flex;
+  padding: 5rem 0rem;
+  justify-content: center;
+  background-color: #dbd7ce;
+  box-shadow: inset 0rem 0.5rem 1rem #c5bfb1;
+}
+.localisation__form {
+  width: 33%;
+}
+.localisation__content {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.localisation__icone {
+  display: block;
+  font-size: 3.5rem;
+  position: relative;
+  left: 1.2rem;
+}
+.localisation__input {
+  border: none;
+  background-color: #dbd7ce;
+  width: 70%;
+}
+.localisation__input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+/*button*/
+button {
+  padding: 3rem 5rem;
+  border-radius: 5rem;
+  border: none;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+}
+
 /*Layout*(les blocs BEM, ex: header et footer)*/
 header h1 {
   margin: 0;
@@ -63,7 +110,34 @@ header h1 {
 .footer__title {
   font-weight: normal;
 }
+.footer__ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer__li {
+  padding-bottom: 0.6rem;
+}
+.footer__li--icone {
+  position: relative;
+  left: 3.5rem;
+}
+.footer__li--spé {
+  position: relative;
+  left: 4rem;
+}
 
 /*Pages*/
+.accueil {
+  background-color: #f8f8ec;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.accueil__title {
+  margin-top: 0;
+  padding-top: 5rem;
+}
+.accueil__content {
+  margin-bottom: 5rem;
+}
 
 /*# sourceMappingURL=style.css.map */

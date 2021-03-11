@@ -1,0 +1,7 @@
+@mixin button{
+    padding:$padding-button;
+    border-radius:$radius-button;
+    border: none;
+    background: linear-gradient(to top,$color-primary,$color-secondary);
+    color:$button-text;
+}

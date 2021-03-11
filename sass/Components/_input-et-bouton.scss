@@ -1,0 +1,36 @@
+/*input*/
+.localisation{
+    display: flex;
+    padding:nth($padding-title-and-input,1)0rem;
+    justify-content: center;
+    background-color:$input-color;
+    box-shadow:inset 0rem 0.5rem 1rem darken($input-color,10%);
+    &__form{
+        width: 33%;
+    }
+    &__content{
+        margin:$no-margin;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icone{
+        display:block;
+        font-size:$button-and-input-size;
+        position: relative;
+        left: 1.2rem;
+    }
+    &__input{
+        border: none;
+        background-color:$input-color;
+        width: 70%;
+        &::placeholder{
+            color:$input-text-color;
+            font-weight: bold;
+        }
+    }
+}
+
+/*button*/
+button{
+    @include button;
+}
