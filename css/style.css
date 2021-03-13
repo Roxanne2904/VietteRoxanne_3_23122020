@@ -2,11 +2,17 @@
 /*Utils*/
 /*Size*/
 /*padding-margin*/
+/*---------------------------*/
+/*ohmyfood-title and input*/
 /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+/*--------------------------*/
 /*list*/
 /*list*/
+/*--------------------------*/
+/*restau-legend-text*/
 /*border*/
 /*color*/
+/*height bloc*/
 /*Base-(police, font-size)*/
 @font-face {
   font-family: "shrikhandregular";
@@ -22,23 +28,23 @@
 }
 main {
   font-family: "robotoregular";
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 main button {
-  font-size: 3.5rem;
+  font-size: 2.9rem;
 }
 main input {
-  font-size: 3.5rem;
+  font-size: 2.9rem;
 }
 
 h1 {
   font-family: "shrikhandregular";
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -49,32 +55,30 @@ h3 {
   font-family: "shrikhandregular";
 }
 
-.fa-hands-helping:before {
-  font-size: 1rem;
-}
-
 /*Components(composants)*/
 /*input*/
 .localisation {
   display: flex;
-  padding: 5rem 0rem;
+  padding: 3rem 0rem;
   justify-content: center;
   background-color: #dbd7ce;
   box-shadow: inset 0rem 0.5rem 1rem #c5bfb1;
 }
 .localisation__form {
-  width: 33%;
+  width: 60%;
 }
 .localisation__content {
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .localisation__icone {
   display: block;
-  font-size: 3.5rem;
+  font-size: 2.9rem;
   position: relative;
   left: 1.2rem;
+  margin-right: 4rem;
+  color: #4e4e4e;
 }
 .localisation__input {
   border: none;
@@ -82,8 +86,8 @@ h3 {
   width: 70%;
 }
 .localisation__input::placeholder {
-  color: black;
-  font-weight: bold;
+  color: #4e4e4e;
+  font-weight: 600;
 }
 
 /*button*/
@@ -98,7 +102,7 @@ button {
 /*Layout*(les blocs BEM, ex: header et footer)*/
 header h1 {
   margin: 0;
-  padding: 5rem 5rem;
+  padding: 3rem 5rem;
   text-align: center;
 }
 
@@ -117,27 +121,85 @@ header h1 {
 .footer__li {
   padding-bottom: 0.6rem;
 }
-.footer__li--icone {
-  position: relative;
-  left: 3.5rem;
-}
-.footer__li--spé {
-  position: relative;
-  left: 4rem;
-}
 
 /*Pages*/
+/*Accueil*/
 .accueil {
   background-color: #f8f8ec;
   text-align: center;
-  padding-bottom: 10rem;
+  padding: 3rem 6rem 10rem;
 }
 .accueil__title {
   margin-top: 0;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  font-weight: bolder;
 }
 .accueil__content {
   margin-bottom: 5rem;
+}
+
+/*Fonctionnement*/
+/*Restaurant*/
+.restaurant__link {
+  display: block;
+  color: black;
+  position: relative;
+}
+.restaurant__link:link {
+  color: black;
+  text-decoration: none;
+}
+.restaurant__content {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4rem;
+  margin-bottom: 3rem;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.486);
+  position: relative;
+}
+.restaurant__content-img {
+  overflow: hidden;
+  width: 100%;
+  height: 32rem;
+  position: relative;
+}
+.restaurant__content-img-etiquette {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+  font-size: 2.5rem;
+  color: #278870;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+}
+.restaurant__content-img-photo {
+  width: 105%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -52%);
+}
+.restaurant__content-title {
+  display: flex;
+  height: 10rem;
+  font-size: 3.3rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.restaurant__content-title-legend {
+  font-weight: normal;
+  color: #4e4e4e;
+}
+.restaurant__content-title-legend strong {
+  font-weight: bolder;
+  color: black;
+}
+.restaurant__content-title-heart {
+  padding-right: 2rem;
+  font-size: 4rem;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

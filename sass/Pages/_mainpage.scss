@@ -1,12 +1,82 @@
+/*Accueil*/
 .accueil{
     background-color:$accueil-bgd;
     text-align: center;
-    padding-bottom: $padding-bot-accueil;
+    padding:$padding-accueil;
     &__title{
         margin-top: $no-padding;
         padding-top:nth($padding-title-and-input,1);
+        font-weight: bolder;
     }
     &__content{
         margin-bottom: 5rem;
+    }
+}
+
+/*Fonctionnement*/
+/*Restaurant*/
+.restaurant{
+    &__link{
+        display: block;
+        color:black;
+        position: relative;
+        &:link{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    &__content{
+        margin:$no-margin;
+        overflow: hidden;
+        border-radius: $radius-bloc-restau;
+        margin-bottom: 3rem;
+        @include bloc-restau-shadow;
+        position: relative;
+        &-img{
+            overflow: hidden;
+            width: 100%;
+            height: $height-bloc-restau;
+            position: relative;
+            &-etiquette{
+                background-color: $color-tertiary;
+                position: absolute;
+                top:2rem;
+                right:2rem;
+                z-index: 1;
+                font-size:$title-size-tertiary;
+                color:darken($color-tertiary,40%);
+                padding:$padding-restau-etiquette;
+                border-radius: $radius-etiquette;
+            }
+            &-photo{
+                width: 105%;
+                position: absolute;
+                left:50%;
+                top:40%;
+                transform: translate(-50%, -52%);
+            }
+        }
+    }
+    &__content{
+        &-title{
+            display: flex;
+            height:10rem;
+            font-size:$restau-contenttxt-size;
+            padding:$padding-restaulegend-content;
+            justify-content: space-between;
+            &-legend{
+                font-weight: normal;
+                color:$input-text-color;
+                strong{
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+            &-heart{
+             padding-right: $padding-restaulegend-content;
+             font-size:$icone-heart;
+             color:$color-primary;
+            }
+        }
     }
 }

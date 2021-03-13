@@ -1,33 +1,42 @@
 /*Size*/
-$main-text-size:3rem;
-$title-size-primary:7rem;
-$title-size-secondary:4.8rem;
+$main-text-size:1rem;
+$title-size-primary:6rem;
+$title-size-secondary:4rem;
 $title-size-tertiary:2.5rem;
-$button-and-input-size:3.5rem;
-$icone-footer-size:1rem;
+$button-and-input-size:2.9rem;
+$restau-contenttxt-size:3.3rem;
+$icone-heart:4rem;
 
 /*padding-margin*/
 $no-margin:0;
 $no-padding:0;
-$padding-title-and-input:5rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+/*---------------------------*/
+/*ohmyfood-title and input*/
+$padding-title-and-input:3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+/*--------------------------*/
 $padding-footer:3rem 0 4rem 6rem; /*list*/
 $padding-button:3rem 5rem;/*list*/
-$padding-bot-accueil:10rem;
+$padding-accueil: 3rem 6rem 10rem;
+$padding-restau-etiquette:0.8rem 2rem;
+/*--------------------------*/
+/*restau-legend-text*/
+$padding-restaulegend-content:2rem;
 
 /*border*/
 $radius-button:5rem;
+$radius-etiquette:0.5rem;
+$radius-bloc-restau:4rem;
 
 /*color*/
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
-
 $input-color: rgb(219, 215, 206);
-$input-text-color:black;
-
+$input-text-color:rgb(78, 78, 78);
 $accueil-bgd:rgb(248, 248, 236);
-
 $footer-bgd:rgb(32, 32, 32);
 $footer-text:white;
-
 $button-text:white;
+
+/*height bloc*/
+$height-bloc-restau:32rem;

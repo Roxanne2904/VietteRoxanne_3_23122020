@@ -6,18 +6,20 @@
     background-color:$input-color;
     box-shadow:inset 0rem 0.5rem 1rem darken($input-color,10%);
     &__form{
-        width: 33%;
+        width: 60%;
     }
     &__content{
         margin:$no-margin;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     &__icone{
         display:block;
         font-size:$button-and-input-size;
         position: relative;
         left: 1.2rem;
+        margin-right: 4rem;
+        color:$input-text-color;
     }
     &__input{
         border: none;
@@ -25,7 +27,7 @@
         width: 70%;
         &::placeholder{
             color:$input-text-color;
-            font-weight: bold;
+            font-weight:600;
         }
     }
 }

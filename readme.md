@@ -1,8 +1,8 @@
-11.03.2021
+13.03.2021
 
-* Avancement dans le code scss de la main page, en utilisant le système 7-1.
-* Réalisation d'une mixins pour les buttons. 
-* Plusieurs variables aussi ont été réalisé. 
-* Le footer et le header sont finis.
-* class="acceuil",premier jet: "fini".
-* section (fonctionnement [="operation"] et restaurant): "pas commencé".
+* section restaurant quasiement terminée.
+  - trouver une solution pour les coeurs...
+* quelques ajustements sur l'ensemble de la page principal. 
+* quelques bugs à corriger sur la footer pour la prochaine fois. 
+* Réaliser le css de la section ="operation"(fonctionnement).
+* Commencer à mettre en place le css des 4 pages avec une mixin.  
