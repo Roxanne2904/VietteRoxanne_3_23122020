@@ -17,25 +17,26 @@
 }
 main{
     font-family:'robotoregular';
-    font-size:$main-text-size;
+    font-size:$size-maintxt;
+    width: auto;
 }
 main{
     button{
-        font-size:$button-and-input-size;
+        font-size:$size-button-input;
     }
     input{
-        font-size:$button-and-input-size;
+        font-size:$size-button-input;
     }
 }
 h1{
     font-family:'shrikhandregular';
-    font-size:$title-size-primary;
+    font-size:$size-title-primary;
 }
 h2{
-    font-size:$title-size-secondary;
+    font-size:$size-title-secondary;
 }
 h3{
-    font-size:$title-size-tertiary;
+    font-size:$size-title-tertiary;
 }
 .footer__title{
     font-family:'shrikhandregular'

@@ -3,8 +3,9 @@
     border-radius:$radius-button;
     border: none;
     background: linear-gradient(to top,$color-primary,$color-secondary);
-    color:$button-text;
+    color:$colortxt-button;
+    @include bloc-shadow;
 }
-@mixin bloc-restau-shadow{
-    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.486);
+@mixin bloc-shadow{
+    box-shadow: 0rem 1rem 1rem darken(white,25%);
 }

@@ -1,82 +1,132 @@
 /*Accueil*/
-.accueil{
-    background-color:$accueil-bgd;
-    text-align: center;
-    padding:$padding-accueil;
-    &__title{
-        margin-top: $no-padding;
-        padding-top:nth($padding-title-and-input,1);
-        font-weight: bolder;
-    }
-    &__content{
-        margin-bottom: 5rem;
-    }
+.accueil {
+  background-color: $bgd-accueil;
+  text-align: center;
+  padding: $padding-accueil;
+  &__title {
+    margin-top: $no-padding;
+    padding-top: nth($padding-title-and-input, 1);
+    font-weight: bolder;
+  }
+  &__content {
+    margin-bottom: 5rem;
+    font-size: $size-maintxt;
+    color: $colortxt-input;
+  }
 }
 
 /*Fonctionnement*/
+.operation {
+  padding: $padding-section;
+  &__bloc {
+    background-color: $bgd-accueil;
+    display: flex;
+    align-items: center;
+    box-shadow: 0rem 0rem 0.7rem 0.7rem $bgd-accueil;
+    border-radius: $radius-bloc-restau;
+    margin-bottom: $padding-opera-element;
+  }
+  &__bloc-content {
+    background-color: $bgd-accueil;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    width: 100%;
+    @include bloc-shadow;
+    border-radius: $radius-bloc-restau;
+    height: 11.5rem;
+    &-number {
+      font-size: $size-opera-number;
+      background-color: $color-primary;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      text-align: center;
+      color: $colortxt-button;
+      margin-right: 1.5rem;
+      position: relative;
+      right: 1.6rem;
+      span {
+        position: absolute;
+        left: 1.35rem;
+        top: 0.5rem;
+      }
+    }
+    &-icone {
+      color: $colortxt-input;
+      font-size: $icone-operation;
+      margin-right: 2.6rem;
+    }
+  }
+}
 /*Restaurant*/
-.restaurant{
-    &__link{
-        display: block;
-        color:black;
-        position: relative;
-        &:link{
-            color: black;
-            text-decoration: none;
-        }
+.restaurant {
+  padding: $padding-section;
+  background-color: $bgd-accueil;
+  &__link {
+    display: block;
+    color: black;
+    position: relative;
+    &:link {
+      color: black;
+      text-decoration: none;
     }
-    &__content{
-        margin:$no-margin;
-        overflow: hidden;
-        border-radius: $radius-bloc-restau;
-        margin-bottom: 3rem;
-        @include bloc-restau-shadow;
-        position: relative;
-        &-img{
-            overflow: hidden;
-            width: 100%;
-            height: $height-bloc-restau;
-            position: relative;
-            &-etiquette{
-                background-color: $color-tertiary;
-                position: absolute;
-                top:2rem;
-                right:2rem;
-                z-index: 1;
-                font-size:$title-size-tertiary;
-                color:darken($color-tertiary,40%);
-                padding:$padding-restau-etiquette;
-                border-radius: $radius-etiquette;
-            }
-            &-photo{
-                width: 105%;
-                position: absolute;
-                left:50%;
-                top:40%;
-                transform: translate(-50%, -52%);
-            }
-        }
+  }
+  &__content {
+    background-color: white;
+    margin: $no-margin;
+    overflow: hidden;
+    border-radius: $radius-bloc-restau;
+    margin-bottom: 3rem;
+    @include bloc-shadow;
+    position: relative;
+    &-img {
+      overflow: hidden;
+      width: 100%;
+      height: $height-bloc-restau;
+      position: relative;
+      &-etiquette {
+        background-color: $color-tertiary;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1;
+        font-size: $size-title-tertiary;
+        color: darken($color-tertiary, 40%);
+        padding: $padding-restau-etiquette;
+        border-radius: $radius-etiquette;
+        font-weight: bolder;
+      }
+      &-photo {
+        width: 105%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -52%);
+      }
     }
-    &__content{
-        &-title{
-            display: flex;
-            height:10rem;
-            font-size:$restau-contenttxt-size;
-            padding:$padding-restaulegend-content;
-            justify-content: space-between;
-            &-legend{
-                font-weight: normal;
-                color:$input-text-color;
-                strong{
-                    font-weight: bolder;
-                    color: black;
-                }
-            }
-            &-heart{
-             padding-right: $padding-restaulegend-content;
-             font-size:$icone-heart;
-             color:$color-primary;
-            }
+  }
+  &__content {
+    &-title {
+      display: flex;
+      height: 10rem;
+      font-size: $size-restau-txtcontent;
+      padding: $padding-restaulegend-content;
+      justify-content: space-between;
+      &-legend {
+        font-weight: normal;
+        color: $colortxt-input;
+        strong {
+          font-weight: bolder;
+          color: black;
         }
+      }
+      &-heart {
+        padding-right: $padding-restaulegend-content;
+        font-size: $icone-heart;
+        color: white;
+        -webkit-text-stroke: 0.15rem black;
+      }
     }
+  }
 }

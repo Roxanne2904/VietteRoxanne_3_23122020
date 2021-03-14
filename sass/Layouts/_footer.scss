@@ -1,6 +1,6 @@
 .footer{
-    background-color:$footer-bgd;
-    color:$footer-text;
+    background-color:$bgd-footer;
+    color:$colortxt-footer;
     padding:$padding-footer;
     &__title{
         font-weight: normal;
@@ -11,5 +11,13 @@
     }
     &__li{
         padding-bottom: 0.6rem;
+        &-icone{
+            display: inline-block;
+            font-size:$icone-footer;
+            margin-right:$padding-icone-footer;
+            &--spé{
+                margin-right:$padding-icone-footer--spé;
+            }
+        }
     }
 }

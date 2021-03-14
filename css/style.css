@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /*Utils*/
 /*Size*/
-/*padding-margin*/
+/*padding*/
 /*---------------------------*/
 /*ohmyfood-title and input*/
 /* list: nth($nomdelaliste, position de la valeur souhaité)*/
 /*--------------------------*/
 /*list*/
-/*list*/
 /*--------------------------*/
 /*restau-legend-text*/
+/*margin*/
 /*border*/
 /*color*/
 /*height bloc*/
@@ -28,7 +28,8 @@
 }
 main {
   font-family: "robotoregular";
-  font-size: 1rem;
+  font-size: 1.3rem;
+  width: auto;
 }
 
 main button {
@@ -48,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .footer__title {
@@ -78,7 +79,7 @@ h3 {
   position: relative;
   left: 1.2rem;
   margin-right: 4rem;
-  color: #4e4e4e;
+  color: #5f5f5f;
 }
 .localisation__input {
   border: none;
@@ -86,7 +87,7 @@ h3 {
   width: 70%;
 }
 .localisation__input::placeholder {
-  color: #4e4e4e;
+  color: #5f5f5f;
   font-weight: 600;
 }
 
@@ -97,6 +98,7 @@ button {
   border: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
+  box-shadow: 0rem 1rem 1rem #bfbfbf;
 }
 
 /*Layout*(les blocs BEM, ex: header et footer)*/
@@ -121,6 +123,14 @@ header h1 {
 .footer__li {
   padding-bottom: 0.6rem;
 }
+.footer__li-icone {
+  display: inline-block;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+}
+.footer__li-icone--spé {
+  margin-right: 2.3rem;
+}
 
 /*Pages*/
 /*Accueil*/
@@ -136,10 +146,60 @@ header h1 {
 }
 .accueil__content {
   margin-bottom: 5rem;
+  font-size: 1.3rem;
+  color: #5f5f5f;
 }
 
 /*Fonctionnement*/
+.operation {
+  padding: 3.5rem 2rem 3.5rem 2rem;
+}
+.operation__bloc {
+  background-color: #f8f8ec;
+  display: flex;
+  align-items: center;
+  box-shadow: 0rem 0rem 0.7rem 0.7rem #f8f8ec;
+  border-radius: 4rem;
+  margin-bottom: 2.5rem;
+}
+.operation__bloc-content {
+  background-color: #f8f8ec;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  width: 100%;
+  box-shadow: 0rem 1rem 1rem #bfbfbf;
+  border-radius: 4rem;
+  height: 11.5rem;
+}
+.operation__bloc-content-number {
+  font-size: 2.2rem;
+  background-color: #9356DC;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-right: 1.5rem;
+  position: relative;
+  right: 1.6rem;
+}
+.operation__bloc-content-number span {
+  position: absolute;
+  left: 1.35rem;
+  top: 0.5rem;
+}
+.operation__bloc-content-icone {
+  color: #5f5f5f;
+  font-size: 2.8rem;
+  margin-right: 2.6rem;
+}
+
 /*Restaurant*/
+.restaurant {
+  padding: 3.5rem 2rem 3.5rem 2rem;
+  background-color: #f8f8ec;
+}
 .restaurant__link {
   display: block;
   color: black;
@@ -150,11 +210,12 @@ header h1 {
   text-decoration: none;
 }
 .restaurant__content {
+  background-color: white;
   margin: 0;
   overflow: hidden;
   border-radius: 4rem;
   margin-bottom: 3rem;
-  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.486);
+  box-shadow: 0rem 1rem 1rem #bfbfbf;
   position: relative;
 }
 .restaurant__content-img {
@@ -169,10 +230,11 @@ header h1 {
   top: 2rem;
   right: 2rem;
   z-index: 1;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #278870;
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
+  font-weight: bolder;
 }
 .restaurant__content-img-photo {
   width: 105%;
@@ -190,7 +252,7 @@ header h1 {
 }
 .restaurant__content-title-legend {
   font-weight: normal;
-  color: #4e4e4e;
+  color: #5f5f5f;
 }
 .restaurant__content-title-legend strong {
   font-weight: bolder;
@@ -199,7 +261,8 @@ header h1 {
 .restaurant__content-title-heart {
   padding-right: 2rem;
   font-size: 4rem;
-  color: #9356DC;
+  color: white;
+  -webkit-text-stroke: 0.15rem black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,42 +1,51 @@
 /*Size*/
-$main-text-size:1rem;
-$title-size-primary:6rem;
-$title-size-secondary:4rem;
-$title-size-tertiary:2.5rem;
-$button-and-input-size:2.9rem;
-$restau-contenttxt-size:3.3rem;
-$icone-heart:4rem;
+$size-maintxt: 1.3rem;
+$size-title-primary: 6rem;
+$size-title-secondary: 4rem;
+$size-title-tertiary: 2.8rem;
+$size-button-input: 2.9rem;
+$size-restau-txtcontent: 3.3rem;
+$size-opera-number: 2.2rem;
+$icone-heart: 4rem;
+$icone-operation: 2.8rem;
+$icone-footer: 2.2rem;
 
-/*padding-margin*/
-$no-margin:0;
-$no-padding:0;
+/*padding*/
+$no-padding: 0;
 /*---------------------------*/
 /*ohmyfood-title and input*/
-$padding-title-and-input:3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+$padding-title-and-input: 3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
 /*--------------------------*/
-$padding-footer:3rem 0 4rem 6rem; /*list*/
-$padding-button:3rem 5rem;/*list*/
+$padding-footer: 3rem 0 4rem 6rem; /*list*/
+$padding-button: 3rem 5rem;
 $padding-accueil: 3rem 6rem 10rem;
-$padding-restau-etiquette:0.8rem 2rem;
+$padding-restau-etiquette: 0.8rem 2rem;
 /*--------------------------*/
 /*restau-legend-text*/
-$padding-restaulegend-content:2rem;
+$padding-restaulegend-content: 2rem;
+$padding-icone-footer: 1.5rem;
+$padding-icone-footer--spé: 2.3rem;
+$padding-opera-element: 2.5rem;
+$padding-section: 3.5rem 2rem 3.5rem 2rem;
+
+/*margin*/
+$no-margin: 0;
 
 /*border*/
-$radius-button:5rem;
-$radius-etiquette:0.5rem;
-$radius-bloc-restau:4rem;
+$radius-button: 5rem;
+$radius-etiquette: 0.5rem;
+$radius-bloc-restau: 4rem;
 
 /*color*/
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-$input-color: rgb(219, 215, 206);
-$input-text-color:rgb(78, 78, 78);
-$accueil-bgd:rgb(248, 248, 236);
-$footer-bgd:rgb(32, 32, 32);
-$footer-text:white;
-$button-text:white;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$bgd-input: rgb(219, 215, 206);
+$bgd-accueil: rgb(248, 248, 236);
+$bgd-footer: rgb(32, 32, 32);
+$colortxt-input: rgb(95, 95, 95);
+$colortxt-button: white;
+$colortxt-footer: white;
 
 /*height bloc*/
-$height-bloc-restau:32rem;
+$height-bloc-restau: 32rem;
