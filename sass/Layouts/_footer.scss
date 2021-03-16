@@ -11,6 +11,10 @@
   }
   &__li {
     padding-bottom: 0.6rem;
+    a {
+      @include links;
+      color: $bgd-white;
+    }
     &-icone {
       display: inline-block;
       font-size: $icone-footer;

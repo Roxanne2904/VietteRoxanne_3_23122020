@@ -14,3 +14,6 @@
   font-size: $icone-heart;
   -webkit-text-stroke: 0.15rem black;
 }
+@mixin links {
+  text-decoration: none;
+}

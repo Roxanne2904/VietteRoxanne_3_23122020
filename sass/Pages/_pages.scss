@@ -30,8 +30,23 @@
       padding-top: $paddingtop-menu-title;
     }
     &__heart {
-      @include normal-hearts;
-      color: $bgd-accueil;
+      position: relative;
+      font-family: "robotoregular";
+      &__icone1 {
+        position: absolute;
+        @include normal-hearts;
+        color: $bgd-accueil;
+        opacity: 1;
+        transition: opacity 800ms;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      &__icone2 {
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
     &__recette {
       padding: $padding-menu-recette;
