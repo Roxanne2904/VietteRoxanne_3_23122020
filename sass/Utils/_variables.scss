@@ -1,14 +1,18 @@
 /*Size*/
-$size-maintxt: 1.3rem;
 $size-title-primary: 6rem;
 $size-title-secondary: 4rem;
-$size-title-tertiary: 2.8rem;
-$size-button-input: 2.9rem;
+$size-title-tertiary: 2.5rem;
+$size-button-input: 2.8rem;
 $size-restau-txtcontent: 3.3rem;
 $size-opera-number: 2.2rem;
+$size-footer-txt: 2.5rem;
+$size-menu-txt: 2.3rem;
+$size-menu-strong-txt: 2.7rem;
+$icone-header-arrow: 3.5rem;
 $icone-heart: 4rem;
 $icone-operation: 2.8rem;
 $icone-footer: 2.2rem;
+$icone-menu-check: 2.6rem;
 
 /*padding*/
 $no-padding: 0;
@@ -17,7 +21,7 @@ $no-padding: 0;
 $padding-title-and-input: 3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
 /*--------------------------*/
 $padding-footer: 3rem 0 4rem 6rem; /*list*/
-$padding-button: 3rem 5rem;
+$padding-button: 2rem 4rem;
 $padding-accueil: 3rem 6rem 10rem;
 $padding-restau-etiquette: 0.8rem 2rem;
 /*--------------------------*/
@@ -26,17 +30,28 @@ $padding-restaulegend-content: 2rem;
 $padding-icone-footer: 1.5rem;
 $padding-icone-footer--spé: 2.3rem;
 $padding-opera-element: 2.5rem;
-$padding-section: 3.5rem 2rem 3.5rem 2rem;
+/*menu*/
+$paddingtop-menu-title: 3rem;
+$padding-menu-content: 1rem;
+$padding-menu-blocs: 0.7rem 0 1rem 1.5rem;
+$padding-menu-recette: 0rem 2.5rem;
+$padding-menu-button: 5.2rem 10rem 0;
 
 /*margin*/
 $no-margin: 0;
+$margin-section: 3.5rem 2rem 8rem 2rem;
+$margintop-menu-subtitle: 5rem;
+$maringtop-bot-menu-content: 1.5rem 0 2.3rem 0;
 
 /*border*/
 $radius-button: 5rem;
 $radius-etiquette: 0.5rem;
 $radius-bloc-restau: 4rem;
+$radius-menu: 5rem 5rem 0 0;
+$radius-menu-content-bloc: 2rem;
 
 /*color*/
+$bgd-white: white;
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
@@ -44,8 +59,8 @@ $bgd-input: rgb(219, 215, 206);
 $bgd-accueil: rgb(248, 248, 236);
 $bgd-footer: rgb(32, 32, 32);
 $colortxt-input: rgb(95, 95, 95);
-$colortxt-button: white;
-$colortxt-footer: white;
+$colortxt-button: $bgd-white;
+$colortxt-footer: $bgd-white;
 
 /*height bloc*/
 $height-bloc-restau: 32rem;

@@ -1,11 +1,16 @@
-@mixin button{
-    padding:$padding-button;
-    border-radius:$radius-button;
-    border: none;
-    background: linear-gradient(to top,$color-primary,$color-secondary);
-    color:$colortxt-button;
-    @include bloc-shadow;
+@mixin button {
+  width: 80%;
+  padding: $padding-button;
+  border-radius: $radius-button;
+  border: none;
+  background: linear-gradient(to top, $color-primary, $color-secondary);
+  color: $colortxt-button;
+  @include bloc-shadow;
 }
-@mixin bloc-shadow{
-    box-shadow: 0rem 1rem 1rem darken(white,25%);
+@mixin bloc-shadow {
+  box-shadow: 0rem 1rem 1rem darken(white, 25%);
+}
+@mixin normal-hearts {
+  font-size: $icone-heart;
+  -webkit-text-stroke: 0.15rem black;
 }

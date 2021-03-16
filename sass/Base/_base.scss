@@ -1,46 +1,44 @@
 @font-face {
-    font-family: 'shrikhandregular';
-    src: url('../font/shrikhand-regular-webfont.woff2') format('woff2'),
-         url('../font/shrikhand-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "shrikhandregular";
+  src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"),
+    url("../font/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'robotoregular';
-    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
-         url('../font/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "robotoregular";
+  src: url("../font/roboto-regular-webfont.woff2") format("woff2"),
+    url("../font/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-main{
-    font-family:'robotoregular';
-    font-size:$size-maintxt;
-    width: auto;
+html {
+  font-size: 1rem;
 }
-main{
-    button{
-        font-size:$size-button-input;
-    }
-    input{
-        font-size:$size-button-input;
-    }
+main {
+  font-family: "robotoregular";
+  width: auto;
 }
-h1{
-    font-family:'shrikhandregular';
-    font-size:$size-title-primary;
+main {
+  button {
+    font-size: $size-button-input;
+    font-family: "robotoregular";
+  }
+  input {
+    font-size: $size-button-input;
+  }
 }
-h2{
-    font-size:$size-title-secondary;
+h1 {
+  font-family: "shrikhandregular";
+  font-size: $size-title-primary;
 }
-h3{
-    font-size:$size-title-tertiary;
+h2 {
+  font-size: $size-title-secondary;
 }
-.footer__title{
-    font-family:'shrikhandregular'
+h3 {
+  font-size: $size-title-tertiary;
 }
-
-
-
+.footer__title {
+  font-family: "shrikhandregular";
+}

@@ -20,3 +20,10 @@ A FAIRE:
  animations. 
 *réaliser l'animation des coeurs ("background" "gradient" "texte"-utilisations des webkits)
 *si le temps: commencer à réaliser l'animation du "loading spinner"
+
+16.03.2021
+
+* le Css a été mis en place partout (page principal et les 4 pages de menus).
+* Il reste un bug au niveau du footer des pages menus ...------> taille de la font
+  - (La cause = display: flex, au niveau des blocs "menu__recette")???
+   

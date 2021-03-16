@@ -1,38 +1,38 @@
 /*input*/
-.localisation{
+.localisation {
+  display: flex;
+  padding: nth($padding-title-and-input, 1) 0rem;
+  justify-content: center;
+  background-color: $bgd-input;
+  box-shadow: inset 0rem 0.5rem 1rem darken($bgd-input, 10%);
+  &__form {
+    width: 60%;
+  }
+  &__content {
+    margin: $no-margin;
     display: flex;
-    padding:nth($padding-title-and-input,1)0rem;
     justify-content: center;
-    background-color:$bgd-input;
-    box-shadow:inset 0rem 0.5rem 1rem darken($bgd-input,10%);
-    &__form{
-        width: 60%;
+  }
+  &__icone {
+    display: block;
+    font-size: $size-button-input;
+    position: relative;
+    left: 1.2rem;
+    margin-right: 4rem;
+    color: $colortxt-input;
+  }
+  &__input {
+    border: none;
+    background-color: $bgd-input;
+    width: 70%;
+    &::placeholder {
+      color: $colortxt-input;
+      font-weight: 600;
     }
-    &__content{
-        margin:$no-margin;
-        display: flex;
-        justify-content: center;
-    }
-    &__icone{
-        display:block;
-        font-size:$size-button-input;
-        position: relative;
-        left: 1.2rem;
-        margin-right: 4rem;
-        color:$colortxt-input;
-    }
-    &__input{
-        border: none;
-        background-color:$bgd-input;
-        width: 70%;
-        &::placeholder{
-            color:$colortxt-input;
-            font-weight:600;
-        }
-    }
+  }
 }
 
 /*button*/
-button{
-    @include button;
+button {
+  @include button;
 }

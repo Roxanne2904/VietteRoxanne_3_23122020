@@ -1,23 +1,23 @@
-.footer{
-    background-color:$bgd-footer;
-    color:$colortxt-footer;
-    padding:$padding-footer;
-    &__title{
-        font-weight: normal;
+.footer {
+  background-color: $bgd-footer;
+  color: $colortxt-footer;
+  padding: $padding-footer;
+  &__title {
+    font-weight: normal;
+  }
+  &__ul {
+    list-style-type: none;
+    padding: $no-padding;
+  }
+  &__li {
+    padding-bottom: 0.6rem;
+    &-icone {
+      display: inline-block;
+      font-size: $icone-footer;
+      margin-right: $padding-icone-footer;
+      &--spé {
+        margin-right: $padding-icone-footer--spé;
+      }
     }
-    &__ul{
-        list-style-type: none;
-        padding:$no-padding;
-    }
-    &__li{
-        padding-bottom: 0.6rem;
-        &-icone{
-            display: inline-block;
-            font-size:$icone-footer;
-            margin-right:$padding-icone-footer;
-            &--spé{
-                margin-right:$padding-icone-footer--spé;
-            }
-        }
-    }
+  }
 }

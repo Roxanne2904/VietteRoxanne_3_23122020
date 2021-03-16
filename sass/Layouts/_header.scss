@@ -1,7 +1,19 @@
-header{
-    h1{
-        margin:$no-margin;
-        padding:$padding-title-and-input;
-        text-align: center;
-    }
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &__arrow {
+    height: 100%;
+    font-size: $icone-header-arrow;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 0.5rem;
+  }
+  &__title {
+    margin: $no-margin;
+    padding: $padding-title-and-input;
+    text-align: center;
+  }
 }

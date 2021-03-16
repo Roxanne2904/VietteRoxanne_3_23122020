@@ -1,0 +1,106 @@
+.image {
+  margin: $no-margin;
+  width: 100%;
+  height: 41rem;
+  overflow: hidden;
+  &__photo {
+    width: 100%;
+    &--change {
+      transform: translateY(-30%);
+    }
+  }
+}
+.bloc {
+  background-color: $bgd-accueil;
+  .menu {
+    background-color: $bgd-accueil;
+    flex-direction: column;
+    position: relative;
+    bottom: 8rem;
+    border-radius: $radius-menu;
+    &__title {
+      font-family: "shrikhandregular";
+      background-color: $bgd-accueil;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 5% 5%;
+      border-radius: $radius-menu;
+      padding-top: $paddingtop-menu-title;
+    }
+    &__heart {
+      @include normal-hearts;
+      color: $bgd-accueil;
+    }
+    &__recette {
+      padding: $padding-menu-recette;
+      &__subtitle {
+        align-self: flex-start;
+        margin-top: $margintop-menu-subtitle;
+        margin-bottom: $no-margin;
+        color: $colortxt-input;
+      }
+      &__underscore {
+        &__icone {
+          display: inline-block;
+          transform: scale(11, 3);
+          position: relative;
+          left: 4.5rem;
+          bottom: 0.3rem;
+          color: $color-tertiary;
+        }
+      }
+      &__content {
+        display: flex;
+        font-size: $size-menu-txt;
+        margin: $maringtop-bot-menu-content;
+        overflow: hidden;
+        border-radius: $radius-menu-content-bloc;
+        @include bloc-shadow;
+      }
+      &__text {
+        background-color: $bgd-white;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: $padding-menu-blocs;
+        strong {
+          font-size: $size-menu-strong-txt;
+        }
+        span {
+          color: $colortxt-input;
+        }
+      }
+      &__price {
+        background-color: $bgd-white;
+        width: 20%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-weight: bold;
+        padding-bottom: nth($padding-menu-blocs, 3);
+      }
+      &__check {
+        background-color: $color-tertiary;
+        width: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $icone-menu-check;
+        color: $bgd-white;
+        span {
+          position: relative;
+          right: 0.1rem;
+          top: 0.1rem;
+        }
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      padding: $padding-menu-button;
+    }
+  }
+}
