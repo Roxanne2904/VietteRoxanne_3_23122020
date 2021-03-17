@@ -68,11 +68,24 @@
       }
       &__content {
         display: flex;
-        font-size: $size-menu-txt;
         margin: $maringtop-bot-menu-content;
+        font-size: $size-menu-txt;
         overflow: hidden;
         border-radius: $radius-menu-content-bloc;
+        background-color: $bgd-white;
         @include bloc-shadow;
+        &:hover {
+          .menu__recette__price {
+            transform: translateX(0);
+            animation: price-box 1000ms;
+            animation-fill-mode: both;
+          }
+          .menu__recette__check {
+            transform: translateX(0);
+            animation: check-box 1000ms;
+            animation-fill-mode: both;
+          }
+        }
       }
       &__text {
         background-color: $bgd-white;
@@ -96,26 +109,23 @@
         justify-content: center;
         font-weight: bold;
         padding-bottom: nth($padding-menu-blocs, 3);
+        transform: translateX(80%);
       }
       &__check {
         background-color: $color-tertiary;
-        width: 0%;
+        width: 17%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: $icone-menu-check;
         color: $bgd-white;
+        transform: translateX(100%);
         span {
           position: relative;
           right: 0.1rem;
           top: 0.1rem;
         }
       }
-    }
-    &__button {
-      display: flex;
-      justify-content: center;
-      padding: $padding-menu-button;
     }
   }
 }

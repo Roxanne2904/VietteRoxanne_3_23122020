@@ -32,4 +32,6 @@ A FAIRE:
 * Mise en place de la branche "feature".
 * L'animation des coeurs ---ok
 * Le hover des fonctionnalités ---ok (utilisations de opacity pour le hover)
-   
+* Les bouton s'éclaircissent en hover (utilisation de opacity)
+* En cours de réa sur les animations "check boxes"...
+  -première étape----ok

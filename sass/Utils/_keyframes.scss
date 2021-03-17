@@ -1,0 +1,16 @@
+@keyframes price-box {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes check-box {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

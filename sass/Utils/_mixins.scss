@@ -1,9 +1,20 @@
 @mixin button {
-  width: 80%;
   padding: $padding-button;
   border-radius: $radius-button;
   border: none;
-  background: linear-gradient(to top, $color-primary, $color-secondary);
+  background: linear-gradient(-5deg, $color-primary 15%, $color-secondary);
+  color: $colortxt-button;
+  @include bloc-shadow;
+}
+@mixin button-lighten {
+  padding: $padding-button;
+  border-radius: $radius-button;
+  border: none;
+  background: linear-gradient(
+    -5deg,
+    lighten($color-primary, 15%) 15%,
+    lighten($color-secondary, 15%)
+  );
   color: $colortxt-button;
   @include bloc-shadow;
 }

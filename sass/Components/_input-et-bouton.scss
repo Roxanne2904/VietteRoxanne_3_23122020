@@ -33,6 +33,49 @@
 }
 
 /*button*/
-button {
-  @include button;
+.accueil__btn {
+  position: relative;
+  &__elemnt {
+    width: 80%;
+    position: absolute;
+    @include button;
+    opacity: 1;
+    transition: opacity 1000ms;
+    outline-style: none;
+    &:hover {
+      opacity: 0;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
+  &__elemnt__bgd {
+    width: 80%;
+    @include button-lighten;
+  }
+}
+
+.menu__button {
+  display: flex;
+  justify-content: center;
+  padding-top: $padding-menu-button;
+  position: relative;
+  &__elemnt {
+    width: 53%;
+    position: absolute;
+    @include button;
+    opacity: 1;
+    transition: opacity 1000ms;
+    outline-style: none;
+    &:hover {
+      opacity: 0;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
+  &__elemnt__bgd {
+    width: 53%;
+    @include button-lighten;
+  }
 }
