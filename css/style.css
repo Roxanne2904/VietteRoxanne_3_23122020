@@ -181,16 +181,24 @@ button {
   box-shadow: 0rem 0rem 0.7rem 0.7rem #f8f8ec;
   border-radius: 4rem;
   margin-bottom: 2.5rem;
+  position: relative;
 }
 .operation__bloc-content {
+  position: absolute;
   background-color: #f8f8ec;
   display: flex;
   align-items: center;
   margin: 0.5rem;
-  width: 100%;
+  width: 98%;
   box-shadow: 0rem 1rem 1rem #bfbfbf;
   border-radius: 4rem;
-  height: 11.5rem;
+  height: 11.65rem;
+  opacity: 1;
+  transition: opacity 1100ms;
+  /*Pour mettre en place le hover avec opacity*/
+}
+.operation__bloc-content:hover {
+  opacity: 0;
 }
 .operation__bloc-content-number {
   font-size: 2.2rem;
@@ -212,7 +220,46 @@ button {
 .operation__bloc-content-icone {
   color: #5f5f5f;
   font-size: 2.8rem;
-  margin-right: 2.6rem;
+  margin-right: 3.3rem;
+}
+.operation__bloc-content-icone--phone {
+  font-size: 3.3rem;
+}
+.operation__bloc-content-bgd {
+  background-color: #9256dc2f;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  width: 98%;
+  box-shadow: 0rem 1rem 1rem #bfbfbf;
+  border-radius: 4rem;
+  height: 11.48rem;
+  opacity: 1;
+}
+.operation__bloc-content-bgd-number {
+  font-size: 2.2rem;
+  background-color: #9356dc;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-right: 1.5rem;
+  position: relative;
+  right: 1.6rem;
+}
+.operation__bloc-content-bgd-number span {
+  position: absolute;
+  left: 1.35rem;
+  top: 0.5rem;
+}
+.operation__bloc-content-bgd-icone {
+  color: #9356dc;
+  font-size: 2.8rem;
+  margin-right: 3.3rem;
+}
+.operation__bloc-content-bgd-icone--phone {
+  font-size: 3.3rem;
 }
 
 /*Restaurant*/

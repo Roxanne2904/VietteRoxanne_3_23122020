@@ -26,16 +26,23 @@
     box-shadow: 0rem 0rem 0.7rem 0.7rem $bgd-accueil;
     border-radius: $radius-bloc-restau;
     margin-bottom: $padding-opera-element;
+    position: relative;
   }
   &__bloc-content {
+    position: absolute;
     background-color: $bgd-accueil;
     display: flex;
     align-items: center;
     margin: 0.5rem;
-    width: 100%;
+    width: 98%;
     @include bloc-shadow;
     border-radius: $radius-bloc-restau;
-    height: 11.5rem;
+    height: 11.65rem;
+    opacity: 1;
+    transition: opacity 1100ms;
+    &:hover {
+      opacity: 0;
+    }
     &-number {
       font-size: $size-opera-number;
       background-color: $color-primary;
@@ -56,7 +63,47 @@
     &-icone {
       color: $colortxt-input;
       font-size: $icone-operation;
-      margin-right: 2.6rem;
+      margin-right: 3.3rem;
+      &--phone {
+        font-size: $icone-operation-phone;
+      }
+    }
+    /*Pour mettre en place le hover avec opacity*/
+    &-bgd {
+      background-color: $color-primary-transparent;
+      display: flex;
+      align-items: center;
+      margin: 0.5rem;
+      width: 98%;
+      @include bloc-shadow;
+      border-radius: $radius-bloc-restau;
+      height: 11.48rem;
+      opacity: 1;
+      &-number {
+        font-size: $size-opera-number;
+        background-color: $color-primary;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        text-align: center;
+        color: $colortxt-button;
+        margin-right: 1.5rem;
+        position: relative;
+        right: 1.6rem;
+        span {
+          position: absolute;
+          left: 1.35rem;
+          top: 0.5rem;
+        }
+      }
+      &-icone {
+        color: $color-primary;
+        font-size: $icone-operation;
+        margin-right: 3.3rem;
+        &--phone {
+          font-size: $icone-operation-phone;
+        }
+      }
     }
   }
 }

@@ -26,4 +26,10 @@ A FAIRE:
 * le Css a été mis en place partout (page principal et les 4 pages de menus).
 * Il reste un bug au niveau du footer des pages menus ...------> taille de la font
   - (La cause = display: flex, au niveau des blocs "menu__recette")???
+
+17.03.2021
+
+* Mise en place de la branche "feature".
+* L'animation des coeurs ---ok
+* Le hover des fonctionnalités ---ok (utilisations de opacity pour le hover)
    
