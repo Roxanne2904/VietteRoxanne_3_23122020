@@ -74,16 +74,36 @@
         border-radius: $radius-menu-content-bloc;
         background-color: $bgd-white;
         @include bloc-shadow;
+        &1 {
+          animation: content-anim 1000ms 100ms;
+          animation-fill-mode: both;
+        }
+        &2 {
+          animation: content-anim 1000ms 500ms;
+          animation-fill-mode: both;
+        }
+        &3 {
+          animation: content-anim 1000ms 800ms;
+          animation-fill-mode: both;
+        }
+        &4 {
+          animation: content-anim 1000ms 1100ms;
+          animation-fill-mode: both;
+        }
+
         &:hover {
           .menu__recette__price {
             transform: translateX(0);
-            animation: price-box 1000ms;
+            animation: price-box 500ms;
             animation-fill-mode: both;
           }
           .menu__recette__check {
             transform: translateX(0);
-            animation: check-box 1000ms;
+            animation: check-box 500ms;
             animation-fill-mode: both;
+            span {
+              transform: rotate(2turn);
+            }
           }
         }
       }
@@ -124,6 +144,7 @@
           position: relative;
           right: 0.1rem;
           top: 0.1rem;
+          transition: transform 500ms;
         }
       }
     }

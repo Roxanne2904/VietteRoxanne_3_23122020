@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: $bgd-white;
   &__arrow {
     height: 100%;
     font-size: $icone-header-arrow;
