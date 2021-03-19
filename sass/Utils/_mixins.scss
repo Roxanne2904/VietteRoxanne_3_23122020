@@ -1,3 +1,11 @@
+@mixin animation-dots {
+  width: $size-dot;
+  height: $size-dot;
+  border-radius: 50%;
+  animation-fill-mode: both;
+  transform: scale(0.1);
+}
+
 @mixin button {
   padding: $padding-button;
   border-radius: $radius-button;

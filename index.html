@@ -13,120 +13,136 @@
   </head>
 
   <body>
-    <div class="loading-spinner">
-      <div class="loading-spinner__content">
-        <div class="loading-spinner__content1"><!--dot 1--></div>
-        <div class="loading-spinner__content2"><!--dot 2--></div>
-        <div class="loading-spinner__content3"><!--dot 3--></div>
+    <div class="bloc__loading-spinner">
+      <div class="bloc__loading-spinner__content">
+        <div class="bloc__loading-spinner__content1"><!--dot 1--></div>
+        <div class="bloc__loading-spinner__content2"><!--dot 2--></div>
+        <div class="bloc__loading-spinner__content3"><!--dot 3--></div>
       </div>
     </div>
-    <main class="indexhtml">
+
+    <div class="bloc__main">
       <header class="header">
         <h1 class="header__title">Ohmyfood</h1>
       </header>
 
-      <div class="localisation">
-        <form class="localisation__form" method="POST">
-          <p class="localisation__content">
-            <span class="localisation__icone"
-              ><i class="fas fa-map-marker-alt"></i
-            ></span>
-            <input
-              class="localisation__input"
-              type="search"
-              name="lieu"
-              placeholder="Paris, Belleville"
-            />
-          </p>
-        </form>
-      </div>
-
-      <section class="accueil">
-        <h2 class="accueil__title">Réservez le menu qui vous convient</h2>
-        <h3 class="accueil__content">
-          Découvrez des restaurants d'exception,<br />
-          séléctionnés par nos soins.
-        </h3>
-        <div class="accueil__btn">
-          <button class="accueil__btn__elemnt">Explorer nos restaurants</button>
-          <button class="accueil__btn__elemnt__bgd">Explorer nos restaurants</button>
-        </div>
-        
-      </section>
-
-      <section class="operation">
-        <h2 class="operation__title">Fonctionnement</h2>
-        <div class="operation__content">
-          <div class="operation__bloc">
-            <div class="operation__bloc-content">
-              <div class="operation__bloc-content-number"><span>1</span></div>
-              <span class="operation__bloc-content-icone"
-                ><i class="fas fa-mobile-alt operation__bloc-content-icone--phone"></i
+      <main>
+        <div class="localisation">
+          <form class="localisation__form" method="POST">
+            <p class="localisation__content">
+              <span class="localisation__icone"
+                ><i class="fas fa-map-marker-alt"></i
               ></span>
-              <h3>Choisissez un restaurant</h3>
-            </div>
-            <!--Pour le fond en hover à mettre en place avec opacity en css-->
-            <div class="operation__bloc-content-bgd">
-              <div class="operation__bloc-content-bgd-number"><span>1</span></div>
-              <span class="operation__bloc-content-bgd-icone"
-                ><i class="fas fa-mobile-alt operation__bloc-content-bgd-icone--phone"></i
-              ></span>
-              <h3>Choisissez un restaurant</h3>
-            </div>
-          </div>
-
-          <div class="operation__bloc">
-            <div class="operation__bloc-content">
-              <div class="operation__bloc-content-number"><span>2</span></div>
-              <span class="operation__bloc-content-icone"
-                ><i class="fas fa-list-ul"></i
-              ></span>
-              <h3>Composez votre menu</h3>
-            </div>
-            <!--Pour le fond en hover à mettre en place avec opacity en css-->
-            <div class="operation__bloc-content-bgd">
-              <div class="operation__bloc-content-bgd-number"><span>2</span></div>
-              <span class="operation__bloc-content-bgd-icone"
-                ><i class="fas fa-list-ul"></i
-                  ></span>
-              <h3>Composez votre menu</h3>
-            </div>
-          </div>
-
-          <div class="operation__bloc">
-            <div class="operation__bloc-content">
-              <div class="operation__bloc-content-number"><span>3</span></div>
-              <span class="operation__bloc-content-icone"
-                ><i class="fas fa-store"></i
-              ></span>
-              <h3>Dégustez au restaurant</h3>
-            </div>
-            <!--Pour le fond en hover à mettre en place avec opacity en css-->
-            <div class="operation__bloc-content-bgd">
-              <div class="operation__bloc-content-bgd-number"><span>3</span></div>
-              <span class="operation__bloc-content-bgd-icone"
-                ><i class="fas fa-store"></i
-                  ></span>
-              <h3>Dégustez au restaurant</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="restaurant">
-        <h2 class="restaurant__title">Restaurants</h2>
-
-        <a class="restaurant__link" href="./index-01.html">
-          <figure class="restaurant__content">
-            <div class="restaurant__content-img">
-              <div class="restaurant__content-img-etiquette">Nouveau</div>
-              <img
-                class="restaurant__content-img-photo"
-                src="./images/restaurant/restau_(1).jpg"
-                alt="photo d'une assiette gastronomique"
+              <input
+                class="localisation__input"
+                type="search"
+                name="lieu"
+                placeholder="Paris, Belleville"
               />
+            </p>
+          </form>
+        </div>
+
+        <section class="accueil">
+          <h2 class="accueil__title">Réservez le menu qui vous convient</h2>
+          <h3 class="accueil__content">
+            Découvrez des restaurants d'exception,<br />
+            séléctionnés par nos soins.
+          </h3>
+          <div class="accueil__btn">
+            <button class="accueil__btn__elemnt">
+              Explorer nos restaurants
+            </button>
+            <button class="accueil__btn__elemnt__bgd">
+              Explorer nos restaurants
+            </button>
+          </div>
+        </section>
+
+        <section class="operation">
+          <h2 class="operation__title">Fonctionnement</h2>
+          <div class="operation__content">
+            <div class="operation__bloc">
+              <div class="operation__bloc-content">
+                <div class="operation__bloc-content-number"><span>1</span></div>
+                <span class="operation__bloc-content-icone"
+                  ><i
+                    class="fas fa-mobile-alt operation__bloc-content-icone--phone"
+                  ></i
+                ></span>
+                <h3>Choisissez un restaurant</h3>
+              </div>
+              <!--Pour le fond en hover à mettre en place avec opacity en css-->
+              <div class="operation__bloc-content-bgd">
+                <div class="operation__bloc-content-bgd-number">
+                  <span>1</span>
+                </div>
+                <span class="operation__bloc-content-bgd-icone"
+                  ><i
+                    class="fas fa-mobile-alt operation__bloc-content-bgd-icone--phone"
+                  ></i
+                ></span>
+                <h3>Choisissez un restaurant</h3>
+              </div>
             </div>
-        </a>    
+
+            <div class="operation__bloc">
+              <div class="operation__bloc-content">
+                <div class="operation__bloc-content-number"><span>2</span></div>
+                <span class="operation__bloc-content-icone"
+                  ><i class="fas fa-list-ul"></i
+                ></span>
+                <h3>Composez votre menu</h3>
+              </div>
+              <!--Pour le fond en hover à mettre en place avec opacity en css-->
+              <div class="operation__bloc-content-bgd">
+                <div class="operation__bloc-content-bgd-number">
+                  <span>2</span>
+                </div>
+                <span class="operation__bloc-content-bgd-icone"
+                  ><i class="fas fa-list-ul"></i
+                ></span>
+                <h3>Composez votre menu</h3>
+              </div>
+            </div>
+
+            <div class="operation__bloc">
+              <div class="operation__bloc-content">
+                <div class="operation__bloc-content-number"><span>3</span></div>
+                <span class="operation__bloc-content-icone"
+                  ><i class="fas fa-store"></i
+                ></span>
+                <h3>Dégustez au restaurant</h3>
+              </div>
+              <!--Pour le fond en hover à mettre en place avec opacity en css-->
+              <div class="operation__bloc-content-bgd">
+                <div class="operation__bloc-content-bgd-number">
+                  <span>3</span>
+                </div>
+                <span class="operation__bloc-content-bgd-icone"
+                  ><i class="fas fa-store"></i
+                ></span>
+                <h3>Dégustez au restaurant</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="restaurant">
+          <h2 class="restaurant__title">Restaurants</h2>
+
+          <figure class="restaurant__content">
+            <a class="restaurant__link" href="./index-01.html">
+              <div class="restaurant__content-img">
+                <div class="restaurant__content-img-etiquette">Nouveau</div>
+                <img
+                  class="restaurant__content-img-photo"
+                  src="./images/restaurant/restau_(1).jpg"
+                  alt="photo d'une assiette gastronomique"
+                />
+              </div>
+            </a>
+
             <figcaption class="restaurant__content-title">
               <div class="restaurant__content-title-legend">
                 <strong>La palette du goût</strong><br />
@@ -142,19 +158,18 @@
               </div>
             </figcaption>
           </figure>
-        
 
-        <a class="restaurant__link" href="./index-02.html">
           <figure class="restaurant__content">
-            <div class="restaurant__content-img">
-              <div class="restaurant__content-img-etiquette">Nouveau</div>
-              <img
-                class="restaurant__content-img-photo"
-                src="./images/restaurant/restau_(3).jpg"
-                alt="photo d'une assiette garnie vue de-dessus"
-              />
-            </div>
-        </a>    
+            <a class="restaurant__link" href="./index-02.html">
+              <div class="restaurant__content-img">
+                <div class="restaurant__content-img-etiquette">Nouveau</div>
+                <img
+                  class="restaurant__content-img-photo"
+                  src="./images/restaurant/restau_(3).jpg"
+                  alt="photo d'une assiette garnie vue de-dessus"
+                />
+              </div>
+            </a>
             <figcaption class="restaurant__content-title">
               <div class="restaurant__content-title-legend">
                 <strong>La note enchantée</strong><br />
@@ -170,19 +185,20 @@
               </div>
             </figcaption>
           </figure>
-        
 
-        <a class="restaurant__link" href="./index-03.html">
           <figure class="restaurant__content">
-            <div class="restaurant__content-img">
-              <div class="restaurant__content-img-etiquette--none">Nouveau</div>
-              <img
-                class="restaurant__content-img-photo"
-                src="./images/restaurant/restau_(4).jpg"
-                alt="photo d'une assiette de légumes"
-              />
-            </div>
-        </a>
+            <a class="restaurant__link" href="./index-03.html">
+              <div class="restaurant__content-img">
+                <div class="restaurant__content-img-etiquette--none">
+                  Nouveau
+                </div>
+                <img
+                  class="restaurant__content-img-photo"
+                  src="./images/restaurant/restau_(4).jpg"
+                  alt="photo d'une assiette de légumes"
+                />
+              </div>
+            </a>
             <figcaption class="restaurant__content-title">
               <div class="restaurant__content-title-legend">
                 <strong>À la Française</strong><br />
@@ -198,19 +214,20 @@
               </div>
             </figcaption>
           </figure>
-        
 
-        <a class="restaurant__link" href="./index-04.html">
           <figure class="restaurant__content">
-            <div class="restaurant__content-img">
-              <div class="restaurant__content-img-etiquette--none">Nouveau</div>
-              <img
-                class="restaurant__content-img-photo"
-                src="./images/restaurant/restau_(2).jpg"
-                alt="photo d'une assiette rectangulaire de poisson"
-              />
-            </div>
-        </a>
+            <a class="restaurant__link" href="./index-04.html">
+              <div class="restaurant__content-img">
+                <div class="restaurant__content-img-etiquette--none">
+                  Nouveau
+                </div>
+                <img
+                  class="restaurant__content-img-photo"
+                  src="./images/restaurant/restau_(2).jpg"
+                  alt="photo d'une assiette rectangulaire de poisson"
+                />
+              </div>
+            </a>
             <figcaption class="restaurant__content-title">
               <div class="restaurant__content-title-legend">
                 <strong>Le délice des sens</strong><br />
@@ -226,8 +243,8 @@
               </div>
             </figcaption>
           </figure>
-        
-      </section>
+        </section>
+      </main>
 
       <footer class="footer">
         <h2 class="footer__title">Ohmyfood</h2>
@@ -248,6 +265,6 @@
           </li>
         </ul>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

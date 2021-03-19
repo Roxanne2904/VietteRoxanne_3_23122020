@@ -15,56 +15,66 @@
 }
 body {
   margin: $no-margin;
-}
-main {
   font-family: "robotoregular";
   width: auto;
 }
 
-.indexhtml {
-  animation: main-indexhtml 1200ms cubic-bezier(0.61, 0.17, 0, 1.01) 3000ms;
-  animation-fill-mode: both;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-}
-.loading-spinner {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 46%;
-  font-size: 2rem;
-  &__content {
-    display: flex;
-    &1 {
-      margin-right: 1.5rem;
-      width: $size-dot;
-      height: $size-dot;
-      border-radius: 50%;
-      background-color: $color-primary;
-      animation: loading-spinner 1800ms 100ms 2;
-      animation-fill-mode: both;
+body {
+  .bloc {
+    &__loading-spinner {
+      position: fixed;
+      top: 50%;
+      left: 47%;
+      &__content {
+        display: flex;
+        justify-content: center;
+        background-color: $bgd-white;
+        transform: scale(-100vh);
+        animation: bye-loading 1000ms 3000ms;
+        &1 {
+          @include animation-dots;
+          margin-right: 1.5rem;
+          background: linear-gradient(
+            to right,
+            lighten($color-secondary, 10%),
+            30%,
+            $color-secondary
+          );
+          animation: loading-spinner 1600ms 100ms 2;
+        }
+        &2 {
+          @include animation-dots;
+          margin-right: 1.5rem;
+          background: linear-gradient(
+            to right,
+            $color-secondary,
+            30%,
+            $color-primary
+          );
+          animation: loading-spinner 1600ms 300ms 2;
+        }
+        &3 {
+          @include animation-dots;
+          background: linear-gradient(
+            to right,
+            $color-primary,
+            40%,
+            darken($color-primary, 13%)
+          );
+          animation: loading-spinner 1600ms 500ms 2;
+        }
+      }
     }
-    &2 {
-      margin-right: 1.5rem;
-      width: $size-dot;
-      height: $size-dot;
-      border-radius: 50%;
-      background-color: $color-secondary;
-      animation: loading-spinner 1800ms 400ms 2;
+    &__main {
+      position: absolute;
+      top: 0;
+      animation: bloc-main 500ms 3200ms;
       animation-fill-mode: both;
-    }
-    &3 {
-      margin-right: 1.5rem;
-      width: $size-dot;
-      height: $size-dot;
-      border-radius: 50%;
-      background-color: $color-primary;
-      animation: loading-spinner 1800ms 700ms 2;
-      animation-fill-mode: both;
+      opacity: 1;
     }
   }
 }
+
 main {
   button {
     font-size: $size-button-input;

@@ -3,6 +3,11 @@
   justify-content: center;
   position: relative;
   background-color: $bgd-white;
+  a {
+    &:visited {
+      color: black;
+    }
+  }
   &__arrow {
     height: 100%;
     font-size: $icone-header-arrow;
@@ -12,6 +17,7 @@
     left: 3.5rem;
     bottom: 0.5rem;
   }
+
   &__title {
     margin: $no-margin;
     padding: $padding-title-and-input;

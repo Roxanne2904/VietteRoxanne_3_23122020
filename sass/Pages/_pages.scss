@@ -75,18 +75,26 @@
         background-color: $bgd-white;
         @include bloc-shadow;
         &1 {
+          opacity: 1;
+          transform: translateY(0);
           animation: content-anim 1000ms 100ms;
           animation-fill-mode: both;
         }
         &2 {
+          opacity: 1;
+          transform: translateY(0);
           animation: content-anim 1000ms 500ms;
           animation-fill-mode: both;
         }
         &3 {
+          opacity: 1;
+          transform: translateY(0);
           animation: content-anim 1000ms 800ms;
           animation-fill-mode: both;
         }
         &4 {
+          opacity: 1;
+          transform: translateY(0);
           animation: content-anim 1000ms 1100ms;
           animation-fill-mode: both;
         }
