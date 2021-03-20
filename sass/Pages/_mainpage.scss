@@ -16,8 +16,9 @@
 
 /*Fonctionnement*/
 .operation {
-  margin: nth($margin-section, 1) nth($margin-section, 2)
+  padding: nth($margin-section, 1) nth($margin-section, 2)
     nth($margin-section, 3) 3rem;
+  background-color: $bgd-white;
   &__bloc {
     background-color: $bgd-accueil;
     display: flex;

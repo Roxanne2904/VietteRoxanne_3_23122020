@@ -56,17 +56,17 @@
 @keyframes loading-spinner {
   from {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(1);
   }
 
   50% {
     opacity: 1;
-    transform: scale(2.7);
+    transform: scale(2.5);
   }
 
   to {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(1);
   }
 }
 /*Faire disparaitre le loading spinner*/

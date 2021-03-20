@@ -1,3 +1,8 @@
+* {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 @font-face {
   font-family: "shrikhandregular";
   src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"),
@@ -30,7 +35,7 @@ body {
         justify-content: center;
         background-color: $bgd-white;
         transform: scale(-100vh);
-        animation: bye-loading 1000ms 3000ms;
+        animation: bye-loading 1000ms 3500ms;
         &1 {
           @include animation-dots;
           margin-right: 1.5rem;
@@ -40,7 +45,7 @@ body {
             30%,
             $color-secondary
           );
-          animation: loading-spinner 1600ms 100ms 2;
+          animation: loading-spinner 1800ms 100ms 2 ease-in-out;
         }
         &2 {
           @include animation-dots;
@@ -51,7 +56,7 @@ body {
             30%,
             $color-primary
           );
-          animation: loading-spinner 1600ms 300ms 2;
+          animation: loading-spinner 1800ms 500ms 2 ease-in-out;
         }
         &3 {
           @include animation-dots;
@@ -61,14 +66,12 @@ body {
             40%,
             darken($color-primary, 13%)
           );
-          animation: loading-spinner 1600ms 500ms 2;
+          animation: loading-spinner 1800ms 800ms 2 ease-in-out;
         }
       }
     }
     &__main {
-      position: absolute;
-      top: 0;
-      animation: bloc-main 500ms 3200ms;
+      animation: bloc-main 500ms 4000ms;
       animation-fill-mode: both;
       opacity: 1;
     }
