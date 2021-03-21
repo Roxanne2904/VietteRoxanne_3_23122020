@@ -27,12 +27,36 @@
   @include bloc-shadow;
 }
 @mixin bloc-shadow {
-  box-shadow: 0rem 1rem 1rem darken(white, 25%);
+  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
 }
 @mixin normal-hearts {
   font-size: $icone-heart;
-  -webkit-text-stroke: 0.15rem black;
+  -webkit-text-stroke: 0.07rem black;
 }
 @mixin links {
   text-decoration: none;
+}
+
+/*MEDIAS QUERIES*/
+
+/*Large devices*/
+@mixin sm {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
 }

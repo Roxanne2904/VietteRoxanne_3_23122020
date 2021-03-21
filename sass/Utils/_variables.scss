@@ -1,37 +1,43 @@
-/*Size*/
+/*SIZE*/
 $size-dot: 1rem;
-$size-title-primary: 6rem;
-$size-title-secondary: 4rem;
-$size-title-tertiary: 2.7rem;
-$size-button-input: 2.8rem;
-$size-restau-txtcontent: 3.3rem;
-$size-opera-number: 2.2rem;
-$size-footer-txt: 2.5rem;
+$size-title-primary: 2rem;
+$size-title-secondary: 1.5rem;
+$size-title-tertiary: 1.1rem;
+$size-button-input: 1.08rem;
+$size-restau-txtcontent: 1.2rem;
+$size-title-etiquette: 0.95rem;
+$size-opera-number: 1rem;
+$size-opera-txt: 1.05rem;
+$size-cercle-dot: 1.7rem;
 $size-menu-txt: 2.3rem;
 $size-menu-strong-txt: 2.7rem;
+$size-footer-txt: 2.5rem;
+$size-footer-title: 1.15rem;
 $icone-header-arrow: 3.5rem;
-$icone-heart: 4rem;
-$icone-operation: 2.8rem;
-$icone-operation-phone: 3.3rem;
-$icone-footer: 2.2rem;
+$icone-heart: 1.5rem;
+$icone-operation: 1rem;
+$icone-operation-phone: 1.3rem;
+$icone-footer: 0.8rem;
 $icone-menu-check: 3rem;
 
-/*padding*/
+/*-------------------------------*/
+/*PADDING*/
 $no-padding: 0;
-/*---------------------------*/
 /*ohmyfood-title and input*/
-$padding-title-and-input: 3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
-/*--------------------------*/
-$padding-footer: 3rem 0 4rem 6rem; /*list*/
-$padding-button: 2rem 4rem;
-$padding-accueil: 3rem 6rem 10rem;
-$padding-restau-etiquette: 0.8rem 2rem;
-/*--------------------------*/
+$padding-title-and-input: 1rem 0rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+
+$padding-footer: 0.7rem 0 1rem 1.5rem; /*list*/
+$padding-button: 0.8rem 0.6rem;
+$padding-accueil: 0 1.5rem 4rem;
+$padding-accueil-title: 2.5rem 1rem 0;
+$padding-restau-etiquette: 0.4rem 0.9rem;
 /*restau-legend-text*/
-$padding-restaulegend-content: 2rem;
-$padding-icone-footer: 1.5rem;
-$padding-icone-footer--spé: 2.3rem;
+$padding-restaulegend-content: 1rem;
+$padding-restaulegend-heart: 0.2rem;
+$padding-icone-footer: 0.8rem;
+$padding-icone-footer--spé: 1.16rem;
 $padding-opera-element: 2.5rem;
+$padding-section: 2rem 1rem 2rem 1rem;
 /*menu*/
 $paddingtop-menu-title: 3rem;
 $padding-menu-content: 1rem;
@@ -39,31 +45,45 @@ $padding-menu-blocs: 1rem 0 1rem 1.5rem;
 $padding-menu-recette: 0rem 2.5rem;
 $padding-menu-button: 5.2rem;
 
-/*margin*/
+/*-------------------------------*/
+/*MARGIN*/
 $no-margin: 0;
-$margin-section: 3.5rem 2rem 8rem 2rem;
 $margintop-menu-subtitle: 5rem;
 $maringtop-bot-menu-content: 1.5rem 0 2.3rem 0;
 
-/*border*/
+/*-------------------------------*/
+/*BORDER-RADIUS*/
 $radius-button: 5rem;
-$radius-etiquette: 0.5rem;
-$radius-bloc-restau: 4rem;
+$radius-etiquette: 0.2rem;
+$radius-bloc-restau: 1.2rem;
 $radius-menu: 5rem 5rem 0 0;
 $radius-menu-content-bloc: 2rem;
 
-/*color*/
+/*-------------------------------*/
+/*COLOR*/
 $bgd-white: white;
 $color-primary: #9356dc;
 $color-primary-transparent: #9256dc2f;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-$bgd-input: rgb(219, 215, 206);
-$bgd-accueil: rgb(248, 248, 236);
+$bgd-input: rgb(238, 235, 227);
+$bgd-accueil: rgb(247, 247, 240);
 $bgd-footer: rgb(32, 32, 32);
 $colortxt-input: rgb(95, 95, 95);
 $colortxt-button: $bgd-white;
 $colortxt-footer: $bgd-white;
 
-/*height bloc*/
-$height-bloc-restau: 32rem;
+/*-------------------------------*/
+/*HEIGHT BLOC*/
+$height-bloc-restau: 11.2rem;
+
+/*-------------------------------*/
+/*ANIMATION*/
+$A-duration: 1550ms;
+
+/*-------------------------------*/
+/*RESPONSIVE*/
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;

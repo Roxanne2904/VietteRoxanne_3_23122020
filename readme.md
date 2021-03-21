@@ -22,3 +22,11 @@
 * Ajout d'une "div" qui englobe toute la page (header, main et footer) pour mettre en place le loading.
 	-cette div est en position absolute ---> pour palier au pb de taille des font.
 * Correction apportée sur les pages: balise "span" au lieu de "div" dans le h2.
+
+21.03.2021
+
+* Debug de mon problème de dimension en cours...
+  - impossible de faire le responsive correctement sans l'ajout de la balise:
+    - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    - Besoin de revoir toutes les valeurs "rem" et de réajuster la mise en page";
+* Index.html :------ok;
