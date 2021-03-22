@@ -1,24 +1,25 @@
 /*SIZE*/
-$size-dot: 1rem;
+$size-dot: 0.5rem;
 $size-title-primary: 2rem;
 $size-title-secondary: 1.5rem;
 $size-title-tertiary: 1.1rem;
+$size-pages-titles: 1.8rem;
 $size-button-input: 1.08rem;
 $size-restau-txtcontent: 1.2rem;
 $size-title-etiquette: 0.95rem;
 $size-opera-number: 1rem;
 $size-opera-txt: 1.05rem;
 $size-cercle-dot: 1.7rem;
-$size-menu-txt: 2.3rem;
-$size-menu-strong-txt: 2.7rem;
+$size-menu-txt: 1rem;
+$size-menu-strong-txt: 1.1rem;
 $size-footer-txt: 2.5rem;
 $size-footer-title: 1.15rem;
-$icone-header-arrow: 3.5rem;
+$icone-header-arrow: 1.3rem;
 $icone-heart: 1.5rem;
 $icone-operation: 1rem;
 $icone-operation-phone: 1.3rem;
 $icone-footer: 0.8rem;
-$icone-menu-check: 3rem;
+$icone-menu-check: 1.1rem;
 
 /*-------------------------------*/
 /*PADDING*/
@@ -39,25 +40,25 @@ $padding-icone-footer--spé: 1.16rem;
 $padding-opera-element: 2.5rem;
 $padding-section: 2rem 1rem 2rem 1rem;
 /*menu*/
-$paddingtop-menu-title: 3rem;
+$paddingtop-menu-title: 2rem;
 $padding-menu-content: 1rem;
-$padding-menu-blocs: 1rem 0 1rem 1.5rem;
-$padding-menu-recette: 0rem 2.5rem;
-$padding-menu-button: 5.2rem;
+$padding-menu-blocs: 0.6rem 0 0.6rem 1rem;
+$padding-menu-recette: 0rem 1rem;
+$padding-menu-button: 2.5rem;
 
 /*-------------------------------*/
 /*MARGIN*/
 $no-margin: 0;
-$margintop-menu-subtitle: 5rem;
-$maringtop-bot-menu-content: 1.5rem 0 2.3rem 0;
+$margintop-menu-subtitle: 1.5rem;
+$maringbot-menu-content: 1rem;
 
 /*-------------------------------*/
 /*BORDER-RADIUS*/
 $radius-button: 5rem;
 $radius-etiquette: 0.2rem;
 $radius-bloc-restau: 1.2rem;
-$radius-menu: 5rem 5rem 0 0;
-$radius-menu-content-bloc: 2rem;
+$radius-menu: 2rem 2rem 0 0;
+$radius-menu-content-bloc: 1rem;
 
 /*-------------------------------*/
 /*COLOR*/
@@ -83,7 +84,12 @@ $A-duration: 1550ms;
 
 /*-------------------------------*/
 /*RESPONSIVE*/
-$screen-sm-min: 576px;
+$screen-xsm-min: 275px;
+$screen-xsm-max: 366px;
+
+$screen-sm-min: 450px;
+$screen-sm-max: 767.99px;
+
 $screen-md-min: 768px;
 $screen-lg-min: 992px;
 $screen-xl-min: 1200px;

@@ -30,3 +30,8 @@
     - <meta name="viewport" content="width=device-width, initial-scale=1.0">
     - Besoin de revoir toutes les valeurs "rem" et de réajuster la mise en page";
 * Index.html :------ok;
+
+22.03.2021
+
+* Fin du débug;
+* Début du responsive; 

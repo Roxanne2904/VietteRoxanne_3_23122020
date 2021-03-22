@@ -1,18 +1,18 @@
 /*animation pour la chexk box*/
-@keyframes price-box {
-  from {
-    transform: translateX(80%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 @keyframes check-box {
   from {
-    transform: translateX(80%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0%);
+  }
+}
+@keyframes txt-box {
+  from {
+    transform: scaleX(1.01);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 
@@ -61,7 +61,7 @@
 
   50% {
     opacity: 1;
-    transform: scale(2.5);
+    transform: scale(2.7);
   }
 
   to {

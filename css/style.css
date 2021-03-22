@@ -23,20 +23,20 @@
 /*MEDIAS QUERIES*/
 /*Large devices*/
 /*animation pour la chexk box*/
-@keyframes price-box {
-  from {
-    transform: translateX(80%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 @keyframes check-box {
   from {
-    transform: translateX(80%);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0%);
+  }
+}
+@keyframes txt-box {
+  from {
+    transform: scaleX(1.01);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 /*Animation des blocs menu-content*/
@@ -82,7 +82,7 @@
   }
   50% {
     opacity: 1;
-    transform: scale(2.5);
+    transform: scale(2.7);
   }
   to {
     opacity: 0;
@@ -130,7 +130,7 @@ body {
 body .bloc__loading-spinner {
   position: fixed;
   top: 50%;
-  left: 47%;
+  width: 100%;
 }
 body .bloc__loading-spinner__content {
   display: flex;
@@ -139,28 +139,28 @@ body .bloc__loading-spinner__content {
   animation: bye-loading 1000ms 3500ms;
 }
 body .bloc__loading-spinner__content1 {
-  width: 1rem;
-  height: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   animation-fill-mode: both;
   transform: scale(0);
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   background: linear-gradient(to right, #fface8, 30%, #ff79da);
   animation: loading-spinner 1550ms 100ms 2 ease-in-out;
 }
 body .bloc__loading-spinner__content2 {
-  width: 1rem;
-  height: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   animation-fill-mode: both;
   transform: scale(0);
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   background: linear-gradient(to right, #ff79da, 30%, #9356dc);
   animation: loading-spinner 1550ms 500ms 2 ease-in-out;
 }
 body .bloc__loading-spinner__content3 {
-  width: 1rem;
-  height: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   animation-fill-mode: both;
   transform: scale(0);
@@ -176,6 +176,11 @@ body .bloc__main {
 main button {
   font-size: 1.08rem;
   font-family: "robotoregular";
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  main button {
+    font-size: 0.9rem;
+  }
 }
 main input {
   font-size: 1.08rem;
@@ -196,6 +201,13 @@ h3 {
 
 .footer__title {
   font-family: "shrikhandregular";
+}
+
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 400px;
+  }
 }
 
 /*Components(composants)*/
@@ -221,13 +233,15 @@ h3 {
   position: relative;
   bottom: 0.3rem;
   left: 1.2rem;
-  margin-right: 2.2rem;
+  margin-right: 2.5rem;
   color: #5f5f5f;
 }
 .localisation__input {
   border: none;
   background-color: #eeebe3;
-  width: 58%;
+  width: 9rem;
+  position: relative;
+  right: 0.5rem;
 }
 .localisation__input::placeholder {
   color: #5f5f5f;
@@ -237,6 +251,20 @@ h3 {
 /*button*/
 .accueil__btn {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .accueil__btn {
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  .accueil__btn {
+    width: 320px;
+    margin: 0 auto;
+  }
 }
 .accueil__btn__elemnt {
   width: 70%;
@@ -251,6 +279,12 @@ h3 {
   opacity: 1;
   transition: opacity 1000ms;
   outline-style: none;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .accueil__btn__elemnt {
+    width: 85%;
+    left: 7.5%;
+  }
 }
 .accueil__btn__elemnt:hover {
   opacity: 0;
@@ -267,11 +301,16 @@ h3 {
   color: white;
   box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .accueil__btn__elemnt__bgd {
+    width: 85%;
+  }
+}
 
 .menu__button {
   display: flex;
   justify-content: center;
-  padding-top: 5.2rem;
+  padding-bottom: 2.5rem;
   position: relative;
 }
 .menu__button__elemnt {
@@ -310,17 +349,22 @@ h3 {
   position: relative;
   background-color: white;
 }
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  .header {
+    background-color: red;
+  }
+}
 .header a:visited {
   color: black;
 }
 .header__arrow {
   height: 100%;
-  font-size: 3.5rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   position: absolute;
-  left: 3.5rem;
-  bottom: 0.5rem;
+  left: 1.8rem;
+  bottom: 0.1rem;
 }
 .header__title {
   margin: 0;
@@ -332,6 +376,11 @@ h3 {
   background-color: #202020;
   color: white;
   padding: 0.7rem 0 1rem 1.5rem;
+}
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer__title {
   font-weight: normal;
@@ -376,10 +425,15 @@ h3 {
   margin-bottom: 2.2rem;
   color: #5f5f5f;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .accueil__content {
+    font-size: 1rem;
+  }
+}
 
 /*Fonctionnement*/
 .operation {
-  padding: 2rem 1rem 2rem 1.5rem;
+  padding: 2rem 1rem 2rem 1.8rem;
   background-color: white;
 }
 .operation__bloc {
@@ -426,13 +480,29 @@ h3 {
 .operation__bloc-content-txt {
   font-size: 1.05rem;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-txt {
+    font-size: 0.85rem;
+  }
+}
 .operation__bloc-content-icone {
   color: #5f5f5f;
   font-size: 1rem;
   margin: 1.5rem 1.5rem 1.5rem 0;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-icone {
+    font-size: 0.8rem;
+    margin: 1.5rem 1.2rem 1.5rem 0;
+  }
+}
 .operation__bloc-content-icone--phone {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-icone--phone {
+    font-size: 1rem;
+  }
 }
 .operation__bloc-content-bgd {
   background-color: #9256dc2f;
@@ -463,19 +533,40 @@ h3 {
 .operation__bloc-content-bgd-txt {
   font-size: 1.05rem;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-bgd-txt {
+    font-size: 0.85rem;
+  }
+}
 .operation__bloc-content-bgd-icone {
   color: #9356dc;
   font-size: 1rem;
   margin: 1.5rem 1.5rem 1.5rem 0;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-bgd-icone {
+    font-size: 0.8rem;
+    margin: 1.5rem 1.2rem 1.5rem 0;
+  }
+}
 .operation__bloc-content-bgd-icone--phone {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .operation__bloc-content-bgd-icone--phone {
+    font-size: 1rem;
+  }
 }
 
 /*Restaurant*/
 .restaurant {
   padding: 2rem 1rem 2rem 1rem;
   background-color: #f7f7f0;
+}
+@media screen and (min-width: 450px) and (max-width: 767.99px) {
+  .restaurant {
+    padding: 2rem 3.5rem 2rem 3.5rem;
+  }
 }
 .restaurant__link {
   display: block;
@@ -520,6 +611,11 @@ h3 {
   top: 40%;
   transform: translate(-50%, -52%);
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .restaurant__content-img-photo {
+    width: 138%;
+  }
+}
 .restaurant__content-title {
   display: flex;
   font-size: 1.2rem;
@@ -562,8 +658,8 @@ h3 {
 .image {
   margin: 0;
   width: 100%;
-  height: 41rem;
   overflow: hidden;
+  height: 16rem;
 }
 .image__photo {
   width: 100%;
@@ -578,27 +674,34 @@ h3 {
 .bloc .menu {
   background-color: #f7f7f0;
   flex-direction: column;
-  position: relative;
-  bottom: 8rem;
-  border-radius: 5rem 5rem 0 0;
+  border-radius: 2rem 2rem 0 0;
 }
 .bloc .menu__title {
   font-family: "shrikhandregular";
+  font-size: 1.8rem;
   background-color: #f7f7f0;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5% 5%;
-  border-radius: 5rem 5rem 0 0;
-  padding-top: 3rem;
+  margin: 0;
+  border-radius: 2rem 2rem 0 0;
+  padding-top: 2rem;
+  position: relative;
+  bottom: 2.5rem;
+}
+.bloc .menu__title__txt {
+  margin-left: 1rem;
 }
 .bloc .menu__heart {
   position: relative;
+  bottom: 0.3rem;
+  right: 2rem;
   font-family: "robotoregular";
 }
 .bloc .menu__heart__icone1 {
   position: absolute;
+  bottom: 0;
   font-size: 1.5rem;
   -webkit-text-stroke: 0.07rem black;
   color: #f7f7f0;
@@ -609,35 +712,39 @@ h3 {
   opacity: 0;
 }
 .bloc .menu__heart__icone2 {
+  font-size: 1.5rem;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc .menu__recette {
-  padding: 0rem 2.5rem;
+  padding: 0rem 1rem;
+  position: relative;
+  bottom: 2rem;
 }
 .bloc .menu__recette__subtitle {
   align-self: flex-start;
-  margin-top: 5rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   color: #5f5f5f;
 }
 .bloc .menu__recette__underscore__icone {
   display: inline-block;
-  transform: scale(11, 3);
+  transform: scale(3, 1);
   position: relative;
-  left: 4.5rem;
+  left: 0.9rem;
   bottom: 0.3rem;
   color: #99e2d0;
 }
 .bloc .menu__recette__content {
   display: flex;
-  margin: 1.5rem 0 2.3rem 0;
-  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: white;
   box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
+  cursor: pointer;
 }
 .bloc .menu__recette__content1 {
   opacity: 1;
@@ -665,50 +772,50 @@ h3 {
 }
 .bloc .menu__recette__content:hover .menu__recette__price {
   transform: translateX(0);
-  animation: price-box 500ms;
+  animation: check-box 600ms ease-in-out;
   animation-fill-mode: both;
 }
 .bloc .menu__recette__content:hover .menu__recette__check {
+  margin-right: 0;
   transform: translateX(0);
-  animation: check-box 500ms;
+  animation: check-box 600ms;
   animation-fill-mode: both;
 }
 .bloc .menu__recette__content:hover .menu__recette__check span {
-  transform: rotate(2turn);
+  transform: rotate(3turn);
 }
 .bloc .menu__recette__text {
   background-color: white;
-  width: 80%;
+  width: 90%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 1rem 0 1rem 1.5rem;
+  padding: 0.6rem 0 0.6rem 1rem;
 }
 .bloc .menu__recette__text strong {
-  font-size: 2.7rem;
+  font-size: 1.1rem;
 }
 .bloc .menu__recette__text span {
   color: #5f5f5f;
 }
 .bloc .menu__recette__price {
-  background-color: white;
-  width: 20%;
+  width: 10%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-weight: bold;
-  padding-bottom: 1rem;
-  transform: translateX(80%);
+  padding: 0 0.8rem 0.6rem;
+  transform: translateX(0);
 }
 .bloc .menu__recette__check {
   background-color: #99e2d0;
-  width: 17%;
+  width: 22%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 1.1rem;
   color: white;
-  transform: translateX(100%);
+  margin-right: -20%;
 }
 .bloc .menu__recette__check span {
   position: relative;

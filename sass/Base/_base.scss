@@ -29,7 +29,7 @@ body {
     &__loading-spinner {
       position: fixed;
       top: 50%;
-      left: 47%;
+      width: 100%;
       &__content {
         display: flex;
         justify-content: center;
@@ -37,7 +37,7 @@ body {
         animation: bye-loading 1000ms 3500ms;
         &1 {
           @include animation-dots;
-          margin-right: 1.5rem;
+          margin-right: 1rem;
           background: linear-gradient(
             to right,
             lighten($color-secondary, 10%),
@@ -48,7 +48,7 @@ body {
         }
         &2 {
           @include animation-dots;
-          margin-right: 1.5rem;
+          margin-right: 1rem;
           background: linear-gradient(
             to right,
             $color-secondary,
@@ -81,6 +81,9 @@ main {
   button {
     font-size: $size-button-input;
     font-family: "robotoregular";
+    @include xsm {
+      font-size: 0.9rem;
+    }
   }
   input {
     font-size: $size-button-input;
@@ -98,4 +101,10 @@ h3 {
 }
 .footer__title {
   font-family: "shrikhandregular";
+}
+.wrapper {
+  @include sm {
+    margin: 0 auto;
+    width: 400px;
+  }
 }

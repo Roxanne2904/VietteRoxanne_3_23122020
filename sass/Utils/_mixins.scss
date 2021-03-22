@@ -40,8 +40,13 @@
 /*MEDIAS QUERIES*/
 
 /*Large devices*/
+@mixin xsm {
+  @media screen and (min-width: #{$screen-xsm-min}) and (max-width:#{$screen-xsm-max}) {
+    @content;
+  }
+}
 @mixin sm {
-  @media screen and (min-width: #{$screen-sm-min}) {
+  @media screen and (min-width: #{$screen-sm-min}) and (max-width:#{$screen-sm-max}) {
     @content;
   }
 }
