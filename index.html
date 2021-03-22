@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
     <link
       rel="stylesheet"
@@ -59,75 +60,94 @@
           </div>
         </section>
 
-        <section class="operation">
-          <h2 class="operation__title">Fonctionnement</h2>
-          <div class="operation__content">
-            <div class="operation__bloc">
-              <div class="operation__bloc-content">
-                <div class="operation__bloc-content-number"><span>1</span></div>
-                <span class="operation__bloc-content-icone"
-                  ><i
-                    class="fas fa-mobile-alt operation__bloc-content-icone--phone"
-                  ></i
-                ></span>
-                <h3>Choisissez un restaurant</h3>
-              </div>
-              <!--Pour le fond en hover à mettre en place avec opacity en css-->
-              <div class="operation__bloc-content-bgd">
-                <div class="operation__bloc-content-bgd-number">
-                  <span>1</span>
+        <div class="wrapper">
+          <section class="operation">
+            <h2 class="operation__title">Fonctionnement</h2>
+            <div class="operation__content">
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>1</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i
+                      class="fas fa-mobile-alt operation__bloc-content-icone--phone"
+                    ></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Choisissez un restaurant
+                  </h3>
                 </div>
-                <span class="operation__bloc-content-bgd-icone"
-                  ><i
-                    class="fas fa-mobile-alt operation__bloc-content-bgd-icone--phone"
-                  ></i
-                ></span>
-                <h3>Choisissez un restaurant</h3>
+                <!--Pour le fond en hover à mettre en place avec opacity en css-->
+                <div class="operation__bloc-content-bgd">
+                  <div class="operation__bloc-content-bgd-number">
+                    <span>1</span>
+                  </div>
+                  <span class="operation__bloc-content-bgd-icone"
+                    ><i
+                      class="fas fa-mobile-alt operation__bloc-content-bgd-icone--phone"
+                    ></i
+                  ></span>
+                  <h3 class="operation__bloc-content-bgd-txt">
+                    Choisissez un restaurant
+                  </h3>
+                </div>
+              </div>
+
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>2</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i class="fas fa-list-ul"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Composez votre menu
+                  </h3>
+                </div>
+                <!--Pour le fond en hover à mettre en place avec opacity en css-->
+                <div class="operation__bloc-content-bgd">
+                  <div class="operation__bloc-content-bgd-number">
+                    <span>2</span>
+                  </div>
+                  <span class="operation__bloc-content-bgd-icone"
+                    ><i class="fas fa-list-ul"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-bgd-txt">
+                    Composez votre menu
+                  </h3>
+                </div>
+              </div>
+
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>3</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i class="fas fa-store"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Dégustez au restaurant
+                  </h3>
+                </div>
+                <!--Pour le fond en hover à mettre en place avec opacity en css-->
+                <div class="operation__bloc-content-bgd">
+                  <div class="operation__bloc-content-bgd-number">
+                    <span>3</span>
+                  </div>
+                  <span class="operation__bloc-content-bgd-icone"
+                    ><i class="fas fa-store"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-bgd-txt">
+                    Dégustez au restaurant
+                  </h3>
+                </div>
               </div>
             </div>
-
-            <div class="operation__bloc">
-              <div class="operation__bloc-content">
-                <div class="operation__bloc-content-number"><span>2</span></div>
-                <span class="operation__bloc-content-icone"
-                  ><i class="fas fa-list-ul"></i
-                ></span>
-                <h3>Composez votre menu</h3>
-              </div>
-              <!--Pour le fond en hover à mettre en place avec opacity en css-->
-              <div class="operation__bloc-content-bgd">
-                <div class="operation__bloc-content-bgd-number">
-                  <span>2</span>
-                </div>
-                <span class="operation__bloc-content-bgd-icone"
-                  ><i class="fas fa-list-ul"></i
-                ></span>
-                <h3>Composez votre menu</h3>
-              </div>
-            </div>
-
-            <div class="operation__bloc">
-              <div class="operation__bloc-content">
-                <div class="operation__bloc-content-number"><span>3</span></div>
-                <span class="operation__bloc-content-icone"
-                  ><i class="fas fa-store"></i
-                ></span>
-                <h3>Dégustez au restaurant</h3>
-              </div>
-              <!--Pour le fond en hover à mettre en place avec opacity en css-->
-              <div class="operation__bloc-content-bgd">
-                <div class="operation__bloc-content-bgd-number">
-                  <span>3</span>
-                </div>
-                <span class="operation__bloc-content-bgd-icone"
-                  ><i class="fas fa-store"></i
-                ></span>
-                <h3>Dégustez au restaurant</h3>
-              </div>
-            </div>
-          </div>
-        </section>
-
+          </section>
+        </div>
         <section class="restaurant">
           <h2 class="restaurant__title">Restaurants</h2>
 
@@ -255,7 +275,7 @@
             >Proposer un restaurant
           </li>
           <li class="footer__li">
-            <span class="footer__li-icone"
+            <span class="footer__li-icone footer__li-icone--help"
               ><i class="fas fa-hands-helping"></i></span
             >Devenir partenaire
           </li>

@@ -5,39 +5,40 @@
   padding: $padding-accueil;
   &__title {
     margin-top: $no-padding;
-    padding-top: nth($padding-title-and-input, 1);
+    padding: $padding-accueil-title;
     font-weight: bolder;
   }
   &__content {
-    margin-bottom: 5rem;
+    margin-bottom: 2.2rem;
     color: $colortxt-input;
+    @include xsm {
+      font-size: 1rem;
+    }
   }
 }
 
 /*Fonctionnement*/
 .operation {
-  padding: nth($margin-section, 1) nth($margin-section, 2)
-    nth($margin-section, 3) 3rem;
+  padding: nth($padding-section, 1) nth($padding-section, 2)
+    nth($padding-section, 3) 1.8rem;
   background-color: $bgd-white;
   &__bloc {
     background-color: $bgd-accueil;
     display: flex;
     align-items: center;
-    box-shadow: 0rem 0rem 0.7rem 0.7rem $bgd-accueil;
+    box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
     border-radius: $radius-bloc-restau;
     margin-bottom: $padding-opera-element;
     position: relative;
   }
   &__bloc-content {
     position: absolute;
+    top: -0.01rem;
     background-color: $bgd-accueil;
     display: flex;
     align-items: center;
-    margin: 0.5rem;
     width: 98%;
-    @include bloc-shadow;
     border-radius: $radius-bloc-restau;
-    height: 11.65rem;
     opacity: 1;
     transition: opacity 1100ms;
     &:hover {
@@ -46,26 +47,39 @@
     &-number {
       font-size: $size-opera-number;
       background-color: $color-primary;
-      width: 4rem;
-      height: 4rem;
+      width: $size-cercle-dot;
+      height: $size-cercle-dot;
       border-radius: 50%;
       text-align: center;
       color: $colortxt-button;
-      margin-right: 1.5rem;
+      margin-right: 0.6rem;
       position: relative;
-      right: 1.6rem;
+      right: 0.8rem;
       span {
         position: absolute;
-        left: 1.35rem;
-        top: 0.5rem;
+        left: 0.54rem;
+        top: 0.17rem;
+      }
+    }
+    &-txt {
+      font-size: $size-opera-txt;
+      @include xsm {
+        font-size: 0.85rem;
       }
     }
     &-icone {
       color: $colortxt-input;
       font-size: $icone-operation;
-      margin-right: 3.3rem;
+      margin: 1.5rem 1.5rem 1.5rem 0;
+      @include xsm {
+        font-size: 0.8rem;
+        margin: 1.5rem 1.2rem 1.5rem 0;
+      }
       &--phone {
         font-size: $icone-operation-phone;
+        @include xsm {
+          font-size: 1rem;
+        }
       }
     }
     /*Pour mettre en place le hover avec opacity*/
@@ -73,35 +87,46 @@
       background-color: $color-primary-transparent;
       display: flex;
       align-items: center;
-      margin: 0.5rem;
       width: 98%;
       @include bloc-shadow;
       border-radius: $radius-bloc-restau;
-      height: 11.48rem;
       opacity: 1;
       &-number {
         font-size: $size-opera-number;
         background-color: $color-primary;
-        width: 4rem;
-        height: 4rem;
+        width: $size-cercle-dot;
+        height: $size-cercle-dot;
         border-radius: 50%;
         text-align: center;
         color: $colortxt-button;
-        margin-right: 1.5rem;
+        margin-right: 0.6rem;
         position: relative;
-        right: 1.6rem;
+        right: 0.8rem;
         span {
           position: absolute;
-          left: 1.35rem;
-          top: 0.5rem;
+          left: 0.54rem;
+          top: 0.17rem;
+        }
+      }
+      &-txt {
+        font-size: $size-opera-txt;
+        @include xsm {
+          font-size: 0.85rem;
         }
       }
       &-icone {
         color: $color-primary;
         font-size: $icone-operation;
-        margin-right: 3.3rem;
+        margin: 1.5rem 1.5rem 1.5rem 0;
+        @include xsm {
+          font-size: 0.8rem;
+          margin: 1.5rem 1.2rem 1.5rem 0;
+        }
         &--phone {
           font-size: $icone-operation-phone;
+          @include xsm {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -109,8 +134,11 @@
 }
 /*Restaurant*/
 .restaurant {
-  padding: $margin-section;
+  padding: $padding-section;
   background-color: $bgd-accueil;
+  @include sm {
+    padding: 2rem 3.5rem 2rem 3.5rem;
+  }
   &__link {
     display: block;
     color: black;
@@ -135,28 +163,31 @@
       &-etiquette {
         background-color: $color-tertiary;
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        top: 0.8rem;
+        right: 0.8rem;
         z-index: 1;
-        font-size: $size-title-tertiary;
+        font-size: $size-title-etiquette;
         color: darken($color-tertiary, 40%);
         padding: $padding-restau-etiquette;
         border-radius: $radius-etiquette;
+        box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
         font-weight: bolder;
       }
       &-photo {
-        width: 105%;
+        width: 100%;
         position: absolute;
         left: 50%;
         top: 40%;
         transform: translate(-50%, -52%);
+        @include xsm {
+          width: 138%;
+        }
       }
     }
   }
   &__content {
     &-title {
       display: flex;
-      height: 10rem;
       font-size: $size-restau-txtcontent;
       padding: $padding-restaulegend-content;
       justify-content: space-between;
@@ -169,7 +200,7 @@
         }
       }
       &-heart {
-        padding-right: $padding-restaulegend-content;
+        padding-right: $padding-restaulegend-heart;
         font-size: $icone-heart;
         position: relative;
         &-icone1 {

@@ -1,8 +1,8 @@
 .image {
   margin: $no-margin;
   width: 100%;
-  height: 41rem;
   overflow: hidden;
+  height: 16rem;
   &__photo {
     width: 100%;
     &--change {
@@ -15,25 +15,32 @@
   .menu {
     background-color: $bgd-accueil;
     flex-direction: column;
-    position: relative;
-    bottom: 8rem;
     border-radius: $radius-menu;
     &__title {
       font-family: "shrikhandregular";
+      font-size: $size-pages-titles;
       background-color: $bgd-accueil;
-      width: 90%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0 5% 5%;
+      margin: $no-margin;
       border-radius: $radius-menu;
       padding-top: $paddingtop-menu-title;
+      position: relative;
+      bottom: 2.5rem;
+      &__txt {
+        margin-left: 1rem;
+      }
     }
     &__heart {
       position: relative;
+      bottom: 0.3rem;
+      right: 2rem;
       font-family: "robotoregular";
       &__icone1 {
         position: absolute;
+        bottom: 0;
         @include normal-hearts;
         color: $bgd-accueil;
         opacity: 1;
@@ -43,6 +50,7 @@
         }
       }
       &__icone2 {
+        font-size: 1.5rem;
         background: -webkit-linear-gradient($color-primary, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -50,6 +58,8 @@
     }
     &__recette {
       padding: $padding-menu-recette;
+      position: relative;
+      bottom: 2rem;
       &__subtitle {
         align-self: flex-start;
         margin-top: $margintop-menu-subtitle;
@@ -59,21 +69,22 @@
       &__underscore {
         &__icone {
           display: inline-block;
-          transform: scale(11, 3);
+          transform: scale(3, 1);
           position: relative;
-          left: 4.5rem;
+          left: 0.9rem;
           bottom: 0.3rem;
           color: $color-tertiary;
         }
       }
       &__content {
         display: flex;
-        margin: $maringtop-bot-menu-content;
+        margin-bottom: $maringbot-menu-content;
         font-size: $size-menu-txt;
         overflow: hidden;
         border-radius: $radius-menu-content-bloc;
         background-color: $bgd-white;
         @include bloc-shadow;
+        cursor: pointer;
         &1 {
           opacity: 1;
           transform: translateY(0);
@@ -102,22 +113,23 @@
         &:hover {
           .menu__recette__price {
             transform: translateX(0);
-            animation: price-box 500ms;
+            animation: check-box 600ms ease-in-out;
             animation-fill-mode: both;
           }
           .menu__recette__check {
+            margin-right: $no-margin;
             transform: translateX(0);
-            animation: check-box 500ms;
+            animation: check-box 600ms;
             animation-fill-mode: both;
             span {
-              transform: rotate(2turn);
+              transform: rotate(3turn);
             }
           }
         }
       }
       &__text {
         background-color: $bgd-white;
-        width: 80%;
+        width: 90%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -130,24 +142,23 @@
         }
       }
       &__price {
-        background-color: $bgd-white;
-        width: 20%;
+        width: 10%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         font-weight: bold;
-        padding-bottom: nth($padding-menu-blocs, 3);
-        transform: translateX(80%);
+        padding: 0 0.8rem nth($padding-menu-blocs, 3);
+        transform: translateX(0);
       }
       &__check {
         background-color: $color-tertiary;
-        width: 17%;
+        width: 22%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: $icone-menu-check;
         color: $bgd-white;
-        transform: translateX(100%);
+        margin-right: -20%;
         span {
           position: relative;
           right: 0.1rem;

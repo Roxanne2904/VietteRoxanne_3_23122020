@@ -4,9 +4,9 @@
   padding: nth($padding-title-and-input, 1) 0rem;
   justify-content: center;
   background-color: $bgd-input;
-  box-shadow: inset 0rem 0.5rem 1rem darken($bgd-input, 10%);
+  box-shadow: inset 0rem 0.2rem 0.15rem darken($bgd-input, 9%);
   &__form {
-    width: 60%;
+    width: 80%;
   }
   &__content {
     margin: $no-margin;
@@ -17,14 +17,17 @@
     display: block;
     font-size: $size-button-input;
     position: relative;
+    bottom: 0.3rem;
     left: 1.2rem;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
     color: $colortxt-input;
   }
   &__input {
     border: none;
     background-color: $bgd-input;
-    width: 70%;
+    width: 9rem;
+    position: relative;
+    right: 0.5rem;
     &::placeholder {
       color: $colortxt-input;
       font-weight: 600;
@@ -35,13 +38,28 @@
 /*button*/
 .accueil__btn {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
+  @include xsm {
+    width: 230px;
+    margin: 0 auto;
+  }
+  @include sm {
+    width: 320px;
+    margin: 0 auto;
+  }
   &__elemnt {
-    width: 80%;
+    width: 70%;
     position: absolute;
+    left: 15%;
     @include button;
     opacity: 1;
     transition: opacity 1000ms;
     outline-style: none;
+    @include xsm {
+      width: 85%;
+      left: 7.5%;
+    }
     &:hover {
       opacity: 0;
     }
@@ -50,15 +68,18 @@
     }
   }
   &__elemnt__bgd {
-    width: 80%;
+    width: 70%;
     @include button-lighten;
+    @include xsm {
+      width: 85%;
+    }
   }
 }
 
 .menu__button {
   display: flex;
   justify-content: center;
-  padding-top: $padding-menu-button;
+  padding-bottom: $padding-menu-button;
   position: relative;
   &__elemnt {
     width: 53%;
