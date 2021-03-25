@@ -35,3 +35,7 @@
 
 * Fin du débug;
 * Début du responsive; 
+
+25.03.2021
+
+* fin du responsive index.html;

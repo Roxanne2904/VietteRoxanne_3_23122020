@@ -3,9 +3,6 @@
   justify-content: center;
   position: relative;
   background-color: $bgd-white;
-  @include sm {
-    background-color: red;
-  }
   a {
     &:visited {
       color: black;

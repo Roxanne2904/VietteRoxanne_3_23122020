@@ -38,15 +38,8 @@
 /*button*/
 .accueil__btn {
   position: relative;
-  margin: 0 auto;
-  width: 320px;
-  @include xsm {
-    width: 230px;
-    margin: 0 auto;
-  }
   @include sm {
-    width: 320px;
-    margin: 0 auto;
+    @include sm-wrapper-button;
   }
   &__elemnt {
     width: 70%;
@@ -57,8 +50,8 @@
     transition: opacity 1000ms;
     outline-style: none;
     @include xsm {
-      width: 85%;
-      left: 7.5%;
+      width: 80%;
+      left: 10%;
     }
     &:hover {
       opacity: 0;
@@ -71,7 +64,7 @@
     width: 70%;
     @include button-lighten;
     @include xsm {
-      width: 85%;
+      width: 80%;
     }
   }
 }

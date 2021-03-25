@@ -1,3 +1,6 @@
+@mixin bloc-shadow {
+  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
+}
 @mixin animation-dots {
   width: $size-dot;
   height: $size-dot;
@@ -5,7 +8,7 @@
   animation-fill-mode: both;
   transform: scale(0);
 }
-
+/*BUTTON*/
 @mixin button {
   padding: $padding-button;
   border-radius: $radius-button;
@@ -26,9 +29,7 @@
   color: $colortxt-button;
   @include bloc-shadow;
 }
-@mixin bloc-shadow {
-  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
-}
+/*-------------------------------*/
 @mixin normal-hearts {
   font-size: $icone-heart;
   -webkit-text-stroke: 0.07rem black;
@@ -36,32 +37,48 @@
 @mixin links {
   text-decoration: none;
 }
-
+/*------------------------------*/
 /*MEDIAS QUERIES*/
 
-/*Large devices*/
+/*x-small*/
 @mixin xsm {
   @media screen and (min-width: #{$screen-xsm-min}) and (max-width:#{$screen-xsm-max}) {
     @content;
   }
 }
+/*small*/
 @mixin sm {
-  @media screen and (min-width: #{$screen-sm-min}) and (max-width:#{$screen-sm-max}) {
+  @media screen and (min-width: #{$screen-sm-min}) {
     @content;
   }
 }
-@mixin md {
+
+/*medium*/
+@mixin md-and-lg {
   @media screen and (min-width: #{$screen-md-min}) {
     @content;
   }
 }
-@mixin lg {
-  @media screen and (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
+
+/*x-large*/
 @mixin xl {
   @media screen and (min-width: #{$screen-xl-min}) {
     @content;
   }
+}
+/*-------------------------*/
+/*RESPONSIVE MIXIN*/
+@mixin wrapper-operation {
+  margin: 0 auto;
+  width: 400px;
+}
+/*button*/
+@mixin sm-wrapper-button {
+  width: 320px;
+  margin: 0 auto;
+}
+/*footer*/
+@mixin footer-center {
+  text-align: center;
+  padding: $sm-padding-footer;
 }

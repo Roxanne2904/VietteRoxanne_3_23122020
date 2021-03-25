@@ -82,7 +82,7 @@ main {
     font-size: $size-button-input;
     font-family: "robotoregular";
     @include xsm {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
   }
   input {
@@ -92,6 +92,9 @@ main {
 h1 {
   font-family: "shrikhandregular";
   font-size: $size-title-primary;
+  @include xl {
+    font-size: $xl-size-title-primary;
+  }
 }
 h2 {
   font-size: $size-title-secondary;
@@ -101,10 +104,4 @@ h3 {
 }
 .footer__title {
   font-family: "shrikhandregular";
-}
-.wrapper {
-  @include sm {
-    margin: 0 auto;
-    width: 400px;
-  }
 }

@@ -18,79 +18,50 @@
 }
 
 /*Fonctionnement*/
-.operation {
-  padding: nth($padding-section, 1) nth($padding-section, 2)
-    nth($padding-section, 3) 1.8rem;
-  background-color: $bgd-white;
-  &__bloc {
-    background-color: $bgd-accueil;
-    display: flex;
-    align-items: center;
-    box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
-    border-radius: $radius-bloc-restau;
-    margin-bottom: $padding-opera-element;
-    position: relative;
+.wrapper__operation {
+  @include sm {
+    @include wrapper-operation;
   }
-  &__bloc-content {
-    position: absolute;
-    top: -0.01rem;
-    background-color: $bgd-accueil;
-    display: flex;
-    align-items: center;
-    width: 98%;
-    border-radius: $radius-bloc-restau;
-    opacity: 1;
-    transition: opacity 1100ms;
-    &:hover {
-      opacity: 0;
+  .operation {
+    padding: nth($padding-section, 1) nth($padding-section, 2)
+      nth($padding-section, 3) 1.8rem;
+    background-color: $bgd-white;
+    @include md-and-lg {
+      padding: nth($padding-section, 1) nth($padding-section, 2) 0 1.8rem;
     }
-    &-number {
-      font-size: $size-opera-number;
-      background-color: $color-primary;
-      width: $size-cercle-dot;
-      height: $size-cercle-dot;
-      border-radius: 50%;
-      text-align: center;
-      color: $colortxt-button;
-      margin-right: 0.6rem;
+    &__title {
+      @include md-and-lg {
+        position: relative;
+        right: 8.5rem;
+        margin-bottom: 2.5rem;
+      }
+      @include xl {
+        text-align: center;
+        right: 0.5rem;
+      }
+    }
+    &__bloc {
+      background-color: $bgd-accueil;
+      display: flex;
+      align-items: center;
+      box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
+      border-radius: $radius-bloc-restau;
+      margin-bottom: $padding-opera-element;
       position: relative;
-      right: 0.8rem;
-      span {
-        position: absolute;
-        left: 0.54rem;
-        top: 0.17rem;
-      }
     }
-    &-txt {
-      font-size: $size-opera-txt;
-      @include xsm {
-        font-size: 0.85rem;
-      }
-    }
-    &-icone {
-      color: $colortxt-input;
-      font-size: $icone-operation;
-      margin: 1.5rem 1.5rem 1.5rem 0;
-      @include xsm {
-        font-size: 0.8rem;
-        margin: 1.5rem 1.2rem 1.5rem 0;
-      }
-      &--phone {
-        font-size: $icone-operation-phone;
-        @include xsm {
-          font-size: 1rem;
-        }
-      }
-    }
-    /*Pour mettre en place le hover avec opacity*/
-    &-bgd {
-      background-color: $color-primary-transparent;
+    &__bloc-content {
+      position: absolute;
+      top: -0.01rem;
+      background-color: $bgd-accueil;
       display: flex;
       align-items: center;
       width: 98%;
-      @include bloc-shadow;
       border-radius: $radius-bloc-restau;
       opacity: 1;
+      transition: opacity 1100ms;
+      &:hover {
+        opacity: 0;
+      }
       &-number {
         font-size: $size-opera-number;
         background-color: $color-primary;
@@ -102,124 +73,239 @@
         margin-right: 0.6rem;
         position: relative;
         right: 0.8rem;
+        @include xsm {
+          height: $xsm-size-cercle-dot;
+          width: $xsm-size-cercle-dot;
+          right: 0.5rem;
+          font-size: $xsm-size-opera-number;
+        }
         span {
           position: absolute;
           left: 0.54rem;
           top: 0.17rem;
+          @include xsm {
+            left: 0.4rem;
+            top: 0.1rem;
+          }
         }
       }
       &-txt {
         font-size: $size-opera-txt;
         @include xsm {
-          font-size: 0.85rem;
+          font-size: $xsm-size-opera-txt;
+        }
+        @include xl {
+          font-size: $xl-size-opera-txt;
         }
       }
       &-icone {
-        color: $color-primary;
+        color: $colortxt-input;
         font-size: $icone-operation;
-        margin: 1.5rem 1.5rem 1.5rem 0;
+        margin: $margin-opera-icone;
         @include xsm {
-          font-size: 0.8rem;
-          margin: 1.5rem 1.2rem 1.5rem 0;
+          font-size: $xsm-size-opera-icone;
+          margin: $xsm-margin-opera-icone;
         }
         &--phone {
           font-size: $icone-operation-phone;
           @include xsm {
-            font-size: 1rem;
+            font-size: $xsm-size-opera-phone;
+          }
+        }
+      }
+      /*Pour mettre en place le hover avec opacity*/
+      &-bgd {
+        background-color: $color-primary-transparent;
+        display: flex;
+        align-items: center;
+        width: 98%;
+        @include bloc-shadow;
+        border-radius: $radius-bloc-restau;
+        opacity: 1;
+        &-number {
+          font-size: $size-opera-number;
+          background-color: $color-primary;
+          width: $size-cercle-dot;
+          height: $size-cercle-dot;
+          border-radius: 50%;
+          text-align: center;
+          color: $colortxt-button;
+          margin-right: 0.6rem;
+          position: relative;
+          right: 0.8rem;
+          @include xsm {
+            height: $xsm-size-cercle-dot;
+            width: $xsm-size-cercle-dot;
+            right: 0.5rem;
+            font-size: $xsm-size-opera-number;
+          }
+          span {
+            position: absolute;
+            left: 0.54rem;
+            top: 0.17rem;
+            @include xsm {
+              left: 0.4rem;
+              top: 0.1rem;
+            }
+          }
+        }
+        &-txt {
+          font-size: $size-opera-txt;
+          @include xsm {
+            font-size: $xsm-size-opera-txt;
+          }
+          @include xl {
+            font-size: $xl-size-opera-txt;
+          }
+        }
+        &-icone {
+          color: $color-primary;
+          font-size: $icone-operation;
+          margin: $margin-opera-icone;
+          @include xsm {
+            font-size: $xsm-size-opera-icone;
+            margin: $xsm-margin-opera-icone;
+          }
+          &--phone {
+            font-size: $icone-operation-phone;
+            @include xsm {
+              font-size: $xsm-size-opera-phone;
+            }
           }
         }
       }
     }
   }
 }
+
 /*Restaurant*/
-.restaurant {
-  padding: $padding-section;
-  background-color: $bgd-accueil;
-  @include sm {
-    padding: 2rem 3.5rem 2rem 3.5rem;
+.wrapper__restaurant {
+  @include md-and-lg {
+    margin: 0 auto;
+    width: 650px;
   }
-  &__link {
-    display: block;
-    color: black;
-    position: relative;
-    &:link {
-      @include links;
+  @include xl {
+    width: 1200px;
+  }
+  .restaurant {
+    padding: $padding-section;
+    background-color: $bgd-accueil;
+    @include sm {
+      padding: $sm-padding-restau-section;
     }
-  }
-  &__content {
-    background-color: white;
-    margin: $no-margin;
-    overflow: hidden;
-    border-radius: $radius-bloc-restau;
-    margin-bottom: 3rem;
-    @include bloc-shadow;
-    position: relative;
-    &-img {
-      overflow: hidden;
-      width: 100%;
-      height: $height-bloc-restau;
-      position: relative;
-      &-etiquette {
-        background-color: $color-tertiary;
-        position: absolute;
-        top: 0.8rem;
-        right: 0.8rem;
-        z-index: 1;
-        font-size: $size-title-etiquette;
-        color: darken($color-tertiary, 40%);
-        padding: $padding-restau-etiquette;
-        border-radius: $radius-etiquette;
-        box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
-        font-weight: bolder;
-      }
-      &-photo {
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -52%);
-        @include xsm {
-          width: 138%;
-        }
+    @include md-and-lg {
+      background-color: transparent;
+    }
+    &__title {
+      @include xl {
+        text-align: center;
+        margin-bottom: 2.5rem;
       }
     }
-  }
-  &__content {
-    &-title {
-      display: flex;
-      font-size: $size-restau-txtcontent;
-      padding: $padding-restaulegend-content;
-      justify-content: space-between;
-      &-legend {
-        font-weight: normal;
-        color: $colortxt-input;
-        strong {
-          font-weight: bolder;
-          color: black;
-        }
+    &__bloc {
+      @include xl {
+        display: flex;
+        justify-content: space-between;
       }
-      &-heart {
-        padding-right: $padding-restaulegend-heart;
-        font-size: $icone-heart;
+      &__content {
+        background-color: white;
+        margin: $no-margin;
+        overflow: hidden;
+        border-radius: $radius-bloc-restau;
+        margin-bottom: 3rem;
+        @include bloc-shadow;
         position: relative;
-        &-icone1 {
-          color: $bgd-white;
-          @include normal-hearts;
-          position: absolute;
-          opacity: 1;
-          transition: opacity 800ms;
-          &:hover {
-            opacity: 0;
-          }
-          &:active {
-            opacity: 0;
+        @include xl {
+          width: 24%;
+        }
+        &__link {
+          display: block;
+          color: black;
+          position: relative;
+          &:link {
+            @include links;
           }
         }
-        &-icone2 {
-          background: -webkit-linear-gradient($color-primary, $color-secondary);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+        &-img {
+          overflow: hidden;
+          width: 100%;
+          height: $height-bloc-restau;
+          position: relative;
+          @include md-and-lg {
+            height: $md-height-bloc-restau;
+          }
+          @include xl {
+            height: $xl-height-bloc-restau;
+            width: 103%;
+          }
+          &-etiquette {
+            background-color: $color-tertiary;
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            z-index: 1;
+            font-size: $size-title-etiquette;
+            color: darken($color-tertiary, 40%);
+            padding: $padding-restau-etiquette;
+            border-radius: $radius-etiquette;
+            box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
+            font-weight: bolder;
+            &--none {
+              display: none;
+            }
+          }
+          &-photo {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -52%);
+            @include xsm {
+              width: 138%;
+            }
+          }
+        }
+      }
+      &__content {
+        &-title {
+          display: flex;
+          font-size: $size-restau-txtcontent;
+          padding: $padding-restaulegend-content;
+          justify-content: space-between;
+          &-legend {
+            font-weight: normal;
+            color: $colortxt-input;
+            strong {
+              font-weight: bolder;
+              color: black;
+            }
+          }
+          &-heart {
+            padding-right: $padding-restaulegend-heart;
+            font-size: $icone-heart;
+            position: relative;
+            &-icone1 {
+              color: $bgd-white;
+              @include normal-hearts;
+              position: absolute;
+              opacity: 1;
+              transition: opacity 800ms;
+              &:hover {
+                opacity: 0;
+              }
+              &:active {
+                opacity: 0;
+              }
+            }
+            &-icone2 {
+              background: -webkit-linear-gradient(
+                $color-primary,
+                $color-secondary
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
         }
       }
     }

@@ -22,6 +22,17 @@ $icone-footer: 0.8rem;
 $icone-menu-check: 1.1rem;
 
 /*-------------------------------*/
+/*SIZE RESPONSIVE*/
+$xsm-size-cercle-dot: 1.2rem;
+$xsm-size-opera-number: 0.7rem;
+$xsm-size-opera-txt: 0.85rem;
+$xsm-size-opera-icone: 0.8rem;
+$xsm-size-opera-phone: 1rem;
+$md-size-footer: 1.2rem;
+$md-size-footer-title: 1.5rem;
+$md-size-footer-icone: 0.9rem;
+$xl-size-opera-txt: 1.15rem;
+$xl-size-title-primary: 3rem;
 /*PADDING*/
 $no-padding: 0;
 /*ohmyfood-title and input*/
@@ -47,10 +58,27 @@ $padding-menu-recette: 0rem 1rem;
 $padding-menu-button: 2.5rem;
 
 /*-------------------------------*/
+/*PADDING RESPONSIVE*/
+/*sm*/
+$sm-padding-restau-section: nth($padding-section, 1) 3.5rem
+  nth($padding-section, 3) 3.5rem;
+$sm-padding-footer: nth($padding-footer, 1) nth($padding-footer, 2)
+  nth($padding-footer, 3) 0;
+/*-------------------------------*/
 /*MARGIN*/
 $no-margin: 0;
 $margintop-menu-subtitle: 1.5rem;
-$maringbot-menu-content: 1rem;
+$marginbot-menu-content: 1rem;
+$margin-opera-icone: 1.5rem 1.5rem 1.5rem 0;
+
+/*-------------------------------*/
+/*MARGIN RESPONSIVE*/
+/*xsm*/
+$xsm-margin-opera-icone: nth($margin-opera-icone, 1) 1rem
+  nth($margin-opera-icone, 3) nth($margin-opera-icone, 4);
+/*sm*/
+$sm-margin-footer-icones: 0.25rem;
+$sm-margin-footer-icone-spé: 0.5rem;
 
 /*-------------------------------*/
 /*BORDER-RADIUS*/
@@ -77,6 +105,9 @@ $colortxt-footer: $bgd-white;
 /*-------------------------------*/
 /*HEIGHT BLOC*/
 $height-bloc-restau: 11.2rem;
+/*HEIGHT RESPONSIVE*/
+$md-height-bloc-restau: 17rem;
+$xl-height-bloc-restau: 9rem;
 
 /*-------------------------------*/
 /*ANIMATION*/
@@ -88,8 +119,5 @@ $screen-xsm-min: 275px;
 $screen-xsm-max: 366px;
 
 $screen-sm-min: 450px;
-$screen-sm-max: 767.99px;
-
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
+$screen-md-min: 769px;
 $screen-xl-min: 1200px;
