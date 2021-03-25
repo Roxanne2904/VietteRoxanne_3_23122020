@@ -78,7 +78,7 @@
       }
       &__icone1 {
         position: absolute;
-        bottom: 0;
+        bottom: 0.02rem;
         @include normal-hearts;
         color: $bgd-accueil;
         opacity: 1;

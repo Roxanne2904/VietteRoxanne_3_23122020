@@ -184,7 +184,7 @@ body {
 
 body .bloc__loading-spinner {
   position: fixed;
-  top: 46%;
+  top: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -999,7 +999,7 @@ h3 {
 }
 .bloc .menu__heart__icone1 {
   position: absolute;
-  bottom: 0;
+  bottom: 0.02rem;
   font-size: 1.5rem;
   -webkit-text-stroke: 0.07rem black;
   color: #f7f7f0;
