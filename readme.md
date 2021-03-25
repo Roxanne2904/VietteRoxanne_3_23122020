@@ -38,4 +38,5 @@
 
 25.03.2021
 
-* fin du responsive index.html;
+* fin du responsive;
+* modifications du loading-spinner;
