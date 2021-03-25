@@ -40,3 +40,5 @@
 
 * fin du responsive;
 * modifications du loading-spinner;
+* modifs sur la check box ----ok;
+* revoir les bouton et les bloc fonctionnements ----> ! ne pas dupliquer les blocs !

@@ -37,6 +37,7 @@
     background-color: $bgd-accueil;
     flex-direction: column;
     border-radius: $radius-menu;
+    padding-bottom: 3.1rem;
     &__title {
       font-family: "shrikhandregular";
       font-size: $size-pages-titles;
@@ -168,7 +169,6 @@
             animation-fill-mode: both;
           }
           .menu__recette__check {
-            margin-right: $no-margin;
             transform: translateX(0);
             animation: check-box 600ms;
             animation-fill-mode: both;
@@ -225,7 +225,7 @@
           position: relative;
           right: 0.1rem;
           top: 0.1rem;
-          transition: transform 500ms;
+          transition: transform 800ms;
         }
       }
     }

@@ -46,25 +46,14 @@
     position: absolute;
     left: 15%;
     @include button;
-    opacity: 1;
-    transition: opacity 1000ms;
     outline-style: none;
+    transition: linear-gradient 1000ms;
     @include xsm {
       width: 80%;
       left: 10%;
     }
     &:hover {
-      opacity: 0;
-    }
-    &:active {
-      opacity: 0;
-    }
-  }
-  &__elemnt__bgd {
-    width: 70%;
-    @include button-lighten;
-    @include xsm {
-      width: 80%;
+      background: linear-gradient(-5deg, #9256dcd5 15%, #ff79d9be);
     }
   }
 }
@@ -82,18 +71,10 @@
     width: 53%;
     position: absolute;
     @include button;
-    opacity: 1;
-    transition: opacity 1000ms;
+    transition: linear-gradient 1000ms;
     outline-style: none;
     &:hover {
-      opacity: 0;
+      background: linear-gradient(-5deg, #9256dcd5 15%, #ff79d9be);
     }
-    &:active {
-      opacity: 0;
-    }
-  }
-  &__elemnt__bgd {
-    width: 53%;
-    @include button-lighten;
   }
 }
