@@ -74,6 +74,10 @@
   justify-content: center;
   padding-bottom: $padding-menu-button;
   position: relative;
+  @include sm {
+    margin: 0 auto;
+    width: 400px;
+  }
   &__elemnt {
     width: 53%;
     position: absolute;

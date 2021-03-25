@@ -89,6 +89,12 @@ main {
     font-size: $size-button-input;
   }
 }
+.main__pages {
+  @include xl {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
 h1 {
   font-family: "shrikhandregular";
   font-size: $size-title-primary;

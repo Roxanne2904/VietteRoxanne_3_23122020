@@ -3,6 +3,12 @@
   justify-content: center;
   position: relative;
   background-color: $bgd-white;
+  &--header__pages {
+    @include xl {
+      margin: 0 auto;
+      width: 1200px;
+    }
+  }
   a {
     &:visited {
       color: black;
@@ -16,6 +22,10 @@
     position: absolute;
     left: 1.8rem;
     bottom: 0.1rem;
+    @include xsm {
+      font-size: $xsm-icone-header-arrow;
+      left: 1rem;
+    }
   }
 
   &__title {

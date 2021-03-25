@@ -19,15 +19,22 @@ $icone-heart: 1.5rem;
 $icone-operation: 1rem;
 $icone-operation-phone: 1.3rem;
 $icone-footer: 0.8rem;
-$icone-menu-check: 1.1rem;
+$icone-menu-check: 1.2rem;
 
 /*-------------------------------*/
 /*SIZE RESPONSIVE*/
+$xsm-icone-header-arrow: 1.1rem;
+$xsm-size-pages-titles: 1.35rem;
+$xsm-size-menu-txt: 0.85rem;
+$xsm-size-menu-strong-txt: 1rem;
 $xsm-size-cercle-dot: 1.2rem;
 $xsm-size-opera-number: 0.7rem;
 $xsm-size-opera-txt: 0.85rem;
 $xsm-size-opera-icone: 0.8rem;
 $xsm-size-opera-phone: 1rem;
+$sm-icone-menu-check: 1.3rem;
+$md-icone-heart: 2rem;
+$md-size-pages-titles: 2.2rem;
 $md-size-footer: 1.2rem;
 $md-size-footer-title: 1.5rem;
 $md-size-footer-icone: 0.9rem;
@@ -59,7 +66,7 @@ $padding-menu-button: 2.5rem;
 
 /*-------------------------------*/
 /*PADDING RESPONSIVE*/
-/*sm*/
+$xsm-paddingtop-menu-title: 1.3rem;
 $sm-padding-restau-section: nth($padding-section, 1) 3.5rem
   nth($padding-section, 3) 3.5rem;
 $sm-padding-footer: nth($padding-footer, 1) nth($padding-footer, 2)
@@ -120,4 +127,4 @@ $screen-xsm-max: 366px;
 
 $screen-sm-min: 450px;
 $screen-md-min: 769px;
-$screen-xl-min: 1200px;
+$screen-xl-min: 992px;

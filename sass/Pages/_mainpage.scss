@@ -185,7 +185,8 @@
     width: 650px;
   }
   @include xl {
-    width: 1200px;
+    margin: 0 auto;
+    width: 1000px;
   }
   .restaurant {
     padding: $padding-section;
@@ -195,6 +196,10 @@
     }
     @include md-and-lg {
       background-color: transparent;
+    }
+    @include xl {
+      padding: nth($sm-padding-restau-section, 1) 1rem
+        nth($sm-padding-restau-section, 3) 1rem;
     }
     &__title {
       @include xl {
@@ -262,6 +267,9 @@
             transform: translate(-50%, -52%);
             @include xsm {
               width: 138%;
+            }
+            @include xl {
+              width: 115%;
             }
           }
         }

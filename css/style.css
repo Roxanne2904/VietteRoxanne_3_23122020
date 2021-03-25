@@ -11,7 +11,6 @@
 /*menu*/
 /*-------------------------------*/
 /*PADDING RESPONSIVE*/
-/*sm*/
 /*-------------------------------*/
 /*MARGIN*/
 /*-------------------------------*/
@@ -205,11 +204,18 @@ main input {
   font-size: 1.08rem;
 }
 
+@media screen and (min-width: 992px) {
+  .main__pages {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
 h1 {
   font-family: "shrikhandregular";
   font-size: 2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 3rem;
   }
@@ -322,6 +328,12 @@ h3 {
   padding-bottom: 2.5rem;
   position: relative;
 }
+@media screen and (min-width: 450px) {
+  .menu__button {
+    margin: 0 auto;
+    width: 400px;
+  }
+}
 .menu__button__elemnt {
   width: 53%;
   position: absolute;
@@ -358,6 +370,12 @@ h3 {
   position: relative;
   background-color: white;
 }
+@media screen and (min-width: 992px) {
+  .header--header__pages {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
 .header a:visited {
   color: black;
 }
@@ -369,6 +387,12 @@ h3 {
   position: absolute;
   left: 1.8rem;
   bottom: 0.1rem;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .header__arrow {
+    font-size: 1.1rem;
+    left: 1rem;
+  }
 }
 .header__title {
   margin: 0;
@@ -484,7 +508,7 @@ h3 {
     margin-bottom: 2.5rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__operation .operation__title {
     text-align: center;
     right: 0.5rem;
@@ -553,7 +577,7 @@ h3 {
     font-size: 0.85rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__operation .operation__bloc-content-txt {
     font-size: 1.15rem;
   }
@@ -625,7 +649,7 @@ h3 {
     font-size: 0.85rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__operation .operation__bloc-content-bgd-txt {
     font-size: 1.15rem;
   }
@@ -657,9 +681,10 @@ h3 {
     width: 650px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__restaurant {
-    width: 1200px;
+    margin: 0 auto;
+    width: 1000px;
   }
 }
 .wrapper__restaurant .restaurant {
@@ -676,13 +701,18 @@ h3 {
     background-color: transparent;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
+  .wrapper__restaurant .restaurant {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
   .wrapper__restaurant .restaurant__title {
     text-align: center;
     margin-bottom: 2.5rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__restaurant .restaurant__bloc {
     display: flex;
     justify-content: space-between;
@@ -697,7 +727,7 @@ h3 {
   box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__restaurant .restaurant__bloc__content {
     width: 24%;
   }
@@ -721,7 +751,7 @@ h3 {
     height: 17rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .wrapper__restaurant .restaurant__bloc__content-img {
     height: 9rem;
     width: 103%;
@@ -753,6 +783,11 @@ h3 {
 @media screen and (min-width: 275px) and (max-width: 366px) {
   .wrapper__restaurant .restaurant__bloc__content-img-photo {
     width: 138%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper__restaurant .restaurant__bloc__content-img-photo {
+    width: 115%;
   }
 }
 .wrapper__restaurant .restaurant__bloc__content-title {
@@ -800,11 +835,46 @@ h3 {
   overflow: hidden;
   height: 16rem;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .image {
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .image {
+    height: inherit;
+  }
+}
+@media screen and (min-width: 769px) {
+  .image {
+    height: 30rem;
+  }
+}
 .image__photo {
   width: 100%;
 }
+@media screen and (min-width: 769px) {
+  .image__photo {
+    transform: translateY(-10%);
+  }
+}
+@media screen and (min-width: 992px) {
+  .image__photo {
+    transform: translateY(-25%);
+  }
+}
 .image__photo--change {
   transform: translateY(-30%);
+}
+@media screen and (min-width: 450px) {
+  .image__photo--change {
+    transform: translateY(0);
+  }
+}
+@media screen and (min-width: 769px) {
+  .image__photo--change {
+    transform: translateY(-35%);
+  }
 }
 
 .bloc {
@@ -829,14 +899,41 @@ h3 {
   position: relative;
   bottom: 2.5rem;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .bloc .menu__title {
+    font-size: 1.35rem;
+    padding-top: 1.3rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .bloc .menu__title {
+    font-size: 2.2rem;
+    justify-content: center;
+  }
+}
 .bloc .menu__title__txt {
   margin-left: 1rem;
+}
+@media screen and (min-width: 769px) {
+  .bloc .menu__title__txt {
+    margin-left: -10rem;
+  }
 }
 .bloc .menu__heart {
   position: relative;
   bottom: 0.3rem;
   right: 2rem;
   font-family: "robotoregular";
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .bloc .menu__heart {
+    right: 1rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .bloc .menu__heart {
+    right: -10rem;
+  }
 }
 .bloc .menu__heart__icone1 {
   position: absolute;
@@ -847,6 +944,11 @@ h3 {
   opacity: 1;
   transition: opacity 800ms;
 }
+@media screen and (min-width: 769px) {
+  .bloc .menu__heart__icone1 {
+    font-size: 2rem;
+  }
+}
 .bloc .menu__heart__icone1:hover {
   opacity: 0;
 }
@@ -856,10 +958,21 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 769px) {
+  .bloc .menu__heart__icone2 {
+    font-size: 2rem;
+  }
+}
 .bloc .menu__recette {
   padding: 0rem 1rem;
   position: relative;
   bottom: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .bloc .menu__recette {
+    margin: 0 auto;
+    width: 500px;
+  }
 }
 .bloc .menu__recette__subtitle {
   align-self: flex-start;
@@ -884,6 +997,11 @@ h3 {
   background-color: white;
   box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
   cursor: pointer;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .bloc .menu__recette__content {
+    font-size: 0.85rem;
+  }
 }
 .bloc .menu__recette__content1 {
   opacity: 1;
@@ -934,6 +1052,11 @@ h3 {
 .bloc .menu__recette__text strong {
   font-size: 1.1rem;
 }
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .bloc .menu__recette__text strong {
+    font-size: 1rem;
+  }
+}
 .bloc .menu__recette__text span {
   color: #5f5f5f;
 }
@@ -952,9 +1075,21 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
   margin-right: -20%;
+}
+@media screen and (min-width: 275px) and (max-width: 366px) {
+  .bloc .menu__recette__check {
+    width: 25%;
+    margin-right: -22%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .bloc .menu__recette__check {
+    margin-right: -21%;
+    font-size: 1.3rem;
+  }
 }
 .bloc .menu__recette__check span {
   position: relative;

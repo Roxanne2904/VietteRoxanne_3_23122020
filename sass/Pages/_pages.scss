@@ -3,10 +3,31 @@
   width: 100%;
   overflow: hidden;
   height: 16rem;
+  @include xsm {
+    height: 13rem;
+  }
+  @include sm {
+    height: inherit;
+  }
+  @include md-and-lg {
+    height: 30rem;
+  }
   &__photo {
     width: 100%;
+    @include md-and-lg {
+      transform: translateY(-10%);
+    }
+    @include xl {
+      transform: translateY(-25%);
+    }
     &--change {
       transform: translateY(-30%);
+      @include sm {
+        transform: translateY(0);
+      }
+      @include md-and-lg {
+        transform: translateY(-35%);
+      }
     }
   }
 }
@@ -29,8 +50,19 @@
       padding-top: $paddingtop-menu-title;
       position: relative;
       bottom: 2.5rem;
+      @include xsm {
+        font-size: $xsm-size-pages-titles;
+        padding-top: $xsm-paddingtop-menu-title;
+      }
+      @include md-and-lg {
+        font-size: $md-size-pages-titles;
+        justify-content: center;
+      }
       &__txt {
         margin-left: 1rem;
+        @include md-and-lg {
+          margin-left: -10rem;
+        }
       }
     }
     &__heart {
@@ -38,6 +70,12 @@
       bottom: 0.3rem;
       right: 2rem;
       font-family: "robotoregular";
+      @include xsm {
+        right: 1rem;
+      }
+      @include md-and-lg {
+        right: -10rem;
+      }
       &__icone1 {
         position: absolute;
         bottom: 0;
@@ -45,6 +83,9 @@
         color: $bgd-accueil;
         opacity: 1;
         transition: opacity 800ms;
+        @include md-and-lg {
+          font-size: $md-icone-heart;
+        }
         &:hover {
           opacity: 0;
         }
@@ -54,12 +95,19 @@
         background: -webkit-linear-gradient($color-primary, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @include md-and-lg {
+          font-size: $md-icone-heart;
+        }
       }
     }
     &__recette {
       padding: $padding-menu-recette;
       position: relative;
       bottom: 2rem;
+      @include md-and-lg {
+        margin: 0 auto;
+        width: 500px;
+      }
       &__subtitle {
         align-self: flex-start;
         margin-top: $margintop-menu-subtitle;
@@ -85,6 +133,9 @@
         background-color: $bgd-white;
         @include bloc-shadow;
         cursor: pointer;
+        @include xsm {
+          font-size: $xsm-size-menu-txt;
+        }
         &1 {
           opacity: 1;
           transform: translateY(0);
@@ -136,6 +187,9 @@
         padding: $padding-menu-blocs;
         strong {
           font-size: $size-menu-strong-txt;
+          @include xsm {
+            font-size: $xsm-size-menu-strong-txt;
+          }
         }
         span {
           color: $colortxt-input;
@@ -159,6 +213,14 @@
         font-size: $icone-menu-check;
         color: $bgd-white;
         margin-right: -20%;
+        @include xsm {
+          width: 25%;
+          margin-right: -22%;
+        }
+        @include sm {
+          margin-right: -21%;
+          font-size: $sm-icone-menu-check;
+        }
         span {
           position: relative;
           right: 0.1rem;
