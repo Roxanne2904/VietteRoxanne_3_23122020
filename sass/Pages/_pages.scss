@@ -12,6 +12,17 @@
   @include md-and-lg {
     height: 30rem;
   }
+  &--change {
+    @include sm {
+      height: 25rem;
+    }
+    @include md-and-lg {
+      height: 30rem;
+    }
+    @include xl {
+      height: 35rem;
+    }
+  }
   &__photo {
     width: 100%;
     @include md-and-lg {
@@ -23,7 +34,7 @@
     &--change {
       transform: translateY(-30%);
       @include sm {
-        transform: translateY(0);
+        transform: translateY(-28%);
       }
       @include md-and-lg {
         transform: translateY(-35%);
@@ -37,7 +48,7 @@
     background-color: $bgd-accueil;
     flex-direction: column;
     border-radius: $radius-menu;
-    padding-bottom: 3.1rem;
+    padding-bottom: 0.5rem;
     &__title {
       font-family: "shrikhandregular";
       font-size: $size-pages-titles;
@@ -79,26 +90,19 @@
       }
       &__icone1 {
         position: absolute;
-        bottom: 0.02rem;
+        bottom: 0;
         @include normal-hearts;
         color: $bgd-accueil;
         opacity: 1;
         transition: opacity 800ms;
-        @include md-and-lg {
-          font-size: $md-icone-heart;
-        }
         &:hover {
           opacity: 0;
         }
       }
       &__icone2 {
-        font-size: 1.5rem;
         background: -webkit-linear-gradient($color-primary, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        @include md-and-lg {
-          font-size: $md-icone-heart;
-        }
       }
     }
     &__recette {

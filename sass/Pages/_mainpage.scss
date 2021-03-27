@@ -14,6 +14,9 @@
     @include xsm {
       font-size: 1rem;
     }
+    @include xl {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -29,10 +32,13 @@
     @include md-and-lg {
       padding: nth($padding-section, 1) nth($padding-section, 2) 0 1.8rem;
     }
+    @include xl {
+      padding: nth($padding-section, 1) nth($padding-section, 2) 2rem 1.8rem;
+    }
     &__title {
       @include md-and-lg {
         position: relative;
-        right: 8.5rem;
+        right: 6rem;
         margin-bottom: 2.5rem;
       }
       @include xl {
@@ -50,17 +56,18 @@
       position: relative;
     }
     &__bloc-content {
-      position: absolute;
-      top: -0.01rem;
+      @include bloc-shadow;
       background-color: $bgd-accueil;
       display: flex;
       align-items: center;
       width: 98%;
       border-radius: $radius-bloc-restau;
-      opacity: 1;
-      transition: opacity 1100ms;
+      transition: background-color, 1100ms;
       &:hover {
-        opacity: 0;
+        background-color: $color-primary-transparent;
+        .operation__bloc-content-icone {
+          color: $color-primary;
+        }
       }
       &-number {
         font-size: $size-opera-number;
@@ -102,6 +109,7 @@
         color: $colortxt-input;
         font-size: $icone-operation;
         margin: $margin-opera-icone;
+        transition: color 1100ms;
         @include xsm {
           font-size: $xsm-size-opera-icone;
           margin: $xsm-margin-opera-icone;
@@ -110,67 +118,6 @@
           font-size: $icone-operation-phone;
           @include xsm {
             font-size: $xsm-size-opera-phone;
-          }
-        }
-      }
-      /*Pour mettre en place le hover avec opacity*/
-      &-bgd {
-        background-color: $color-primary-transparent;
-        display: flex;
-        align-items: center;
-        width: 98%;
-        @include bloc-shadow;
-        border-radius: $radius-bloc-restau;
-        opacity: 1;
-        &-number {
-          font-size: $size-opera-number;
-          background-color: $color-primary;
-          width: $size-cercle-dot;
-          height: $size-cercle-dot;
-          border-radius: 50%;
-          text-align: center;
-          color: $colortxt-button;
-          margin-right: 0.6rem;
-          position: relative;
-          right: 0.8rem;
-          @include xsm {
-            height: $xsm-size-cercle-dot;
-            width: $xsm-size-cercle-dot;
-            right: 0.5rem;
-            font-size: $xsm-size-opera-number;
-          }
-          span {
-            position: absolute;
-            left: 0.54rem;
-            top: 0.17rem;
-            @include xsm {
-              left: 0.4rem;
-              top: 0.1rem;
-            }
-          }
-        }
-        &-txt {
-          font-size: $size-opera-txt;
-          @include xsm {
-            font-size: $xsm-size-opera-txt;
-          }
-          @include xl {
-            font-size: $xl-size-opera-txt;
-          }
-        }
-        &-icone {
-          color: $color-primary;
-          font-size: $icone-operation;
-          margin: $margin-opera-icone;
-          @include xsm {
-            font-size: $xsm-size-opera-icone;
-            margin: $xsm-margin-opera-icone;
-          }
-          &--phone {
-            font-size: $icone-operation-phone;
-            @include xsm {
-              font-size: $xsm-size-opera-phone;
-            }
           }
         }
       }
@@ -186,7 +133,7 @@
   }
   @include xl {
     margin: 0 auto;
-    width: 1000px;
+    width: 950px;
   }
   .restaurant {
     padding: $padding-section;
@@ -198,8 +145,11 @@
       background-color: transparent;
     }
     @include xl {
-      padding: nth($sm-padding-restau-section, 1) 1rem
-        nth($sm-padding-restau-section, 3) 1rem;
+      padding: 1rem;
+      background-color: $bgd-accueil;
+      box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
+      border-radius: 3rem 3rem 0 0;
+      margin-bottom: 2rem;
     }
     &__title {
       @include xl {
@@ -209,19 +159,20 @@
     }
     &__bloc {
       @include xl {
+        height: inherit;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
       }
       &__content {
         background-color: white;
-        margin: $no-margin;
         overflow: hidden;
         border-radius: $radius-bloc-restau;
-        margin-bottom: 3rem;
+        margin: 0 0 3rem 0;
         @include bloc-shadow;
         position: relative;
         @include xl {
-          width: 24%;
+          margin: 0 1rem 3rem 1rem;
         }
         &__link {
           display: block;
@@ -241,7 +192,6 @@
           }
           @include xl {
             height: $xl-height-bloc-restau;
-            width: 103%;
           }
           &-etiquette {
             background-color: $color-tertiary;
@@ -255,6 +205,9 @@
             border-radius: $radius-etiquette;
             box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
             font-weight: bolder;
+            @include xl {
+              font-size: 1.2rem;
+            }
             &--none {
               display: none;
             }
@@ -268,9 +221,6 @@
             @include xsm {
               width: 138%;
             }
-            @include xl {
-              width: 115%;
-            }
           }
         }
       }
@@ -280,9 +230,20 @@
           font-size: $size-restau-txtcontent;
           padding: $padding-restaulegend-content;
           justify-content: space-between;
+          @include xl {
+            font-size: 1.5rem;
+          }
           &-legend {
             font-weight: normal;
             color: $colortxt-input;
+            @include xl {
+              padding-right: 8rem;
+            }
+            &--spe {
+              @include xl {
+                padding-right: 10.6rem;
+              }
+            }
             strong {
               font-weight: bolder;
               color: black;
@@ -292,6 +253,9 @@
             padding-right: $padding-restaulegend-heart;
             font-size: $icone-heart;
             position: relative;
+            @include xl {
+              font-size: 1.8rem;
+            }
             &-icone1 {
               color: $bgd-white;
               @include normal-hearts;

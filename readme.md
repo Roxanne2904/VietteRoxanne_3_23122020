@@ -42,3 +42,10 @@
 * modifications du loading-spinner;
 * modifs sur la check box ----ok;
 * revoir les bouton et les bloc fonctionnements ----> ! ne pas dupliquer les blocs !
+ 
+27.03.2021
+
+* retouches sur le responsive + ajout d'un hover sur les <li>
+* les blocs de la section fonctionnement ne sont plus dupliqués.
+* Les boutons aussi ont été modifié. Eux aussi ne sont plus dupliqués.
+* le bug des coeurs sur les pages a été corrigé. 

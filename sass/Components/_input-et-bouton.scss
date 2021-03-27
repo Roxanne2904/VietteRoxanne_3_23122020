@@ -37,23 +37,41 @@
 
 /*button*/
 .accueil__btn {
-  position: relative;
   @include sm {
     @include sm-wrapper-button;
   }
+  @include xsm {
+    margin: 0 auto;
+    width: 235px;
+  }
+  @include xl {
+    width: 400px;
+  }
   &__elemnt {
-    width: 70%;
-    position: absolute;
-    left: 15%;
+    width: 65%;
+    position: relative;
     @include button;
     outline-style: none;
-    transition: linear-gradient 1000ms;
+    z-index: 1;
+    &:hover {
+      .accueil__btn__elemnt__bgd {
+        opacity: 1;
+      }
+    }
     @include xsm {
       width: 80%;
-      left: 10%;
     }
-    &:hover {
-      background: linear-gradient(-5deg, #9256dcd5 15%, #ff79d9be);
+    &__bgd {
+      @include button-lighten;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0;
+      border-radius: $radius-button;
+      transition: opacity 1000ms;
     }
   }
 }
@@ -69,12 +87,26 @@
   }
   &__elemnt {
     width: 53%;
-    position: absolute;
+    position: relative;
     @include button;
-    transition: linear-gradient 1000ms;
     outline-style: none;
+    z-index: 1;
     &:hover {
-      background: linear-gradient(-5deg, #9256dcd5 15%, #ff79d9be);
+      .menu__button__elemnt__bgd {
+        opacity: 1;
+      }
+    }
+    &__bgd {
+      @include button-lighten;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0;
+      border-radius: $radius-button;
+      transition: opacity 1000ms;
     }
   }
 }

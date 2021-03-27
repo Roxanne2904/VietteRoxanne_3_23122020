@@ -19,12 +19,21 @@
   &__li {
     padding-bottom: 0.6rem;
     font-size: 1rem;
+    transition: all 500ms;
     @include md-and-lg {
       font-size: $md-size-footer;
+    }
+    &:hover {
+      color: $color-tertiary;
+      transform: scaleY(1.2);
     }
     a {
       @include links;
       color: $bgd-white;
+      display: block;
+      &:hover {
+        color: $color-tertiary;
+      }
     }
     &-icone {
       display: inline-block;
