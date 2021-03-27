@@ -1,8 +1,3 @@
-* {
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
 @font-face {
   font-family: "shrikhandregular";
   src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"),
@@ -36,8 +31,9 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: scale(-100vh);
+      transform: translateX(0vh);
       animation: bye-loading 1000ms 3500ms;
+      animation-fill-mode: forwards;
       &__txt {
         font-family: "shrikhandregular";
         display: inline-block;
