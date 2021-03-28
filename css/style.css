@@ -1088,13 +1088,9 @@ h3 {
 }
 .bloc .menu__recette__content:hover .menu__recette__price {
   transform: translateX(0);
-  animation: check-box 600ms ease-in-out;
-  animation-fill-mode: both;
 }
 .bloc .menu__recette__content:hover .menu__recette__check {
-  transform: translateX(0);
-  animation: check-box 600ms;
-  animation-fill-mode: both;
+  margin: 0;
 }
 .bloc .menu__recette__content:hover .menu__recette__check span {
   transform: rotate(3turn);
@@ -1125,7 +1121,7 @@ h3 {
   justify-content: center;
   font-weight: bold;
   padding: 0 0.8rem 0.6rem;
-  transform: translateX(0);
+  transition: transform 600ms ease-in-out;
 }
 .bloc .menu__recette__check {
   background-color: #99e2d0;
@@ -1136,6 +1132,7 @@ h3 {
   font-size: 1.2rem;
   color: white;
   margin-right: -20%;
+  transition: margin 600ms;
 }
 @media screen and (min-width: 275px) and (max-width: 366px) {
   .bloc .menu__recette__check {
