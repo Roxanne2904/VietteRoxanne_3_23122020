@@ -49,3 +49,9 @@
 * les blocs de la section fonctionnement ne sont plus dupliqués.
 * Les boutons aussi ont été modifié. Eux aussi ne sont plus dupliqués.
 * le bug des coeurs sur les pages a été corrigé. 
+
+28.03.2021
+
+* la checkbox a maintenant un "transition" à la place d'une animation;
+  - grâce à cela on a un ":hover-out" qui fonctionne correctement
+* la transition se fait maintenant grâce à un width et non une margin-left;

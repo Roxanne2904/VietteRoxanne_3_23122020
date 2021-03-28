@@ -2,21 +2,21 @@
   margin: $no-margin;
   width: 100%;
   overflow: hidden;
-  height: 16rem;
-  @include xsm {
-    height: 13rem;
+  @include md {
+    height: 31rem;
   }
-  @include sm {
-    height: inherit;
-  }
-  @include md-and-lg {
+  @include lg {
     height: 30rem;
   }
   &--change {
+    height: 17rem;
+    @include xsm {
+      height: 13rem;
+    }
     @include sm {
       height: 25rem;
     }
-    @include md-and-lg {
+    @include md {
       height: 30rem;
     }
     @include xl {
@@ -25,18 +25,21 @@
   }
   &__photo {
     width: 100%;
-    @include md-and-lg {
+    @include md {
       transform: translateY(-10%);
     }
-    @include xl {
+    @include lg {
       transform: translateY(-25%);
     }
     &--change {
       transform: translateY(-30%);
-      @include sm {
-        transform: translateY(-28%);
+      @include md {
+        transform: translateY(-34%);
       }
-      @include md-and-lg {
+      @include lg {
+        transform: translateY(-40%);
+      }
+      @include xl {
         transform: translateY(-35%);
       }
     }
@@ -66,14 +69,19 @@
         font-size: $xsm-size-pages-titles;
         padding-top: $xsm-paddingtop-menu-title;
       }
-      @include md-and-lg {
-        font-size: $md-size-pages-titles;
+      @include sm {
         justify-content: center;
+      }
+      @include md {
+        font-size: $md-size-pages-titles;
       }
       &__txt {
         margin-left: 1rem;
-        @include md-and-lg {
-          margin-left: -10rem;
+        @include sm {
+          margin-left: -6rem;
+        }
+        @include md {
+          margin-left: -15rem;
         }
       }
     }
@@ -85,8 +93,11 @@
       @include xsm {
         right: 1rem;
       }
-      @include md-and-lg {
-        right: -10rem;
+      @include sm {
+        right: -6rem;
+      }
+      @include md {
+        right: -15rem;
       }
       &__icone1 {
         position: absolute;
@@ -109,9 +120,13 @@
       padding: $padding-menu-recette;
       position: relative;
       bottom: 2rem;
-      @include md-and-lg {
+      @include sm {
         margin: 0 auto;
-        width: 500px;
+        width: 420px;
+      }
+      @include md {
+        margin: 0 auto;
+        width: 600px;
       }
       &__subtitle {
         align-self: flex-start;
@@ -171,9 +186,15 @@
             transform: translateX(0);
           }
           .menu__recette__check {
-            margin: 0;
+            width: 22%;
+            @include xsm {
+              width: 30%;
+            }
             span {
-              transform: rotate(3turn);
+              transform: translateX(0vh);
+              i {
+                transform: rotate(3turn);
+              }
             }
           }
         }
@@ -206,26 +227,24 @@
       }
       &__check {
         background-color: $color-tertiary;
-        width: 22%;
+        width: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: $icone-menu-check;
         color: $bgd-white;
-        margin-right: -20%;
-        transition: margin 600ms;
-        @include xsm {
-          width: 25%;
-          margin-right: -22%;
-        }
+        transition: width 600ms;
         @include sm {
-          margin-right: -21%;
-          font-size: $sm-icone-menu-check;
+          font-size: 1.4rem;
         }
         span {
           position: relative;
           right: 0.1rem;
           top: 0.1rem;
+          transform: translateX(3vh);
+          transition: transform 500ms ease;
+        }
+        i {
           transition: transform 800ms;
         }
       }

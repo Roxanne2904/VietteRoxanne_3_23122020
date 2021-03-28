@@ -8,7 +8,7 @@
   &__title {
     font-weight: normal;
     font-size: $size-footer-title;
-    @include md-and-lg {
+    @include md {
       font-size: $md-size-footer-title;
     }
   }
@@ -20,7 +20,7 @@
     padding-bottom: 0.6rem;
     font-size: 1rem;
     transition: all 500ms;
-    @include md-and-lg {
+    @include md {
       font-size: $md-size-footer;
     }
     &:hover {
@@ -43,7 +43,7 @@
       @include sm {
         margin-right: $sm-margin-footer-icones;
       }
-      @include md-and-lg {
+      @include md {
         font-size: $md-size-footer-icone;
       }
       &--spé {

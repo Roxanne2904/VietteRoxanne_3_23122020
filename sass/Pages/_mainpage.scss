@@ -29,14 +29,14 @@
     padding: nth($padding-section, 1) nth($padding-section, 2)
       nth($padding-section, 3) 1.8rem;
     background-color: $bgd-white;
-    @include md-and-lg {
+    @include md {
       padding: nth($padding-section, 1) nth($padding-section, 2) 0 1.8rem;
     }
     @include xl {
       padding: nth($padding-section, 1) nth($padding-section, 2) 2rem 1.8rem;
     }
     &__title {
-      @include md-and-lg {
+      @include md {
         position: relative;
         right: 6rem;
         margin-bottom: 2.5rem;
@@ -127,7 +127,7 @@
 
 /*Restaurant*/
 .wrapper__restaurant {
-  @include md-and-lg {
+  @include md {
     margin: 0 auto;
     width: 650px;
   }
@@ -141,7 +141,7 @@
     @include sm {
       padding: $sm-padding-restau-section;
     }
-    @include md-and-lg {
+    @include md {
       background-color: transparent;
     }
     @include xl {
@@ -187,7 +187,7 @@
           width: 100%;
           height: $height-bloc-restau;
           position: relative;
-          @include md-and-lg {
+          @include md {
             height: $md-height-bloc-restau;
           }
           @include xl {

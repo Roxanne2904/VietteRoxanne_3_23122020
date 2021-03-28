@@ -48,8 +48,14 @@
 }
 
 /*medium*/
-@mixin md-and-lg {
+@mixin md {
   @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+/*large*/
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg-min}) {
     @content;
   }
 }

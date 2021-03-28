@@ -1,15 +1,15 @@
 @font-face {
   font-family: "shrikhandregular";
-  src: url("../font/shrikhand-regular-webfont.woff2") format("woff2"),
-    url("../font/shrikhand-regular-webfont.woff") format("woff");
+  src: url("../../font/shrikhand-regular-webfont.woff2") format("woff2"),
+    url("../../font/shrikhand-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "robotoregular";
-  src: url("../font/roboto-regular-webfont.woff2") format("woff2"),
-    url("../font/roboto-regular-webfont.woff") format("woff");
+  src: url("../../font/roboto-regular-webfont.woff2") format("woff2"),
+    url("../../font/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,7 @@ body {
         overflow: hidden;
         margin: 0 auto;
         width: 160px;
-        @include xl {
+        @include lg {
           width: 250px;
         }
         span {
@@ -58,7 +58,7 @@ body {
           opacity: 0;
           animation: txt-loading 3000ms 500ms ease-in-out;
           animation-fill-mode: both;
-          @include xl {
+          @include lg {
             font-size: 1.9rem;
           }
         }
