@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("../../font/shrikhand-regular-webfont.woff2") format("woff2"),
+    url("../../font/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("../../font/roboto-regular-webfont.woff2") format("woff2"),
+    url("../../font/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: $no-margin;
+  font-family: "robotoregular";
+  width: auto;
+}
+
+body {
+  .bloc {
+    &__loading-spinner {
+      position: fixed;
+      top: 40%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(0vh);
+      animation: bye-loading 1000ms 3500ms;
+      animation-fill-mode: forwards;
+      &__txt {
+        position: relative;
+        font-family: "shrikhandregular";
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        padding: 2rem;
+        margin: 0 auto;
+        width: 220px;
+        border-radius: 50%;
+        @include lg {
+          width: 250px;
+        }
+        &__logo {
+          background-color: rgba(19, 19, 19, 0.863);
+          color: $bgd-white;
+          width: 75%;
+          font-size: 1.4rem;
+          display: block;
+          padding: 0.7rem;
+          border: rgb(110, 110, 110) solid 0.2rem;
+          border-radius: 50%;
+          transform-origin: left;
+          transform: translateX(-101%) scaleY(0);
+          opacity: 0;
+          animation: txt-loading 3000ms 500ms ease-in-out;
+          animation-fill-mode: both;
+          @include lg {
+            font-size: 1.9rem;
+            padding: 1rem;
+          }
+        }
+        &__bgd {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          border-radius: 50%;
+          box-shadow: inset 0 0 17px 15px $bgd-white;
+        }
+      }
+      &__content {
+        display: flex;
+        justify-content: center;
+        margin-top: -0.8rem;
+        z-index: 1;
+        @include animation-dots($animation-dot-spinner);
+      }
+    }
+    &__main {
+      animation: bloc-main 500ms 4000ms;
+      animation-fill-mode: both;
+      opacity: 1;
+    }
+  }
+}
+
+main {
+  button {
+    font-size: $size-button-input;
+    font-family: "robotoregular";
+    @include xsm {
+      font-size: 0.95rem;
+    }
+    @include xl {
+      font-size: 1.2rem;
+    }
+  }
+  input {
+    font-size: $size-button-input;
+  }
+}
+.main__pages {
+  @include xl {
+    margin: 0 auto;
+    width: 992px;
+  }
+}
+h1 {
+  font-family: "shrikhandregular";
+  font-size: $size-title-primary;
+  @include xl {
+    font-size: $xl-size-title-primary;
+  }
+}
+h2 {
+  font-size: $size-title-secondary;
+  @include xl {
+    font-size: 1.8rem;
+  }
+}
+h3 {
+  font-size: $size-title-tertiary;
+}
+.footer__title {
+  font-family: "shrikhandregular";
+}

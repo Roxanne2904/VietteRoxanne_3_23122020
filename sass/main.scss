@@ -1,0 +1,19 @@
+/*Utils*/
+@import "./Utils/variables.scss";
+@import "./Utils/fonctions.scss";
+@import "./Utils/mixins.scss";
+@import "./Utils/keyframes.scss";
+
+/*Base-(police, font-size)*/
+@import "./Base/base.scss";
+
+/*Components(composants)*/
+@import "./Components/input-et-bouton.scss";
+
+/*Layout*(les blocs BEM, ex: header et footer)*/
+@import "./Layouts/header.scss";
+@import "./Layouts/footer.scss";
+
+/*Pages*/
+@import "./Pages/mainpage.scss";
+@import "./Pages/pages.scss";

@@ -1,0 +1,58 @@
+.footer {
+  background-color: $bgd-footer;
+  color: $colortxt-footer;
+  padding: $padding-footer;
+  @include sm {
+    @include footer-center;
+  }
+  &__title {
+    font-weight: normal;
+    font-size: $size-footer-title;
+    @include md {
+      font-size: $md-size-footer-title;
+    }
+  }
+  &__ul {
+    list-style-type: none;
+    padding: $no-padding;
+  }
+  &__li {
+    padding-bottom: 0.6rem;
+    font-size: 1rem;
+    transition: all 500ms;
+    @include md {
+      font-size: $md-size-footer;
+    }
+    &:hover {
+      color: $color-tertiary;
+      transform: scaleY(1.2);
+    }
+    a {
+      @include links;
+      color: $bgd-white;
+      display: block;
+      &:hover {
+        color: $color-tertiary;
+      }
+    }
+    &-icone {
+      display: inline-block;
+      font-size: $icone-footer;
+      margin-right: $padding-icone-footer;
+      transform: rotate(-15deg);
+      @include sm {
+        margin-right: $sm-margin-footer-icones;
+      }
+      @include md {
+        font-size: $md-size-footer-icone;
+      }
+      &--spé {
+        margin-right: $padding-icone-footer--spé;
+        transform: rotate(0deg);
+        @include sm {
+          margin-right: $sm-margin-footer-icone-spé;
+        }
+      }
+    }
+  }
+}

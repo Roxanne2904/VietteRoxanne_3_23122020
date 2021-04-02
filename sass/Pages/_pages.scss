@@ -1,0 +1,233 @@
+.image {
+  margin: $no-margin;
+  width: 100%;
+  overflow: hidden;
+  @include md {
+    height: 31rem;
+  }
+  @include lg {
+    height: 30rem;
+  }
+  &--change {
+    height: 17rem;
+    @include xsm {
+      height: 13rem;
+    }
+    @include sm {
+      height: 25rem;
+    }
+    @include md {
+      height: 30rem;
+    }
+    @include xl {
+      height: 35rem;
+    }
+  }
+  &__photo {
+    width: 100%;
+    @include lg {
+      transform: translateY(-25%);
+    }
+    &--change {
+      transform: translateY(-30%);
+      @include md {
+        transform: translateY(-34%);
+      }
+      @include lg {
+        transform: translateY(-40%);
+      }
+      @include xl {
+        transform: translateY(-35%);
+      }
+    }
+  }
+}
+.bloc {
+  background-color: $bgd-accueil;
+  .menu {
+    background-color: $bgd-accueil;
+    flex-direction: column;
+    border-radius: $radius-menu;
+    padding-bottom: 0.5rem;
+    &__title {
+      font-family: "shrikhandregular";
+      font-size: $size-pages-titles;
+      background-color: $bgd-accueil;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: $no-margin;
+      border-radius: $radius-menu;
+      padding-top: $paddingtop-menu-title;
+      position: relative;
+      bottom: 2.5rem;
+      @include xsm {
+        font-size: $xsm-size-pages-titles;
+        padding-top: $xsm-paddingtop-menu-title;
+      }
+      @include sm {
+        justify-content: center;
+      }
+      @include md {
+        font-size: $md-size-pages-titles;
+      }
+      &__txt {
+        margin-left: 1rem;
+        @include sm {
+          margin-left: -6rem;
+        }
+        @include md {
+          margin-left: -15rem;
+        }
+      }
+    }
+    &__heart {
+      position: relative;
+      bottom: 0.3rem;
+      right: 2rem;
+      font-family: "robotoregular";
+      @include xsm {
+        right: 1rem;
+      }
+      @include sm {
+        right: -6rem;
+      }
+      @include md {
+        right: -15rem;
+      }
+      &__icone1 {
+        position: absolute;
+        bottom: 0;
+        @include normal-hearts;
+        color: $bgd-accueil;
+        opacity: 1;
+        transition: opacity 800ms;
+        &:hover {
+          opacity: 0;
+        }
+      }
+      &__icone2 {
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-image: -webkit-gradient(
+          linear,
+          50% 0%,
+          50% 100%,
+          color-stop(0%, $color-primary),
+          color-stop(100%, $color-secondary)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &__recette {
+      padding: $padding-menu-recette;
+      position: relative;
+      bottom: 2rem;
+      @include sm {
+        margin: 0 auto;
+        width: 420px;
+      }
+      @include md {
+        margin: 0 auto;
+        width: 600px;
+      }
+      &__subtitle {
+        align-self: flex-start;
+        margin-top: $margintop-menu-subtitle;
+        margin-bottom: $no-margin;
+        color: $colortxt-input;
+      }
+      &__underscore {
+        &__icone {
+          display: inline-block;
+          transform: scale(3, 1);
+          position: relative;
+          left: 0.9rem;
+          bottom: 0.3rem;
+          color: $color-tertiary;
+        }
+      }
+      &__content {
+        display: flex;
+        margin-bottom: $marginbot-menu-content;
+        font-size: $size-menu-txt;
+        overflow: hidden;
+        border-radius: $radius-menu-content-bloc;
+        background-color: $bgd-white;
+        @include animation-bloc-menu($animation-bloc-menu);
+        @include bloc-shadow;
+        cursor: pointer;
+        @include xsm {
+          font-size: $xsm-size-menu-txt;
+        }
+        &:hover {
+          .menu__recette__price {
+            transform: translateX(0);
+          }
+          .menu__recette__check {
+            width: 22%;
+            @include xsm {
+              width: 30%;
+            }
+            span {
+              transform: translateX(0vh);
+              i {
+                transform: rotate(3turn);
+              }
+            }
+          }
+        }
+      }
+      &__text {
+        background-color: $bgd-white;
+        width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: $padding-menu-blocs;
+        strong {
+          font-size: $size-menu-strong-txt;
+          @include xsm {
+            font-size: $xsm-size-menu-strong-txt;
+          }
+        }
+        span {
+          color: $colortxt-input;
+        }
+      }
+      &__price {
+        width: 10%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-weight: bold;
+        padding: 0 0.8rem nth($padding-menu-blocs, 3);
+        transition: transform 600ms ease-in-out;
+      }
+      &__check {
+        background-color: $color-tertiary;
+        width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $icone-menu-check;
+        color: $bgd-white;
+        transition: width 600ms;
+        @include sm {
+          font-size: 1.4rem;
+        }
+        span {
+          position: relative;
+          right: 0.1rem;
+          top: 0.1rem;
+          transform: translateX(3vh);
+          transition: transform 500ms ease;
+        }
+        i {
+          transition: transform 800ms;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+/*animation pour la chexk box*/
+@keyframes check-box {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+    margin: $no-margin;
+  }
+}
+@keyframes txt-box {
+  from {
+    transform: scaleX(1.01);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/*Animation des blocs menu-content*/
+@keyframes content-anim {
+  from {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*Animation pour faire apparaitre la main page de index.html*/
+@keyframes bloc-main {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Animation pour les dots*/
+@keyframes loading-spinner {
+  from {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(2.5);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+/*Animation du texte du loading spinner*/
+@keyframes txt-loading {
+  from {
+    opacity: 0;
+    transform: translateX(-101%) scaleY(0);
+  }
+  5% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.75;
+    transform: translateX(0);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(101%) scaleY(0);
+  }
+}
+/*Faire disparaitre le loading spinner*/
+@keyframes bye-loading {
+  from {
+    opacity: 0;
+    transform: translateX(0vh);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100vh);
+  }
+}
