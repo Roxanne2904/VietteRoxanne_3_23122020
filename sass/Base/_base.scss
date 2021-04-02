@@ -26,7 +26,7 @@ body {
   .bloc {
     &__loading-spinner {
       position: fixed;
-      top: 45%;
+      top: 40%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -35,22 +35,26 @@ body {
       animation: bye-loading 1000ms 3500ms;
       animation-fill-mode: forwards;
       &__txt {
+        position: relative;
         font-family: "shrikhandregular";
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         text-align: center;
-        width: 40%;
         overflow: hidden;
+        padding: 2rem;
         margin: 0 auto;
-        width: 160px;
+        width: 220px;
+        border-radius: 50%;
         @include lg {
           width: 250px;
         }
-        span {
+        &__logo {
           background-color: rgba(19, 19, 19, 0.863);
           color: $bgd-white;
-          font-size: 1.2rem;
+          width: 75%;
+          font-size: 1.4rem;
           display: block;
-          padding: 0.5rem;
+          padding: 0.7rem;
           border: rgb(110, 110, 110) solid 0.2rem;
           border-radius: 50%;
           transform-origin: left;
@@ -60,45 +64,25 @@ body {
           animation-fill-mode: both;
           @include lg {
             font-size: 1.9rem;
+            padding: 1rem;
           }
+        }
+        &__bgd {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          border-radius: 50%;
+          box-shadow: inset 0 0 17px 15px $bgd-white;
         }
       }
       &__content {
         display: flex;
         justify-content: center;
-        margin-top: 0.7rem;
-        &1 {
-          @include animation-dots;
-          margin-right: 1rem;
-          background: linear-gradient(
-            to right,
-            lighten($color-secondary, 10%),
-            30%,
-            $color-secondary
-          );
-          animation: loading-spinner $A-duration 100ms 2 ease-in-out;
-        }
-        &2 {
-          @include animation-dots;
-          margin-right: 1rem;
-          background: linear-gradient(
-            to right,
-            $color-secondary,
-            30%,
-            $color-primary
-          );
-          animation: loading-spinner $A-duration 500ms 2 ease-in-out;
-        }
-        &3 {
-          @include animation-dots;
-          background: linear-gradient(
-            to right,
-            $color-primary,
-            40%,
-            darken($color-primary, 13%)
-          );
-          animation: loading-spinner $A-duration 800ms 2 ease-in-out;
-        }
+        margin-top: -0.8rem;
+        z-index: 1;
+        @include animation-dots($animation-dot-spinner);
       }
     }
     &__main {

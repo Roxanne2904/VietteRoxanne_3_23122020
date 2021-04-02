@@ -53,7 +53,9 @@
     @include button;
     outline-style: none;
     z-index: 1;
+    transition: box-shadow 1000ms;
     &:hover {
+      box-shadow: 0rem 0.3rem 0.3rem darken($bgd-input, 15%);
       .accueil__btn__elemnt__bgd {
         opacity: 1;
       }
@@ -91,7 +93,9 @@
     @include button;
     outline-style: none;
     z-index: 1;
+    transition: box-shadow 1000ms;
     &:hover {
+      box-shadow: 0rem 0.3rem 0.3rem darken($bgd-input, 15%);
       .menu__button__elemnt__bgd {
         opacity: 1;
       }

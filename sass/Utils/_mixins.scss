@@ -1,12 +1,28 @@
 @mixin bloc-shadow {
   box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
 }
-@mixin animation-dots {
-  width: $size-dot;
-  height: $size-dot;
-  border-radius: 50%;
-  animation-fill-mode: both;
-  transform: scale(0);
+@mixin animation-dots($map) {
+  @each $bloc, $values in $map {
+    &#{$bloc} {
+      margin-right: map-get($values, margin);
+      width: $size-dot;
+      height: $size-dot;
+      border-radius: 50%;
+      animation-fill-mode: both;
+      transform: scale(0);
+      background: linear-gradient(
+        to right,
+        map-get($values, color1),
+        map-get($values, number),
+        map-get($values, color2)
+      );
+      animation: loading-spinner
+        $A-duration
+        map-get($values, delay)
+        2
+        ease-in-out;
+    }
+  }
 }
 /*BUTTON*/
 @mixin button {
@@ -30,6 +46,16 @@
 }
 @mixin links {
   text-decoration: none;
+}
+@mixin animation-bloc-menu($map) {
+  @each $bloc, $delay in $map {
+    &#{$bloc} {
+      animation: content-anim 1000ms map-get($delay, delay);
+      opacity: 1;
+      transform: translateY(0);
+      animation-fill-mode: both;
+    }
+  }
 }
 /*------------------------------*/
 /*MEDIAS QUERIES*/

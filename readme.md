@@ -55,3 +55,10 @@
 * la checkbox a maintenant un "transition" à la place d'une animation;
   - grâce à cela on a un ":hover-out" qui fonctionne correctement
 * la transition se fait maintenant grâce à un width et non une margin-left;
+
+02.04.2021
+
+* animation des dots du loading spinner + des animations menu réalisé avec des boucles !
+* ajout du webkit-gradient pour les navigateurs qui ne traduisent pas linear-gradient.
+* amélioration du logo du loading spinner (on ne distingue plus le bloc derrière lequel il
+  diparait)

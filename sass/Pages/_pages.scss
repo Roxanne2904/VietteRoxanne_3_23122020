@@ -25,9 +25,6 @@
   }
   &__photo {
     width: 100%;
-    @include md {
-      transform: translateY(-10%);
-    }
     @include lg {
       transform: translateY(-25%);
     }
@@ -112,6 +109,13 @@
       }
       &__icone2 {
         background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-image: -webkit-gradient(
+          linear,
+          50% 0%,
+          50% 100%,
+          color-stop(0%, $color-primary),
+          color-stop(100%, $color-secondary)
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -151,36 +155,12 @@
         overflow: hidden;
         border-radius: $radius-menu-content-bloc;
         background-color: $bgd-white;
+        @include animation-bloc-menu($animation-bloc-menu);
         @include bloc-shadow;
         cursor: pointer;
         @include xsm {
           font-size: $xsm-size-menu-txt;
         }
-        &1 {
-          opacity: 1;
-          transform: translateY(0);
-          animation: content-anim 1000ms 100ms;
-          animation-fill-mode: both;
-        }
-        &2 {
-          opacity: 1;
-          transform: translateY(0);
-          animation: content-anim 1000ms 500ms;
-          animation-fill-mode: both;
-        }
-        &3 {
-          opacity: 1;
-          transform: translateY(0);
-          animation: content-anim 1000ms 800ms;
-          animation-fill-mode: both;
-        }
-        &4 {
-          opacity: 1;
-          transform: translateY(0);
-          animation: content-anim 1000ms 1100ms;
-          animation-fill-mode: both;
-        }
-
         &:hover {
           .menu__recette__price {
             transform: translateX(0);

@@ -22,6 +22,10 @@
 
 /*Fonctionnement*/
 .wrapper__operation {
+  @include xsm {
+    margin: 0 auto;
+    width: 280px;
+  }
   @include sm {
     @include wrapper-operation;
   }
@@ -273,6 +277,13 @@
               background: -webkit-linear-gradient(
                 $color-primary,
                 $color-secondary
+              );
+              background-image: -webkit-gradient(
+                linear,
+                50% 0%,
+                50% 100%,
+                color-stop(0%, $color-primary),
+                color-stop(100%, $color-secondary)
               );
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
