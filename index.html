@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/prefixed/style.css" />
+  </head>
+
+  <body>
+    <div class="bloc__loading-spinner">
+      <span class="bloc__loading-spinner__txt">
+        <span class="bloc__loading-spinner__txt__logo">Ohmyfood</span>
+        <span class="bloc__loading-spinner__txt__bgd"
+          ><!--bloc bgd shadows--></span
+        >
+      </span>
+      <div class="bloc__loading-spinner__content">
+        <div class="bloc__loading-spinner__content1"><!--dot 1--></div>
+        <div class="bloc__loading-spinner__content2"><!--dot 2--></div>
+        <div class="bloc__loading-spinner__content3"><!--dot 3--></div>
+      </div>
+    </div>
+
+    <div class="bloc__main">
+      <header class="header">
+        <h1 class="header__title">Ohmyfood</h1>
+      </header>
+
+      <main>
+        <div class="localisation">
+          <form class="localisation__form" method="POST">
+            <p class="localisation__content">
+              <span class="localisation__icone"
+                ><i class="fas fa-map-marker-alt"></i
+              ></span>
+              <input
+                class="localisation__input"
+                type="search"
+                name="lieu"
+                placeholder="Paris, Belleville"
+              />
+            </p>
+          </form>
+        </div>
+
+        <section class="accueil">
+          <h2 class="accueil__title">Réservez le menu qui vous convient</h2>
+          <h3 class="accueil__content">
+            Découvrez des restaurants d'exception,<br />
+            séléctionnés par nos soins.
+          </h3>
+          <div class="accueil__btn">
+            <button class="accueil__btn__elemnt">
+              Explorer nos restaurants
+              <span class="accueil__btn__elemnt__bgd">
+                <!--bgd__btn__transition-->
+              </span>
+            </button>
+          </div>
+        </section>
+
+        <div class="wrapper__operation">
+          <section class="operation">
+            <h2 class="operation__title">Fonctionnement</h2>
+            <div class="operation__content">
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>1</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i
+                      class="fas fa-mobile-alt operation__bloc-content-icone--phone"
+                    ></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Choisissez un restaurant
+                  </h3>
+                </div>
+              </div>
+
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>2</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i class="fas fa-list-ul"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Composez votre menu
+                  </h3>
+                </div>
+              </div>
+
+              <div class="operation__bloc">
+                <div class="operation__bloc-content">
+                  <div class="operation__bloc-content-number">
+                    <span>3</span>
+                  </div>
+                  <span class="operation__bloc-content-icone"
+                    ><i class="fas fa-store"></i
+                  ></span>
+                  <h3 class="operation__bloc-content-txt">
+                    Dégustez au restaurant
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="wrapper__restaurant">
+          <section class="restaurant">
+            <h2 class="restaurant__title">Restaurants</h2>
+            <div class="restaurant__bloc">
+              <figure class="restaurant__bloc__content">
+                <a
+                  class="restaurant__bloc__content__link"
+                  href="./index-01.html"
+                >
+                  <div class="restaurant__bloc__content-img">
+                    <div class="restaurant__bloc__content-img-etiquette">
+                      Nouveau
+                    </div>
+                    <img
+                      class="restaurant__bloc__content-img-photo"
+                      src="./images/restaurant/restau_(1).jpg"
+                      alt="photo d'une assiette gastronomique"
+                    />
+                  </div>
+                </a>
+
+                <figcaption class="restaurant__bloc__content-title">
+                  <div class="restaurant__bloc__content-title-legend">
+                    <strong>La palette du goût</strong><br />
+                    Ménilmontant
+                  </div>
+                  <div class="restaurant__bloc__content-title-heart">
+                    <span class="restaurant__bloc__content-title-heart-icone1"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                    <span class="restaurant__bloc__content-title-heart-icone2"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="restaurant__bloc__content">
+                <a
+                  class="restaurant__bloc__content__link"
+                  href="./index-02.html"
+                >
+                  <div class="restaurant__bloc__content-img">
+                    <div class="restaurant__bloc__content-img-etiquette">
+                      Nouveau
+                    </div>
+                    <img
+                      class="restaurant__bloc__content-img-photo"
+                      src="./images/restaurant/restau_(3).jpg"
+                      alt="photo d'une assiette garnie vue de-dessus"
+                    />
+                  </div>
+                </a>
+                <figcaption class="restaurant__bloc__content-title">
+                  <div class="restaurant__bloc__content-title-legend">
+                    <strong>La note enchantée</strong><br />
+                    Charonne
+                  </div>
+                  <div class="restaurant__bloc__content-title-heart">
+                    <span class="restaurant__bloc__content-title-heart-icone1"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                    <span class="restaurant__bloc__content-title-heart-icone2"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="restaurant__bloc__content">
+                <a
+                  class="restaurant__bloc__content__link"
+                  href="./index-03.html"
+                >
+                  <div class="restaurant__bloc__content-img">
+                    <div class="restaurant__bloc__content-img-etiquette--none">
+                      Nouveau
+                    </div>
+                    <img
+                      class="restaurant__bloc__content-img-photo"
+                      src="./images/restaurant/restau_(4).jpg"
+                      alt="photo d'une assiette de légumes"
+                    />
+                  </div>
+                </a>
+                <figcaption class="restaurant__bloc__content-title">
+                  <div
+                    class="restaurant__bloc__content-title-legend restaurant__bloc__content-title-legend--spe"
+                  >
+                    <strong>À la Française</strong><br />
+                    Cité Rouge
+                  </div>
+                  <div class="restaurant__bloc__content-title-heart">
+                    <span class="restaurant__bloc__content-title-heart-icone1"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                    <span class="restaurant__bloc__content-title-heart-icone2"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="restaurant__bloc__content">
+                <a
+                  class="restaurant__bloc__content__link"
+                  href="./index-04.html"
+                >
+                  <div class="restaurant__bloc__content-img">
+                    <div class="restaurant__bloc__content-img-etiquette--none">
+                      Nouveau
+                    </div>
+                    <img
+                      class="restaurant__bloc__content-img-photo"
+                      src="./images/restaurant/restau_(2).jpg"
+                      alt="photo d'une assiette rectangulaire de poisson"
+                    />
+                  </div>
+                </a>
+                <figcaption class="restaurant__bloc__content-title">
+                  <div class="restaurant__bloc__content-title-legend">
+                    <strong>Le délice des sens</strong><br />
+                    Folie-Méricourt
+                  </div>
+                  <div class="restaurant__bloc__content-title-heart">
+                    <span class="restaurant__bloc__content-title-heart-icone1"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                    <span class="restaurant__bloc__content-title-heart-icone2"
+                      ><i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <h2 class="footer__title">Ohmyfood</h2>
+        <ul class="footer__ul">
+          <li class="footer__li">
+            <span class="footer__li-icone footer__li-icone--spé"
+              ><i class="fas fa-utensils"></i></span
+            >Proposer un restaurant
+          </li>
+          <li class="footer__li">
+            <span class="footer__li-icone footer__li-icone--help"
+              ><i class="fas fa-hands-helping"></i></span
+            >Devenir partenaire
+          </li>
+          <li class="footer__li">Mentions légales</li>
+          <li class="footer__li">
+            <a href="mailto:roxanne-viette@hotmail.fr">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

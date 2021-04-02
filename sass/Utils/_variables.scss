@@ -1,66 +1,170 @@
-/*Size*/
-$size-title-primary: 6rem;
-$size-title-secondary: 4rem;
-$size-title-tertiary: 2.5rem;
-$size-button-input: 2.8rem;
-$size-restau-txtcontent: 3.3rem;
-$size-opera-number: 2.2rem;
+/*SIZE*/
+$size-dot: 0.5rem;
+$size-title-primary: 2rem;
+$size-title-secondary: 1.5rem;
+$size-title-tertiary: 1.1rem;
+$size-pages-titles: 1.8rem;
+$size-button-input: 1.08rem;
+$size-restau-txtcontent: 1.2rem;
+$size-title-etiquette: 0.95rem;
+$size-opera-number: 1rem;
+$size-opera-txt: 1.05rem;
+$size-cercle-dot: 1.7rem;
+$size-menu-txt: 1rem;
+$size-menu-strong-txt: 1.1rem;
 $size-footer-txt: 2.5rem;
-$size-menu-txt: 2.3rem;
-$size-menu-strong-txt: 2.7rem;
-$icone-header-arrow: 3.5rem;
-$icone-heart: 4rem;
-$icone-operation: 2.8rem;
-$icone-footer: 2.2rem;
-$icone-menu-check: 2.6rem;
+$size-footer-title: 1.15rem;
+$icone-header-arrow: 1.3rem;
+$icone-heart: 1.5rem;
+$icone-operation: 1rem;
+$icone-operation-phone: 1.3rem;
+$icone-footer: 0.8rem;
+$icone-menu-check: 1.2rem;
 
-/*padding*/
+/*-------------------------------*/
+/*SIZE RESPONSIVE*/
+$xsm-icone-header-arrow: 1.1rem;
+$xsm-size-pages-titles: 1.35rem;
+$xsm-size-menu-txt: 0.85rem;
+$xsm-size-menu-strong-txt: 1rem;
+$xsm-size-cercle-dot: 1.2rem;
+$xsm-size-opera-number: 0.7rem;
+$xsm-size-opera-txt: 0.85rem;
+$xsm-size-opera-icone: 0.8rem;
+$xsm-size-opera-phone: 1rem;
+$sm-icone-menu-check: 1.3rem;
+$md-icone-heart: 2rem;
+$md-size-pages-titles: 2.2rem;
+$md-size-footer: 1.2rem;
+$md-size-footer-title: 1.5rem;
+$md-size-footer-icone: 0.9rem;
+$xl-size-opera-txt: 1.15rem;
+$xl-size-title-primary: 3rem;
+/*PADDING*/
 $no-padding: 0;
-/*---------------------------*/
 /*ohmyfood-title and input*/
-$padding-title-and-input: 3rem 5rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
-/*--------------------------*/
-$padding-footer: 3rem 0 4rem 6rem; /*list*/
-$padding-button: 2rem 4rem;
-$padding-accueil: 3rem 6rem 10rem;
-$padding-restau-etiquette: 0.8rem 2rem;
-/*--------------------------*/
+$padding-title-and-input: 1rem 0rem; /* list: nth($nomdelaliste, position de la valeur souhaité)*/
+
+$padding-footer: 0.7rem 0 1rem 1.5rem; /*list*/
+$padding-button: 0.8rem 0.6rem;
+$padding-accueil: 0 1.5rem 4rem;
+$padding-accueil-title: 2.5rem 1rem 0;
+$padding-restau-etiquette: 0.4rem 0.9rem;
 /*restau-legend-text*/
-$padding-restaulegend-content: 2rem;
-$padding-icone-footer: 1.5rem;
-$padding-icone-footer--spé: 2.3rem;
+$padding-restaulegend-content: 1rem;
+$padding-restaulegend-heart: 0.2rem;
+$padding-icone-footer: 0.8rem;
+$padding-icone-footer--spé: 1.16rem;
 $padding-opera-element: 2.5rem;
+$padding-section: 2rem 1rem 2rem 1rem;
 /*menu*/
-$paddingtop-menu-title: 3rem;
+$paddingtop-menu-title: 2rem;
 $padding-menu-content: 1rem;
-$padding-menu-blocs: 0.7rem 0 1rem 1.5rem;
-$padding-menu-recette: 0rem 2.5rem;
-$padding-menu-button: 5.2rem 10rem 0;
+$padding-menu-blocs: 0.6rem 0 0.6rem 1rem;
+$padding-menu-recette: 0rem 1rem;
+$padding-menu-button: 2.5rem;
 
-/*margin*/
+/*-------------------------------*/
+/*PADDING RESPONSIVE*/
+$xsm-paddingtop-menu-title: 1.3rem;
+$sm-padding-restau-section: nth($padding-section, 1) 3.5rem
+  nth($padding-section, 3) 3.5rem;
+$sm-padding-footer: nth($padding-footer, 1) nth($padding-footer, 2)
+  nth($padding-footer, 3) 0;
+/*-------------------------------*/
+/*MARGIN*/
 $no-margin: 0;
-$margin-section: 3.5rem 2rem 8rem 2rem;
-$margintop-menu-subtitle: 5rem;
-$maringtop-bot-menu-content: 1.5rem 0 2.3rem 0;
+$margintop-menu-subtitle: 1.5rem;
+$marginbot-menu-content: 1rem;
+$margin-opera-icone: 1.5rem 1.5rem 1.5rem 0;
 
-/*border*/
+/*-------------------------------*/
+/*MARGIN RESPONSIVE*/
+/*xsm*/
+$xsm-margin-opera-icone: nth($margin-opera-icone, 1) 1rem
+  nth($margin-opera-icone, 3) nth($margin-opera-icone, 4);
+/*sm*/
+$sm-margin-footer-icones: 0.25rem;
+$sm-margin-footer-icone-spé: 0.5rem;
+
+/*-------------------------------*/
+/*BORDER-RADIUS*/
 $radius-button: 5rem;
-$radius-etiquette: 0.5rem;
-$radius-bloc-restau: 4rem;
-$radius-menu: 5rem 5rem 0 0;
-$radius-menu-content-bloc: 2rem;
+$radius-etiquette: 0.2rem;
+$radius-bloc-restau: 1.2rem;
+$radius-menu: 2rem 2rem 0 0;
+$radius-menu-content-bloc: 1rem;
 
-/*color*/
+/*-------------------------------*/
+/*COLOR*/
 $bgd-white: white;
 $color-primary: #9356dc;
+$color-primary-transparent: #9256dc2f;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-$bgd-input: rgb(219, 215, 206);
-$bgd-accueil: rgb(248, 248, 236);
+$bgd-input: rgb(238, 235, 227);
+$bgd-accueil: rgb(247, 247, 240);
 $bgd-footer: rgb(32, 32, 32);
 $colortxt-input: rgb(95, 95, 95);
 $colortxt-button: $bgd-white;
 $colortxt-footer: $bgd-white;
 
-/*height bloc*/
-$height-bloc-restau: 32rem;
+/*-------------------------------*/
+/*HEIGHT BLOC*/
+$height-bloc-restau: 11.2rem;
+/*HEIGHT RESPONSIVE*/
+$md-height-bloc-restau: 17rem;
+$xl-height-bloc-restau: 13rem;
+
+/*-------------------------------*/
+/*ANIMATION*/
+$A-duration: 1550ms;
+
+/*-------------------------------*/
+/*RESPONSIVE*/
+$screen-xsm-min: 275px;
+$screen-xsm-max: 366px;
+
+$screen-sm-min: 450px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+/*MAPS*/
+$animation-dot-spinner: (
+  1: (
+    margin: 1rem,
+    color1: lighten($color-secondary, 10%),
+    number: 30%,
+    color2: $color-secondary,
+    delay: 100ms,
+  ),
+  2: (
+    margin: 1rem,
+    color1: $color-secondary,
+    number: 30%,
+    color2: $color-primary,
+    delay: 500ms,
+  ),
+  3: (
+    margin: 0,
+    color1: $color-primary,
+    number: 30%,
+    color2: darken($color-primary, 13%),
+    delay: 800ms,
+  ),
+);
+$animation-bloc-menu: (
+  1: (
+    delay: 100ms,
+  ),
+  2: (
+    delay: 500ms,
+  ),
+  3: (
+    delay: 900ms,
+  ),
+  4: (
+    delay: 1300ms,
+  ),
+);

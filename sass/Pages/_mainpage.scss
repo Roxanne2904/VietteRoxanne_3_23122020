@@ -5,127 +5,291 @@
   padding: $padding-accueil;
   &__title {
     margin-top: $no-padding;
-    padding-top: nth($padding-title-and-input, 1);
+    padding: $padding-accueil-title;
     font-weight: bolder;
   }
   &__content {
-    margin-bottom: 5rem;
-    font-size: 1.3rem;
+    margin-bottom: 2.2rem;
     color: $colortxt-input;
+    @include xsm {
+      font-size: 1rem;
+    }
+    @include xl {
+      font-size: 1.3rem;
+    }
   }
 }
 
 /*Fonctionnement*/
-.operation {
-  margin: nth($margin-section, 1) nth($margin-section, 2)
-    nth($margin-section, 3) 3rem;
-  &__bloc {
-    background-color: $bgd-accueil;
-    display: flex;
-    align-items: center;
-    box-shadow: 0rem 0rem 0.7rem 0.7rem $bgd-accueil;
-    border-radius: $radius-bloc-restau;
-    margin-bottom: $padding-opera-element;
+.wrapper__operation {
+  @include xsm {
+    margin: 0 auto;
+    width: 280px;
   }
-  &__bloc-content {
-    background-color: $bgd-accueil;
-    display: flex;
-    align-items: center;
-    margin: 0.5rem;
-    width: 100%;
-    @include bloc-shadow;
-    border-radius: $radius-bloc-restau;
-    height: 11.5rem;
-    &-number {
-      font-size: $size-opera-number;
-      background-color: $color-primary;
-      width: 4rem;
-      height: 4rem;
-      border-radius: 50%;
-      text-align: center;
-      color: $colortxt-button;
-      margin-right: 1.5rem;
-      position: relative;
-      right: 1.6rem;
-      span {
-        position: absolute;
-        left: 1.35rem;
-        top: 0.5rem;
+  @include sm {
+    @include wrapper-operation;
+  }
+  .operation {
+    padding: nth($padding-section, 1) nth($padding-section, 2)
+      nth($padding-section, 3) 1.8rem;
+    background-color: $bgd-white;
+    @include md {
+      padding: nth($padding-section, 1) nth($padding-section, 2) 0 1.8rem;
+    }
+    @include xl {
+      padding: nth($padding-section, 1) nth($padding-section, 2) 2rem 1.8rem;
+    }
+    &__title {
+      @include md {
+        position: relative;
+        right: 6rem;
+        margin-bottom: 2.5rem;
+      }
+      @include xl {
+        text-align: center;
+        right: 0.5rem;
       }
     }
-    &-icone {
-      color: $colortxt-input;
-      font-size: $icone-operation;
-      margin-right: 2.6rem;
+    &__bloc {
+      background-color: $bgd-accueil;
+      display: flex;
+      align-items: center;
+      box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
+      border-radius: $radius-bloc-restau;
+      margin-bottom: $padding-opera-element;
+      position: relative;
+    }
+    &__bloc-content {
+      @include bloc-shadow;
+      background-color: $bgd-accueil;
+      display: flex;
+      align-items: center;
+      width: 98%;
+      border-radius: $radius-bloc-restau;
+      transition: background-color, 1100ms;
+      &:hover {
+        background-color: $color-primary-transparent;
+        .operation__bloc-content-icone {
+          color: $color-primary;
+        }
+      }
+      &-number {
+        font-size: $size-opera-number;
+        background-color: $color-primary;
+        width: $size-cercle-dot;
+        height: $size-cercle-dot;
+        border-radius: 50%;
+        text-align: center;
+        color: $colortxt-button;
+        margin-right: 0.6rem;
+        position: relative;
+        right: 0.8rem;
+        @include xsm {
+          height: $xsm-size-cercle-dot;
+          width: $xsm-size-cercle-dot;
+          right: 0.5rem;
+          font-size: $xsm-size-opera-number;
+        }
+        span {
+          position: absolute;
+          left: 0.54rem;
+          top: 0.17rem;
+          @include xsm {
+            left: 0.4rem;
+            top: 0.1rem;
+          }
+        }
+      }
+      &-txt {
+        font-size: $size-opera-txt;
+        @include xsm {
+          font-size: $xsm-size-opera-txt;
+        }
+        @include xl {
+          font-size: $xl-size-opera-txt;
+        }
+      }
+      &-icone {
+        color: $colortxt-input;
+        font-size: $icone-operation;
+        margin: $margin-opera-icone;
+        transition: color 1100ms;
+        @include xsm {
+          font-size: $xsm-size-opera-icone;
+          margin: $xsm-margin-opera-icone;
+        }
+        &--phone {
+          font-size: $icone-operation-phone;
+          @include xsm {
+            font-size: $xsm-size-opera-phone;
+          }
+        }
+      }
     }
   }
 }
+
 /*Restaurant*/
-.restaurant {
-  padding: $margin-section;
-  background-color: $bgd-accueil;
-  &__link {
-    display: block;
-    color: black;
-    position: relative;
-    &:link {
-      color: black;
-      text-decoration: none;
-    }
+.wrapper__restaurant {
+  @include md {
+    margin: 0 auto;
+    width: 650px;
   }
-  &__content {
-    background-color: white;
-    margin: $no-margin;
-    overflow: hidden;
-    border-radius: $radius-bloc-restau;
-    margin-bottom: 3rem;
-    @include bloc-shadow;
-    position: relative;
-    &-img {
-      overflow: hidden;
-      width: 100%;
-      height: $height-bloc-restau;
-      position: relative;
-      &-etiquette {
-        background-color: $color-tertiary;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        z-index: 1;
-        font-size: $size-title-tertiary;
-        color: darken($color-tertiary, 40%);
-        padding: $padding-restau-etiquette;
-        border-radius: $radius-etiquette;
-        font-weight: bolder;
-      }
-      &-photo {
-        width: 105%;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -52%);
+  @include xl {
+    margin: 0 auto;
+    width: 950px;
+  }
+  .restaurant {
+    padding: $padding-section;
+    background-color: $bgd-accueil;
+    @include sm {
+      padding: $sm-padding-restau-section;
+    }
+    @include md {
+      background-color: transparent;
+    }
+    @include xl {
+      padding: 1rem;
+      background-color: $bgd-accueil;
+      box-shadow: 0rem 0rem 0.6rem 0.3rem $bgd-accueil;
+      border-radius: 3rem 3rem 0 0;
+      margin-bottom: 2rem;
+    }
+    &__title {
+      @include xl {
+        text-align: center;
+        margin-bottom: 2.5rem;
       }
     }
-  }
-  &__content {
-    &-title {
-      display: flex;
-      height: 10rem;
-      font-size: $size-restau-txtcontent;
-      padding: $padding-restaulegend-content;
-      justify-content: space-between;
-      &-legend {
-        font-weight: normal;
-        color: $colortxt-input;
-        strong {
-          font-weight: bolder;
+    &__bloc {
+      @include xl {
+        height: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &__content {
+        background-color: white;
+        overflow: hidden;
+        border-radius: $radius-bloc-restau;
+        margin: 0 0 3rem 0;
+        @include bloc-shadow;
+        position: relative;
+        @include xl {
+          margin: 0 1rem 3rem 1rem;
+        }
+        &__link {
+          display: block;
           color: black;
+          position: relative;
+          &:link {
+            @include links;
+          }
+        }
+        &-img {
+          overflow: hidden;
+          width: 100%;
+          height: $height-bloc-restau;
+          position: relative;
+          @include md {
+            height: $md-height-bloc-restau;
+          }
+          @include xl {
+            height: $xl-height-bloc-restau;
+          }
+          &-etiquette {
+            background-color: $color-tertiary;
+            position: absolute;
+            top: 0.8rem;
+            right: 0.8rem;
+            z-index: 1;
+            font-size: $size-title-etiquette;
+            color: darken($color-tertiary, 40%);
+            padding: $padding-restau-etiquette;
+            border-radius: $radius-etiquette;
+            box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
+            font-weight: bolder;
+            @include xl {
+              font-size: 1.2rem;
+            }
+            &--none {
+              display: none;
+            }
+          }
+          &-photo {
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -52%);
+            @include xsm {
+              width: 138%;
+            }
+          }
         }
       }
-      &-heart {
-        padding-right: $padding-restaulegend-content;
-        @include normal-hearts;
-        color: $bgd-white;
+      &__content {
+        &-title {
+          display: flex;
+          font-size: $size-restau-txtcontent;
+          padding: $padding-restaulegend-content;
+          justify-content: space-between;
+          @include xl {
+            font-size: 1.5rem;
+          }
+          &-legend {
+            font-weight: normal;
+            color: $colortxt-input;
+            @include xl {
+              padding-right: 8rem;
+            }
+            &--spe {
+              @include xl {
+                padding-right: 10.6rem;
+              }
+            }
+            strong {
+              font-weight: bolder;
+              color: black;
+            }
+          }
+          &-heart {
+            padding-right: $padding-restaulegend-heart;
+            font-size: $icone-heart;
+            position: relative;
+            @include xl {
+              font-size: 1.8rem;
+            }
+            &-icone1 {
+              color: $bgd-white;
+              @include normal-hearts;
+              position: absolute;
+              opacity: 1;
+              transition: opacity 800ms;
+              &:hover {
+                opacity: 0;
+              }
+              &:active {
+                opacity: 0;
+              }
+            }
+            &-icone2 {
+              background: -webkit-linear-gradient(
+                $color-primary,
+                $color-secondary
+              );
+              background-image: -webkit-gradient(
+                linear,
+                50% 0%,
+                50% 100%,
+                color-stop(0%, $color-primary),
+                color-stop(100%, $color-secondary)
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
       }
     }
   }

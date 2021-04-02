@@ -4,8 +4,8 @@
   "description": "P3 openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
+    "sass": "sass --watch ./sass/main.scss:./css/prefixed/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "author": "Viette Roxanne",
   "license": "ISC",
-  "browserslist":"last 4 versions",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Roxanne2904/VietteRoxanne_3_23122020/issues"
   },

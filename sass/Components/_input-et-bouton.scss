@@ -4,9 +4,9 @@
   padding: nth($padding-title-and-input, 1) 0rem;
   justify-content: center;
   background-color: $bgd-input;
-  box-shadow: inset 0rem 0.5rem 1rem darken($bgd-input, 10%);
+  box-shadow: inset 0rem 0.2rem 0.15rem darken($bgd-input, 9%);
   &__form {
-    width: 60%;
+    width: 80%;
   }
   &__content {
     margin: $no-margin;
@@ -17,14 +17,17 @@
     display: block;
     font-size: $size-button-input;
     position: relative;
+    bottom: 0.3rem;
     left: 1.2rem;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
     color: $colortxt-input;
   }
   &__input {
     border: none;
     background-color: $bgd-input;
-    width: 70%;
+    width: 9rem;
+    position: relative;
+    right: 0.5rem;
     &::placeholder {
       color: $colortxt-input;
       font-weight: 600;
@@ -33,6 +36,81 @@
 }
 
 /*button*/
-button {
-  @include button;
+.accueil__btn {
+  @include sm {
+    @include sm-wrapper-button;
+  }
+  @include xsm {
+    margin: 0 auto;
+    width: 235px;
+  }
+  @include xl {
+    width: 400px;
+  }
+  &__elemnt {
+    width: 65%;
+    position: relative;
+    @include button;
+    outline-style: none;
+    z-index: 1;
+    transition: box-shadow 1000ms;
+    &:hover {
+      box-shadow: 0rem 0.3rem 0.3rem darken($bgd-input, 15%);
+      .accueil__btn__elemnt__bgd {
+        opacity: 1;
+      }
+    }
+    @include xsm {
+      width: 80%;
+    }
+    &__bgd {
+      @include button-lighten;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0;
+      border-radius: $radius-button;
+      transition: opacity 1000ms;
+    }
+  }
+}
+
+.menu__button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $padding-menu-button;
+  position: relative;
+  @include sm {
+    margin: 0 auto;
+    width: 400px;
+  }
+  &__elemnt {
+    width: 53%;
+    position: relative;
+    @include button;
+    outline-style: none;
+    z-index: 1;
+    transition: box-shadow 1000ms;
+    &:hover {
+      box-shadow: 0rem 0.3rem 0.3rem darken($bgd-input, 15%);
+      .menu__button__elemnt__bgd {
+        opacity: 1;
+      }
+    }
+    &__bgd {
+      @include button-lighten;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      opacity: 0;
+      border-radius: $radius-button;
+      transition: opacity 1000ms;
+    }
+  }
 }

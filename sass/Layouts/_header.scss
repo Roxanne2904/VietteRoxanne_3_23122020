@@ -2,15 +2,35 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: $bgd-white;
+  &--header__pages {
+    @include xl {
+      margin: 0 auto;
+      width: 992px;
+    }
+  }
+  a {
+    &:visited {
+      color: black;
+    }
+    &:link {
+      color: black;
+    }
+  }
   &__arrow {
     height: 100%;
     font-size: $icone-header-arrow;
     display: flex;
     align-items: center;
     position: absolute;
-    left: 3.5rem;
-    bottom: 0.5rem;
+    left: 1.8rem;
+    bottom: 0.1rem;
+    @include xsm {
+      font-size: $xsm-icone-header-arrow;
+      left: 1rem;
+    }
   }
+
   &__title {
     margin: $no-margin;
     padding: $padding-title-and-input;

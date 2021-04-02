@@ -1,16 +1,110 @@
+@mixin bloc-shadow {
+  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.123);
+}
+@mixin animation-dots($map) {
+  @each $bloc, $values in $map {
+    &#{$bloc} {
+      margin-right: map-get($values, margin);
+      width: $size-dot;
+      height: $size-dot;
+      border-radius: 50%;
+      animation-fill-mode: both;
+      transform: scale(0);
+      background: linear-gradient(
+        to right,
+        map-get($values, color1),
+        map-get($values, number),
+        map-get($values, color2)
+      );
+      animation: loading-spinner
+        $A-duration
+        map-get($values, delay)
+        2
+        ease-in-out;
+    }
+  }
+}
+/*BUTTON*/
 @mixin button {
-  width: 80%;
   padding: $padding-button;
   border-radius: $radius-button;
   border: none;
-  background: linear-gradient(to top, $color-primary, $color-secondary);
+  background: linear-gradient(-5deg, $color-primary 15%, $color-secondary);
   color: $colortxt-button;
   @include bloc-shadow;
 }
-@mixin bloc-shadow {
-  box-shadow: 0rem 1rem 1rem darken(white, 25%);
+@mixin button-lighten {
+  background: linear-gradient(
+    -5deg,
+    lighten($color-primary, 15%) 15%,
+    lighten($color-secondary, 15%)
+  );
 }
+/*-------------------------------*/
 @mixin normal-hearts {
-  font-size: $icone-heart;
-  -webkit-text-stroke: 0.15rem black;
+  -webkit-text-stroke: 0.08rem black;
+}
+@mixin links {
+  text-decoration: none;
+}
+@mixin animation-bloc-menu($map) {
+  @each $bloc, $delay in $map {
+    &#{$bloc} {
+      animation: content-anim 1000ms map-get($delay, delay);
+      opacity: 1;
+      transform: translateY(0);
+      animation-fill-mode: both;
+    }
+  }
+}
+/*------------------------------*/
+/*MEDIAS QUERIES*/
+
+/*x-small*/
+@mixin xsm {
+  @media screen and (min-width: #{$screen-xsm-min}) and (max-width:#{$screen-xsm-max}) {
+    @content;
+  }
+}
+/*small*/
+@mixin sm {
+  @media screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+/*medium*/
+@mixin md {
+  @media screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+/*large*/
+@mixin lg {
+  @media screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+/*x-large*/
+@mixin xl {
+  @media screen and (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+/*-------------------------*/
+/*RESPONSIVE MIXIN*/
+@mixin wrapper-operation {
+  margin: 0 auto;
+  width: 400px;
+}
+/*button*/
+@mixin sm-wrapper-button {
+  width: 330px;
+  margin: 0 auto;
+}
+/*footer*/
+@mixin footer-center {
+  text-align: center;
+  padding: $sm-padding-footer;
 }

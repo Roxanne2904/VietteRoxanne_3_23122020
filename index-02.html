@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
     <link
       rel="stylesheet"
@@ -9,17 +10,17 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/prefixed/style.css" />
   </head>
 
   <body>
-    <main>
-      <header class="header">
-        <a href="main.html"><i class="fas fa-arrow-left header__arrow"></i></a>
-        <h1 class="header__title">Ohmyfood</h1>
-      </header>
+    <header class="header header--header__pages">
+      <a href="index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
+      <h1 class="header__title">Ohmyfood</h1>
+    </header>
 
-      <figure class="image">
+    <main class="main__pages">
+      <figure class="image image--change">
         <img
           class="image__photo image__photo--change"
           src="./images/restaurant/restau_(3).jpg"
@@ -30,7 +31,14 @@
       <div class="bloc">
         <section class="menu">
           <h2 class="menu__title">
-            La note enchantée<i class="fas fa-heart menu__heart"></i>
+            <span class="menu__title__txt">La note enchanté</span>
+            <span class="menu__heart">
+              <span class="menu__heart__icone1"
+                ><i class="fas fa-heart"></i></span
+              ><span class="menu__heart__icone2"
+                ><i class="fas fa-heart"></i
+              ></span>
+            </span>
           </h2>
 
           <!--ENTREES-->
@@ -42,7 +50,7 @@
               ></span>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content1">
               <div class="menu__recette__text">
                 <strong>Ravioles de foie gras</strong><br />
                 <span>Accompagnés de leur crème à la truffe</span>
@@ -53,7 +61,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content2">
               <div class="menu__recette__text">
                 <strong>Caviar osciètre</strong><br />
                 <span>Sur blini à la farine de blé noir</span>
@@ -64,7 +72,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content3">
               <div class="menu__recette__text">
                 <strong>Homard et espuma de potiron</strong><br />
                 <span>Mariné aux zests d'orange</span>
@@ -75,7 +83,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content4">
               <div class="menu__recette__text">
                 <strong>Foie gras de canard cuit entier</strong><br />
                 <span>Confiture de figue et pain toasté</span>
@@ -96,7 +104,7 @@
               ></span>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content1">
               <div class="menu__recette__text">
                 <strong>Noix de coquilles Saint-Jacques</strong><br />
                 <span>Sur son lit de purée de céleri-rave</span>
@@ -107,7 +115,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content2">
               <div class="menu__recette__text">
                 <strong>langoustine poêlée</strong><br />
                 <span>Purée de patate douce</span>
@@ -118,7 +126,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content3">
               <div class="menu__recette__text">
                 <strong>Mijoté de queue de boeuf</strong><br />
                 <span>Et riz sauvage de aux zests de citron</span>
@@ -139,7 +147,7 @@
               ></span>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content1">
               <div class="menu__recette__text">
                 <strong>Macaron noisette et chocolat</strong><br />
                 <span>Glace au caramel brun et sel de Guérande</span>
@@ -150,7 +158,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content2">
               <div class="menu__recette__text">
                 <strong>Baba au rhum revisité</strong><br />
                 <span>Avec son coulis de citron</span>
@@ -161,7 +169,7 @@
               </div>
             </div>
 
-            <div class="menu__recette__content">
+            <div class="menu__recette__content menu__recette__content3">
               <div class="menu__recette__text">
                 <strong>Tarte au citron meringuée</strong><br />
                 <span>Destructurée</span>
@@ -173,27 +181,35 @@
             </div>
           </div>
 
-          <div class="menu__button"><button>Commander</button></div>
+          <div class="menu__button">
+            <button class="menu__button__elemnt">
+              Commander
+              <span class="menu__button__elemnt__bgd">
+                <!--bgd__pour__hover-->
+              </span>
+            </button>
+          </div>
         </section>
       </div>
-
-      <footer class="footer">
-        <h2 class="footer__title">Ohmyfood</h2>
-        <ul class="footer__ul">
-          <li class="footer__li">
-            <span class="footer__li-icone footer__li-icone--spé"
-              ><i class="fas fa-utensils"></i></span
-            >Proposer un restaurant
-          </li>
-          <li class="footer__li">
-            <span class="footer__li-icone"
-              ><i class="fas fa-hands-helping"></i></span
-            >Devenir partenaire
-          </li>
-          <li class="footer__li">Mentions légales</li>
-          <li class="footer__li">Contact</li>
-        </ul>
-      </footer>
     </main>
+    <footer class="footer">
+      <h2 class="footer__title">Ohmyfood</h2>
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <span class="footer__li-icone footer__li-icone--spé"
+            ><i class="fas fa-utensils"></i></span
+          >Proposer un restaurant
+        </li>
+        <li class="footer__li">
+          <span class="footer__li-icone"
+            ><i class="fas fa-hands-helping"></i></span
+          >Devenir partenaire
+        </li>
+        <li class="footer__li">Mentions légales</li>
+        <li class="footer__li">
+          <a href="mailto:roxanne-viette@hotmail.fr">Contact</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
