@@ -1,3 +1,6 @@
+## I started this project on 11/01/2021
+*Training begins on 23/12/2020*
+
 17.03.2021
 
 * Mise en place de la branche "feature".
@@ -10,10 +13,10 @@
 18.03.2021
 
 * Réa de toute les animations----> ok.
-  - Modifications à prévoir pour le "loading-spinner"(faire basculer cette <div> et non le <main>)
-* Prévoir une modification en html = la balise <main> doit être, entre le <header> et le <footer>.
+  - Modifications à prévoir pour le "loading-spinner"(faire basculer cette ```<div>``` et non le ```<main>```)
+* Prévoir une modification en html = la balise ```<main>``` doit être, entre le ```<header>``` et le ```<footer>```.
 * Mettre en place le responsive du site. 
-* Petite erreur sur le w3c html sur les pages secondaires (balise <div> dans le <h2> à changer en <span>) 
+* Petite erreur sur le w3c html sur les pages secondaires (balise ```<div>```dans le ```<h2>``` à changer en ```<span>```) 
 
 19.03.2021
 
@@ -27,7 +30,7 @@
 
 * Debug de mon problème de dimension en cours...
   - impossible de faire le responsive correctement sans l'ajout de la balise:
-    - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    - ```<meta name="viewport" content="width=device-width, initial-scale=1.0">```
     - Besoin de revoir toutes les valeurs "rem" et de réajuster la mise en page";
 * Index.html :------ok;
 
@@ -45,7 +48,7 @@
  
 27.03.2021
 
-* retouches sur le responsive + ajout d'un hover sur les <li>
+* retouches sur le responsive + ajout d'un hover sur les ```<li>```
 * les blocs de la section fonctionnement ne sont plus dupliqués.
 * Les boutons aussi ont été modifié. Eux aussi ne sont plus dupliqués.
 * le bug des coeurs sur les pages a été corrigé. 
